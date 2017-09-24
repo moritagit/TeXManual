@@ -1,5 +1,7 @@
-%第x章
-%例未実装
+\documentclass[class=jreport, crop=false, preview=false, dvipdfmx, a4paper, 14Q, fleqn]{standalone}
+\usepackage{../../preamble/preamble_TeXManual}
+\begin{document}
+
 \chapter{ファイルの分割と統合}
 \label{ch:file-management}
 
@@ -228,7 +230,6 @@ chapter1.texから見たパスとして扱われます。
 main.texの中身は以下のようになります。
 
 \begin{ITeX}
-
 \documentclass[dvipdfmx, a4paper]{jsarticle}
 \input{../preamble/preamble}
 \begin{document}
@@ -238,7 +239,6 @@ main.texの中身は以下のようになります。
 \subimport{../chapter2/}{chapter2}
 \subimport{../chapter3/}{chapter3}
 \end{document}
-
 \end{ITeX}
 
 これで，例えばchapter1.tex内で
@@ -252,3 +252,159 @@ main.texの中身は以下のようになります。
 長い文書を書くときは是非使ってみて下さい。
 
 
+
+\section{分割したファイルを実行する}
+ここまでで，ファイルを分割してそれをまとめることはできるようになりました。
+ただ，これだけだとちょっと不便です。
+例えば，ファイルの一部を書き換え，
+それを出力して修正するというとき，
+その実行はmain.texを用いて行わなければなりません。
+このとき，他のファイルごと実行すると実行時間がかなりかかりますが，
+他のファイルを読み込んでいる\verb|\input|などをコメントアウトするのも面倒です。
+そこで，分割したファイルを実行するやり方を紹介しようと思います。
+
+
+\subsection{docmuteパッケージ}
+docmuteパッケージを用いれば，
+\verb|\input|と\verb|\include|されるファイルの
+\verb|\begin{document}|と\verb|\end{document}|の外を無視し，
+その中身だけを読み込むことができます。
+まずはプリアンブル（preamble.tex）に
+\begin{ITeX}
+\usepackage{docmute}
+\end{ITeX}
+と書いてください。
+ただ，このdocmuteパッケージはインストールされていない可能性もあります。
+その場合は，第\ref{ch:packages}章\ref{sec:install-packages}節を見て
+自分でインストールしてもよいですが，
+後のstandaloneパッケージがほぼdocmuteの上位互換となっているので，
+そちらを使ってもよいと思います。
+
+使い方を説明します。
+main.texの中身が以下のようになっているとします。
+
+\begin{ITeX}[title = main.tex]
+\documentclass[dvipdfmx, a4paper]{jsarticle}
+\input{../preamble}
+\begin{document}
+\include{../chapter1/chapter1}
+\include{../chapter2/chapter2}
+\include{../chapter3/chapter3}
+\end{document}
+\end{ITeX}
+
+また，chapter1.texの中身が以下のようになっているとします。
+
+\begin{ITeX}[title = chapter1.tex]
+\documentclass[dvipdfmx, a4paper]{jsarticle}
+\input{../preamble}
+\begin{document}
+\chapter{はじめに}
+はじめに～～～～～。
+
+\end{document}
+\end{ITeX}
+
+まずはchapter1.texのみを実行し，内容を確認します。
+内容がOKになったら，
+main.texを実行します。
+そうすると，\verb|\begin{document}|と\verb|\end{document}|の間だけがmainで読み込まれるので，
+ファイルの統合もうまくいきます。
+
+ここで注意ですが，プリアンブル部分は無視されるので，
+main.texとchapter1.texのプリアンブルが異なっていると
+それぞれの実行結果が変わる可能性があります。
+できるだけ同じプリアンブルを使うようにしてください。
+また，\verb|\include|と\verb|\input|は使えますが，
+\verb|\import|や\verb|\subimport|は使えないので注意してください。
+
+
+
+\section{subfilesパッケージ}
+subfilesパッケージを使えば，
+chapter1.tex等において親のmain.texのプリアンブルを引き継いで使うことができます。
+まずはプリアンブル（preamble.tex）に
+\begin{ITeX}
+\usepackage{subfiles}
+\end{ITeX}
+と書いてください。
+
+使い方ですが，chapter1.tex等のドキュメントクラスにsubfilesを指定し，
+オプションでmain.texのパスを指定してください。
+また，読み込みは\verb|\subfile|コマンドで行ってください。
+具体的には，以下のようにするということです。
+
+\begin{ITeX}[title = main.tex]
+\documentclass[dvipdfmx, a4paper]{jsarticle}
+\input{../preamble}
+\begin{document}
+\include{../chapter1/chapter1}
+\include{../chapter2/chapter2}
+\include{../chapter3/chapter3}
+\end{document}
+\end{ITeX}
+
+\begin{ITeX}[title = chapter1.tex]
+\documentclass[../main/main.tex]{subfiles}
+\begin{document}
+\chapter{はじめに}
+はじめに～～～～～。
+
+\end{document}
+\end{ITeX}
+
+こうすることによって，子のchapter1.texでmain.texのプリアンブルを読み込んで使うことができます。
+プリアンブルを共有できるので，
+いちいち子のファイルでプリアンブルを書いたり読み込んだりする必要がなくて便利です。
+
+ただ，\verb|\import|や\verb|\subimport|に対応するコマンドは用意されていませんので注意してください
+（僕が試したときは，chapter1.tex等で\verb|\input|を使うとテキストのみ読み込まれ，
+tcolorboxやtikzが表示されないという形になりました）。
+
+なお，この節は
+「\href{http://qiita.com/sankichi92/items/1e113fcf6cc045eb64f7}{分割したLaTeXファイルをsubfilesを使ってコンパイルする}」
+を参考にしました。
+
+
+
+\section{standaloneパッケージ}
+standaloneパッケージを使えば，
+子のプリアンブルを親に共有することができます。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+standaloneパッケージでは，
+\verb|\input|や\verb|\include|に加え\verb|\import|や\verb|\subimport|も使えるので，
+これらを使いたい人はstandaloneパッケージを使ってみて下さい。
+
+ここで注意ですが，子のプリアンブルが親のプリアンブルに共有されるので，
+preamble.texの相対パスがmain.texからとchapter1.texからで異なる場合はエラーします。
+絶対パスで指定してもいいですが，特に子のプリアンブルを親に共有しなくてもいい場合は，
+\verb|\usepackage{standalone}|のように，
+subpreamblesオプションを外してください。\\
+
+
+上の全てのパッケージを通して，
+子のchapter1.tex等で使った他ファイルへの参照となる\verb|\ref|は
+「??」等となりうまく表示されません。
+mainにおいてはちゃんと表示されるので
+基本的にはそこまで気にしなくて大丈夫だと思いますが，
+子のPDFをそのまま使う可能性がある場合は注意してください。
+
+
+
+\end{document}
