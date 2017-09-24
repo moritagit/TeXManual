@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  25 SEP 2017 03:41
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  25 SEP 2017 04:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3419,47 +3419,57 @@ Overfull \hbox (4.05414pt too wide) in paragraph at lines 356--359
 ルを書いたり読み込んだりする必要が
  []
 
+\openout4 = `file_management.listing'.
 
-Overfull \hbox (1.20116pt too wide) in paragraph at lines 401--407
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `file_management.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [6]
+Overfull \hbox (4.05414pt too wide) in paragraph at lines 402--410
+\JY1/hmc/m/n/10 エラーしません。 他の子のファイルと共有しないようなプリアンブル
+は， 共有のプリアンブルでなく子のそ
+ []
+
+
+Overfull \hbox (8.86523pt too wide) in paragraph at lines 421--425
+\JY1/hmc/m/n/10 の用途で使っているわけではないのであまりそちらには詳しくありま
+せん。 そちらの用途で使うとき用のオ
+ []
+
+
+Overfull \hbox (1.20116pt too wide) in paragraph at lines 431--437
 \JY1/hmc/m/n/10 となりうまく表示されません。 \T1/ptm/m/n/10 main \JY1/hmc/m/n/1
 0 においてはちゃんと表示されるので基本的にはそこまで気にしなくて
  []
 
-Package atenddvi Info: Last page = 6.
-[6] 
+
 AED: lastpage setting LastPage
+Package atenddvi Info: Last page = 7.
 [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 410.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 410.
- (./file_management.aux
-
-Package atenddvi Warning: Rerun LaTeX, last page has changed.
-
-
-Package animate Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-(animate)                @ Rerun to get internal references right! @
-(animate)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
-
-)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 410.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 410.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 439.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 439.
+ (./file_management.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 439.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 439.
 Package rerunfilecheck Info: File `file_management.out' has not changed.
-(rerunfilecheck)             Checksum: 5C1A68E86B99B53EA27968F9CE108F94;825.
+(rerunfilecheck)             Checksum: C69D5C2157E19C103FCF2BCA51E6ACF3;843.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 45110 strings out of 493671
- 869140 string characters out of 6151255
- 1006660 words of memory out of 5000000
- 47841 multiletter control sequences out of 15000+600000
+ 45131 strings out of 493671
+ 869549 string characters out of 6151255
+ 1012525 words of memory out of 5000000
+ 47858 multiletter control sequences out of 15000+600000
  44482 words of font info for 99 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 76i,12n,151p,10484b,3064s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 76i,12n,151p,10484b,3056s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on file_management.dvi (7 pages, 55544 bytes).
+Output written on file_management.dvi (7 pages, 62744 bytes).

@@ -149,18 +149,27 @@
 
 
 %別行立ての入力表示
-\newtcblisting{ITeX}[1][]{%
+\newtcblisting{ITeX}{%
 	boxrule = 0pt,%
 	size = minimal,%
-	lefttitle = 1zw,
+	left = 5zw,%
+	colback = lightcyan,%
+	listing options = {style=tcblatex, texcsstyle=*\color{blue}},%
+	listing only,
+	}
+\newtcblisting{ITeX*}[1][]{%
+	boxrule = 0pt,%
+	size = minimal,%
+	lefttitle = 1zw,%
 	leftupper = 5zw,%
 	colback = lightcyan,%
 	colbacktitle = cyan,
 	fonttitle = \bfseries,
 	listing options = {style=tcblatex, texcsstyle=*\color{blue}},%
 	listing only,
-	#1
+	#1,
 	}
+
 
 
 

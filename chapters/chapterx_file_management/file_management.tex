@@ -283,27 +283,27 @@ docmuteパッケージを用いれば，
 使い方を説明します。
 main.texの中身が以下のようになっているとします。
 
-\begin{ITeX}[title = main.tex]
+\begin{ITeX*}[title = main.tex]
 \documentclass[dvipdfmx, a4paper]{jsarticle}
-\input{../preamble}
+\input{../preamble/preamble}
 \begin{document}
 \include{../chapter1/chapter1}
 \include{../chapter2/chapter2}
 \include{../chapter3/chapter3}
 \end{document}
-\end{ITeX}
+\end{ITeX*}
 
 また，chapter1.texの中身が以下のようになっているとします。
 
-\begin{ITeX}[title = chapter1.tex]
+\begin{ITeX*}[title = chapter1.tex]
 \documentclass[dvipdfmx, a4paper]{jsarticle}
-\input{../preamble}
+\input{../preamble/preamble}
 \begin{document}
 \chapter{はじめに}
 はじめに～～～～～。
 
 \end{document}
-\end{ITeX}
+\end{ITeX*}
 
 まずはchapter1.texのみを実行し，内容を確認します。
 内容がOKになったら，
@@ -320,7 +320,7 @@ main.texとchapter1.texのプリアンブルが異なっていると
 
 
 
-\section{subfilesパッケージ}
+\subsection{subfilesパッケージ}
 subfilesパッケージを使えば，
 chapter1.tex等において親のmain.texのプリアンブルを引き継いで使うことができます。
 まずはプリアンブル（preamble.tex）に
@@ -334,24 +334,24 @@ chapter1.tex等において親のmain.texのプリアンブルを引き継いで
 また，読み込みは\verb|\subfile|コマンドで行ってください。
 具体的には，以下のようにするということです。
 
-\begin{ITeX}[title = main.tex]
+\begin{ITeX*}[title = main.tex]
 \documentclass[dvipdfmx, a4paper]{jsarticle}
-\input{../preamble}
+\input{../preamble/preamble}
 \begin{document}
 \include{../chapter1/chapter1}
 \include{../chapter2/chapter2}
 \include{../chapter3/chapter3}
 \end{document}
-\end{ITeX}
+\end{ITeX*}
 
-\begin{ITeX}[title = chapter1.tex]
+\begin{ITeX*}[title = chapter1.tex]
 \documentclass[../main/main.tex]{subfiles}
 \begin{document}
 \chapter{はじめに}
 はじめに～～～～～。
 
 \end{document}
-\end{ITeX}
+\end{ITeX*}
 
 こうすることによって，子のchapter1.texでmain.texのプリアンブルを読み込んで使うことができます。
 プリアンブルを共有できるので，
@@ -361,31 +361,52 @@ chapter1.tex等において親のmain.texのプリアンブルを引き継いで
 （僕が試したときは，chapter1.tex等で\verb|\input|を使うとテキストのみ読み込まれ，
 tcolorboxやtikzが表示されないという形になりました）。
 
-なお，この節は
+なお，この小節は
 「\href{http://qiita.com/sankichi92/items/1e113fcf6cc045eb64f7}{分割したLaTeXファイルをsubfilesを使ってコンパイルする}」
 を参考にしました。
 
 
 
-\section{standaloneパッケージ}
+\subsection{standaloneパッケージ}
 standaloneパッケージを使えば，
 子のプリアンブルを親に共有することができます。
+まずは，subpreamblesオプションを追加して，
+\begin{ITeX}
+\usepackage[subpreambles=true]{standalone}
+\end{ITeX}
+としてください。
 
+使い方ですが，main.texでの読み込みは\verb|\input|や\verb|\subimport|で行えます。
+main.texの中身は上と同じとしますので，省略します。
+子のファイルについてですが，
+これは以下のようにします。
 
+\begin{ITeX*}[title = chapter1.tex]
+\documentclass[class=jsarticle, crop=false, preview=false, dvipdfmx, a4paper]{standalone}
+\input{../preamble/preamble}
+\newcommand{\kodomo}{子供}
+\begin{document}
+\chapter{はじめに}
+はじめに～～～～～。
+\kodomo
 
+\end{document}
+\end{ITeX*}
 
+ドキュメントクラスにはstandaloneを指定し，
+オプションでclass=jsarticle等とします。
+jsarticle等につけるオプション（dcipdfmxやa4paper等）も普通につけることができます。
+crop=flaseやpreview=falseですが，
+僕はよくわからないまま使っているので是非自分で調べてみて下さい。
 
-
-
-
-
-
-
-
-
-
-
-
+上の例では，chapter1.texのプリアンブルで\verb|\kodomo|というコマンドを定義し，
+文章中でこれを使っています。
+docmuteやsubfileではこれはmain.texには読み込まれないので，
+main.texを実行するとエラーしてしまいます。
+しかし，standaloneを使えば，子のプリアンブルが親にも共有されるので，
+main.texを実行してもエラーしません。
+他の子のファイルと共有しないようなプリアンブルは，
+共有のプリアンブルでなく子のそれに書いてもよいでしょう。
 
 standaloneパッケージでは，
 \verb|\input|や\verb|\include|に加え\verb|\import|や\verb|\subimport|も使えるので，
@@ -395,7 +416,16 @@ standaloneパッケージでは，
 preamble.texの相対パスがmain.texからとchapter1.texからで異なる場合はエラーします。
 絶対パスで指定してもいいですが，特に子のプリアンブルを親に共有しなくてもいい場合は，
 \verb|\usepackage{standalone}|のように，
-subpreamblesオプションを外してください。\\
+subpreamblesオプションを外してください。
+
+このstandaloneパッケージは元々tikzという描画パッケージを読み込むときに便利なものです。
+僕はその用途で使っているわけではないのであまりそちらには詳しくありません。
+そちらの用途で使うとき用のオプションやコマンドが用意されているので，
+是非自分で調べてみて下さい。
+
+この小節は，
+「\href{https://ja.sharelatex.com/learn/Multi-file_LaTeX_projects}{Multi-file LaTeX projects}」
+を参考にしました。\\
 
 
 上の全てのパッケージを通して，
@@ -404,7 +434,6 @@ subpreamblesオプションを外してください。\\
 mainにおいてはちゃんと表示されるので
 基本的にはそこまで気にしなくて大丈夫だと思いますが，
 子のPDFをそのまま使う可能性がある場合は注意してください。
-
 
 
 \end{document}

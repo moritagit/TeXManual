@@ -1,6 +1,9 @@
-\documentclass[../main/main.tex]{subfiles}
+\documentclass[class=jsarticle, crop=false, preview=false, dvipdfmx, a4paper]{standalone}
+\input{../preamble/preamble}
+\newcommand{\kodomo}{子供}
 \begin{document}
 \chapter{はじめに}
 はじめに～～～～～。
+\kodomo
 
 \end{document}
