@@ -1,0 +1,606 @@
+%第x章
+\chapter{ページレイアウトについて}
+\label{ch:pagelayout}
+
+この章では，ページレイアウトを扱っていきます。
+{\LaTeX}の考えでは，
+本文とページレイアウトは別物として扱うのがよいとされています。
+つまり，本文中でレイアウトを調整するのは，
+美しくないということです
+（勿論多少は本文中でも調整します）。
+ではどの部分でレイアウトを調整するかというと，
+それは\verb|\documentclass|とプリアンブルです。
+ここからは文書の内容以外の部分も扱っていきます。
+
+
+
+\section{ドキュメントクラス}
+{\TeX}で文書を作るとき，
+最初の行におまじないのように
+\verb|\documentclass{jsarticle}|
+と書いている人が多いと思います。
+このドキュメントクラスは，
+普通に文書を作成するだけなら変える必要がない場面が多いです。
+ですので，ドキュメントクラス自体については軽く触れる程度にしたいと思います。
+ドキュメントクラスには，大きく分けて以下の3つの種類があります。
+
+\begin{table}[H]
+\label{type-of-documentclass}
+\begin{center}
+\begin{tabular}{lp{43zw}}
+article &
+レポートや記事，論文で使われるクラスです。
+最も一般的に使われるクラスで，
+ほとんどの人がこのクラスで文書を作成します。
+節（\verb|\section|）が最上位の構成単位です。\\
+report &
+長めの報告書用のクラスです。
+articleより1つ上の，
+章（\verb|\chapter|）が最上位です。\\
+book &
+本用のクラスです。
+章（\verb|\chapter|）が最上位です。
+\end{tabular}
+\end{center}
+\end{table}
+
+基本的にはjsarticle(japan standard article)を使っていれば大丈夫です。
+長めの文書を作成したり本を書いたりしたいときは，
+適当にググってどうにかしてください。
+
+
+
+\section{ドキュメントクラスのオプション}
+\label{sec:options-of-documentclass}
+
+この節ではドキュメントクラスにつけるオプションについて扱います。
+ただ，これも深入りはしません。
+普通の使い方をする場合で，
+実用上使いそうなものだけに限って紹介します。
+
+\verb|\documentclass|には様々なオプションをつけることができます。
+例えば，図を読み込んだりするときに[dvipdfmx]というオプションをつけると思います。
+こんな感じで，以下のようなオプションが用意されています。
+使いそうなものしか紹介していないので，
+もっと突っ込んだ設定をしたい人は色々ググってみて下さい。
+
+\begin{table}[H]
+\label{tab:options-of-documentclass}
+\begin{center}
+\begin{longtable}{lp{43zw}}
+10pt & 
+	文書全体で，文字サイズを10ptにします（デフォルト値）。
+	10pt以外にも次の値に変更できます。$\rightarrow$
+	9pt, 11pt, 12pt, 14pt, 17pt, 21pt, 25pt, 30pt, 36pt, 43pt \tabularnewline
+a4paper &
+	文書の用紙サイズをA4にします。
+	同様にしてA4, A5, B4, B5が指定できます。 \tabularnewline
+landscape &
+	用紙の向きを横置きにします。\tabularnewline
+twocolumn &
+	文書を2段組みにします（デフォルトは1段組のonecolumnです）。
+	左右の段の間の余白を変更したいときは，
+	\verb|\setlength{\columnsep}{長さ}|
+	とすればOKです。
+	また，中心に太さ $w$ の線を引きたいときは，
+	\verb|\setlength{\columnseprule}{w}|
+	とします。
+	3段組以上を使うには，multicolパッケージを使います。\tabularnewline
+titlepage &
+	\verb|\maketitle|で出力する表題と
+	abstract環境で出力するabstractを，
+	単独ページに出力します。
+	jsarticleでは，これらが本文1ページ目の上に出力される
+	notitlepageがデフォルトです。\tabularnewline
+leqno &
+	数式の番号を左側に出力します。
+	デフォルトでは右側に出力されます。\tabularnewline
+fleqn &
+	数式を本文の左端から一定距離のところから始めます。
+	デフォルトでは数式は中央に配置されます。
+	左端からの距離は，
+	デフォルトでは3zwくらいですが，これを変えたかったら
+	\verb|\setlength{\mathindent}{5zw}|
+	にようにして設定します。\tabularnewline
+dvipdfmx &
+	ドライバを指定します。
+	これにしとけばまず大丈夫です。
+	図とかの出力の際に指定が必要な場合が多いので，
+	指定しておいて損はないです。
+\end{longtable}
+\end{center}
+\end{table}
+
+
+
+\section{紙面上下の余白}
+実用的な話ですが，
+レポートを書くときなど，
+A4用紙3枚以内，のような指定がある場合もあると思います。
+そんなとき，紙面の上下左右のスペースを削って無理矢理押し込める，
+なんてことができたら嬉しいですよね。
+この節ではそのやり方を説明したいと思います。
+
+このマニュアルのレイアウトは次のページのようになっています
+（おそらくデフォルト値です）。
+それぞれの長さがコマンドとして定義されているので，
+それらを再定義してあげれば長さを変えることができます。
+具体的には，
+\begin{ITeX}
+\setlength{長さのコマンド}{長さ}
+\end{ITeX}
+とすれば好きな長さにすることができます。
+もちろん，この長さは，表 \ref{length-unit} に載っている長さで指定してください。 
+また，この命令は，ドキュメント中ではなくプリアンブルに書くとよいでしょう。
+
+なお，縦横で長さの辻褄（合計値）を合わせないと，
+ヘッダーと本文が重なったり，
+本文が紙面からはみ出したりしてしまうこともあるので，
+注意してください。
+基本的には試行錯誤でいい感じのところを見つける形になると思います。
+
+ちなみに，次ページのレイアウトのレビューは，
+layoutというパッケージを読み込み，
+\verb|\layout|と打ち込めば出力されます。
+
+\newpage
+\begin{center}
+\layout
+\end{center}
+
+
+
+\section{インデント}
+次はインデントについてです。
+インデントとは，文字の頭下げのことです。
+頭下げとは，例えば段落がかわったときに先頭を1字空けたり，
+数式を真ん中らへんにするときの頭の空白のことです。
+
+まずは文章中のインデントについてです。
+特定の位置で改段落した後，
+インデントしたくないときは，
+その手前に\verb|\noindent|と打てばよいです。
+文章全体でインデントの長さを設定したいときは，プリアンブルで
+\begin{ITeX}
+\setlength{\parindent}{長さ}
+\end{ITeX}
+としてください。例えば，
+\begin{ITeX}
+\setlength{\parindent}{0pt}
+\end{ITeX}
+とすれば，
+改段落時の頭下げは一括で0になります。
+
+次に，数式のインデントについてです。
+先ほどドキュメントクラスのオプションを扱った節で説明しましたが，
+数式はデフォルトでは紙面の中央に来るように設定されており，
+ここをいじるにはまず\verb|\documentclass|のオプションにfleqnを指定します。
+つまり，
+\begin{ITeX}
+\documentclass[fleqn]{jsarticle}
+\end{ITeX}
+というようにしてください。
+こうすると，デフォルトでは本文左端から3zwのところから数式が始まるようにいなります。
+これをいじるには，プリアンブルで
+\begin{ITeX}
+\setlength{\mathindent}{5zw}
+\end{ITeX}
+のようにしてください。
+
+
+
+\section{行送り}
+\label{sec:lineskip}
+
+行送りとは，
+例えばAという文字が2行に並んでるときの，
+Aの下端を通る水平線間の距離のことです。
+この水平線をベースラインといいます。
+
+jsarticleにおいて，
+行送りは\verb|\baselineskip|というコマンドで定義された長さになっていて，
+そのデフォルト値は16ptです。
+
+行送りを変更したい場合，
+\begin{ITeX}
+\setlength{\baselineskip}{長さ}
+\end{ITeX}
+のように\verb|\baselineskip|の定義を変更するか，
+\begin{ITeX}
+\renewcommand{\baselinestretch}{倍率}
+\end{ITeX}
+とすればいいです。
+
+\verb|\baselineskip|の定義を変えた場合は，
+文字のサイズを変更したタイミングで元に戻ってしまいます。
+\verb|\baselinestretch|を変更すれば，
+文字のサイズを変更しても元には戻りません。
+
+本文中に$\cfrac{d}{dx} \left( \log f(x) \right) = \cfrac{f'(x)}{f(x)}$のような大きい数式があると，
+行送りはその分だけ大きくなり，文字が重ならないようにします。
+これは，上下の行が\verb|\lineskiplimit|だけ近づいたら，
+\verb|\lineskip|より近づかないようにする，
+というようにして実現しています。
+この\verb|\lineskip|は，jsarticleのデフォルトでは1ptに設定されていますが，
+本文中に大きい数式を何度も入れる場合は，
+\begin{ITeX}
+\setlength{\lineskiplimit}{3pt}
+\setlength{\lineskip}{3pt}
+\end{ITeX}
+のように広めに取っておくとよいです。
+
+
+
+\section{字間}
+字間が狭くて見づらい，なんていう場合は，
+字間を広げる必要があります。
+全角文字の間の字間の長さは\verb|\kanjiskip|というコマンドで，
+全角文字と半角文字の間の字間の長さは\verb|\xkanjiskip|というコマンドで定義されています。
+これをいじることで字間を調整できます。
+例えば，全角文字間，全角文字と半角文字の間の字間をデフォルトで0.5ptにし，
+改行位置が変になるなどの場合に応じて0.1ptの伸び縮みを認める，
+という形にしたかったら，
+\begin{ITeX}
+\kanjiskip 0.5pt plus 0.1pt minus 0.1pt
+\xkanjiskip \kanjiskip
+\end{ITeX}
+のようにすればOKです。
+
+
+
+\section{ヘッダーとフッター}
+この節ではヘッダーとフッターの設定の仕方について扱います。
+名前や所属，日付やページ数を右上に表示したりする場面などで役に立ちます。
+
+
+\subsection{{\TeX}標準のヘッダーとフッター}
+ヘッダーやフッターを設定するコマンドは，
+\begin{ITeX}
+\pagestyle{ページスタイルの名前}
+\end{ITeX}
+です。
+このページスタイルには以下のような種類があります。
+
+\begin{table}[H]
+\begin{center}
+\label{tab:type-of-pagestyle}
+\begin{tabular}{lp{39zw}}
+empty &
+	ヘッダー・フッター（ページ番号含む）を表示しません。\tabularnewline
+plain &
+	フッターの中央にページ番号が出力されます。
+	デフォルトはこれです。\tabularnewline
+headings &
+	左ヘッダーに節の名前が，右ヘッダーにページ数が出力されます。
+	ヘッダーの区切りの横線は表示されません。\tabularnewline
+myheadings &
+	headingと同様ですが，ヘッダーの内容を好きに設定できます。
+	設定方法は以下で示します。
+\end{tabular}
+\end{center}
+\end{table}
+
+プリアンブルでこれを設定しておけば，
+ページ全体のヘッダー・フッターが指定したように設定されます。
+なお，\verb|\pagestyle|は文書中でも使うことができ，
+それが書かれているページ以降が指定したページスタイルになります。
+
+また，あるページだけ違うページスタイルにしたいときは，
+\begin{ITeX}
+\thispagestyle{ページスタイル}
+\end{ITeX}
+を使えば，
+そのページだけ設定が変わり，
+次ページから元に戻ります。
+
+myheadingsでのヘッダーの設定方法について説明します。
+偶数ページと奇数ページで同じヘッダーを出力するなら，
+\begin{ITeX}
+\markright{ヘッダー名}
+\end{ITeX}
+とします。
+
+偶数ページと奇数ページでヘッダーが違うときは，
+\begin{ITeX}
+\markboth{左}{右}
+\end{ITeX}
+とすれば，
+見開きの左ページのヘッダーには「左」，
+右ページのヘッダーには「右」と出力されます。
+ただ，もっと自由に設定したいときは，
+次小節のfancyhdrというパッケージを使ってください。
+
+
+\subsection{fancyhdrを使う}
+\label{subsec:fancyhdr}
+
+fancyhdrというパッケージを使うと，
+もっと楽に自由にヘッダー，フッターを設定できます。
+まずはプリアンブル（\verb|\documentclass|と\verb|\begin{document}|の間）に
+\begin{ITeX}
+\usepackage{fancyhdr}
+\end{ITeX}
+と書いてください。
+
+全体が同じでいいときは，
+fancyというページスタイルを使って，
+\begin{ITeX}
+\pagesyle{fancy}
+\lhead{左ヘッダー}
+\chead{中央ヘッダー}
+\rhead{右ヘッダー}
+\lfoot{左フッター}
+\cfoot{中央フッター}
+\rfoot{右フッター}
+\end{ITeX}
+のようにすれば，それぞれの位置に出力がされます。
+文書中でこのコマンドを打てば，
+そのページ以降のヘッダーorフッターが，
+そこで打ったものに変わります。
+また，ヘッダーの線を消したいときは，
+\begin{ITeX}
+\renewcommand{\headrule}{}
+\end{ITeX}
+としてください。
+
+1ページ目とそれ以降のページ，最後のページで
+ヘッダーやフッター，ページレイアウトが違うとき，
+逐一上のコマンドを打って変更してもよいですが，
+\begin{ITeX}
+\fancypagestyle{ページスタイル名}{内容}
+\end{ITeX}
+というコマンドを使ってページスタイルを定義し，
+\begin{ITeX}
+\thispagestyle{ページスタイル}
+\end{ITeX}
+を使って局所的にページスタイルを変更することで，
+ヘッダーやフッター，ページレイアウトを一括で変更することができます。
+
+これだけではわかりづらいと思うので，
+具体的に例を見てみます。
+この文書のヘッダー・フッターの設定を以下に示します。
+
+\begin{ITeX}
+%ヘッダー&フッター
+\fancypagestyle{normal}{%
+  %ヘッダー
+  \lhead{\leftmark}
+  \rhead{\rightmark}
+  \renewcommand{\headrule}{}
+  %フッター
+  \cfoot{\thepage}
+  }
+\pagestyle{normal}
+\end{ITeX}
+
+ここで，
+\verb|\leftmark|，\verb|\rightmark|，\verb|\thepage|はそれぞれ，
+章，節，ページ数を出力するコマンドです。
+\verb|\pagestyle|で定義したページスタイルを
+ちゃんと選択することを忘れないでください。
+
+また，ヘッダーやフッターに画像を挿入したいときは，
+第\ref{ch:pictures}章第\ref{sec:insert-pictures}節の通り，
+minipage環境を作れば簡単に入れられます。
+
+
+
+\section{横置き}
+
+\subsection{PDF全体を横置きにする}
+基本的にPDFの紙は縦に置かれていますが，
+\ref{sec:options-of-documentclass}節に書いた通り，
+\verb|\docuemntclass|のオプションにlandscapeを指定すれば
+紙を横置きにすることができます。
+
+ただこのlandscape，うまく横置きにならないときがあります。
+そのときはgeometryパッケージにlandscapeオプションを付けて読み込めばうまくいくと思います。
+つまり，次のようにするということです。
+\begin{ITeX}
+\documentclass[landscape]{jsarticle}
+\usepackage[landscape]{geometry}
+\begin{document}
+.......
+\end{document}
+\end{ITeX}
+これでうまくいかなかったら（多分行くと思いますが）是非自分で調べてみて下さい。
+
+ちなみに，\ref{subsec:fancyhdr}節で紹介したfancuhdrパッケージは，
+landscapeを使っていてもうまく動くので是非使ってみて下さい。
+
+\subsection{PDFの一部だけ横置きにする}
+前小節ではPDF全体を横置きにする方法を説明しました。
+ここでは，PDFの一部を横置きにする方法を説明します。
+これを実現するために，まずはlscapeパッケージを読み込みます。
+\begin{ITeX}
+\usepackage{lscape}
+\end{ITeX}
+このパッケージに入っているlandscape環境の中に入れた部分が，
+（改ページをして別ページで）横置きになります。
+\begin{ITeX}
+\documentclass{jsarticle}
+\usepackage{lscape}
+\begin{document}
+～～～～～～～～～
+ここまで縦置き
+
+\begin{landscape}
+ここは横置き
+ここの前後で改ページされる
+\end{landscape}
+
+ここからまた縦置き
+～～～～～～～～～
+\end{document}
+\end{ITeX}
+
+どこに使うんだよ，と思う人もいるかもしれませんが，
+例えば横に長い図や表を入れようとして，
+紙面の右からはみ出てしまうようなときなどに使えます。
+例えば次のような横にながーい表でも，
+次ページのように紙面に収めることができます。
+
+\begin{table}[H]
+\begin{tabular}{|cccccc|ccccccc|} \hline
+この表は & A4サイズの紙に &普通に & 書くと & はみ出て & しまいます。 & でも & こんな & 横長の & 表でも & 紙面に & 収めることが & 出来ます。\\ \hline
+この表は & A4サイズの紙に &普通に & 書くと & はみ出て & しまいます。 & でも & こんな & 横長の & 表でも & 紙面に & 収めることが & 出来ます。\\ \hline
+この表は & A4サイズの紙に &普通に & 書くと & はみ出て & しまいます。 & でも & こんな & 横長の & 表でも & 紙面に & 収めることが & 出来ます。\\ \hline
+\end{tabular}
+\caption{横にながーい表}
+\end{table}
+
+\begin{landscape}
+\begin{table}[H]
+\begin{tabular}{|cccccc|ccccccc|} \hline
+この表は & A4サイズの紙に &普通に & 書くと & はみ出て & しまいます。 & でも & こんな & 横長の & 表でも & 紙面に & 収めることが & 出来ます。\\ \hline
+この表は & A4サイズの紙に &普通に & 書くと & はみ出て & しまいます。 & でも & こんな & 横長の & 表でも & 紙面に & 収めることが & 出来ます。\\ \hline
+この表は & A4サイズの紙に &普通に & 書くと & はみ出て & しまいます。 & でも & こんな & 横長の & 表でも & 紙面に & 収めることが & 出来ます。\\ \hline
+\end{tabular}
+\caption{横にながーい表}
+\end{table}
+\end{landscape}
+
+ここでいくつか注意点を挙げておきます。
+まず，内容は横置きですが，紙自体は縦になります。
+紙自体が途中で横になると，論文等では困ってしまうので，
+ある意味当然のデフォルト設定です。
+また，ヘッダーやフッターも縦置きのときと同じようにつきます。
+これも上と同様の理由です。
+
+横に長いものに出会ったときは是非使ってみて下さい。
+
+
+\subsection{PDFの一部を紙ごと横置きにする}
+上でPDF内の一部だけ横置きにする方法はわかりました。
+しかし，中には紙ごと横に置きたい人もいると思います。
+そんな人のために，pdflscapeというパッケージがあります。
+プリアンブルで
+\begin{ITeX}
+\usepackage{lscape}
+\usepackage{pdflscape}
+\end{ITeX}
+として読み込むだけで，
+landscape環境を使っているページが横向きになります。
+
+ただ，このpdflscapeパッケージは，
+そのページを機械的に横向きにするだけであるということに注意してください。
+つまり，ヘッダーやフッターを付けていた場合，
+それらも丸ごと回転してしまい，
+変なレイアウトになってしまうということです。
+
+例えば，論文やレポートを書いていて，
+横に長い図をlscapeパッケージのlandscape環境で入れたはいいが，
+内容を見たいときに非常に見づらい，
+というときなどは，
+一時的に横向きにするという目的でこのpdflscapeを使えばよいので，
+特にヘッダーとフッターの回転に気を配る必要はありません。
+
+しかし，紙面を横にしたままどこかしらに提出するというときは，
+ヘッダーやフッターが回転していてはよくないでしょう。
+簡単な対策としては，landscape環境を使うページだけ
+ヘッダーやフッターを付けないというものが考えられます。
+表や図のみになる特殊なページですから，
+これは全然ありだと思います。
+
+でもやっぱりヘッダーとフッターを付けたい，という人もいると思います。
+ページ数を付けなくていいのであれば，
+pdfpagesというパッケージを用いて上手くやる方法があります。
+横向きのPDFを別ファイルで用意します。
+これはdocumentclassのオプションにlandscapeを付けて，
+fancyhdr等も使って作ればよいです。
+とりあえずこのPDFの名前を「yoko.pdf」としておきます。
+このような別ファイルで用意したPDFを，
+そのページを指定して挿入できるのがpdfpagesパッケージです。
+プリアンブルに
+\begin{ITeX}
+\usepackage{pdfpages}
+\end{ITeX}
+と書き，yoko.pdfを読み込みたいところで
+\begin{ITeX}
+\includepdf[pages=-]{yoko.pdf}
+\end{ITeX}
+とすればOKです。
+もちろん縦置きのPDFにも使えるパッケージですので，
+必要があれば使ってみて下さい。
+なお，pdfpagesについては，
+「\href{http://abenori.blogspot.jp/2015/07/pdfpages.html}{にっき：pdfpages}」
+というサイトを参考にしました。
+様々なオプションについても解説してくださっているので，
+是非一度見てみて下さい。
+
+しかし，ページ数も欲しいよ，という人もいると思います。
+そんな人は，ヘッダーやフッターを手動で配置しましょう。
+textposパッケージのtextblock環境を使えば
+PDFの紙面上にテキストを配置できます。
+これに\verb|\rotatebox{角度}{テキスト}|というコマンドを組み合わせれば，
+横置きに合わせたヘッダー・フッターを付けることができます。
+fancyhdrパッケージと合わせて，いい感じに設定していきましょう。
+すごく適当な感じになっているので，そのうち書き足します.....。				%
+
+まずは必要なパッケージをプリアンブルで読み込みます。
+textposにはabsoluteオプションを付けます。
+\begin{ITeX}
+\usepackage{fancyhdr}
+\usepackage[absolute]{textpos}
+\usepackage{lscape}
+\usepackage{pdflscape}
+\end{ITeX}
+
+次にtextposの初期設定をします。
+textposのblocktext環境は紙面左上を(0, 0)とした座標でテキストを配置します。
+その座標の長さの単位を設定します
+（デフォルトはptですが，このままでよいという人はこのままで大丈夫です）。
+\begin{ITeX}
+\setlength{TPHrizoModule}{1mm}
+\setlength{TPVertModule}{1mm}
+\end{ITeX}
+blocktext環境の使い方は，簡単に説明すると次のような感じです。
+\begin{ITeX}
+\begin{blocktext}{幅}(座標)
+内容
+\end{blocktext}
+\end{ITeX}
+僕は
+「\href{http://konoyonohana.blog.fc2.com/blog-entry-218.html}{天地有情 [LaTeX] textpos --- テキストブロックを任意の場所に配置}」
+というサイトを参考にさせていただきました。
+
+次にfancyhdrでページスタイルを定義します。
+\begin{ITeX}
+\fancypagestyle{yoko}{%
+  %header
+  \lhead[L]{%
+   \begin{textblock}{3}(10, 20)
+      \rotatebox{90}{紙ごと横置き}
+    \end{textblock}
+    }
+  %footer
+  \cfoot{%
+    \begin{textblock}{3}(180, 145)
+      \rotatebox{90}{\thepage}
+    \end{textblock}
+    }
+  \lfoot{%
+    \begin{textblock}{3}(180, 145)
+      \rotatebox{90}{フッターも置ける}
+    \end{textblock}
+    }
+  }
+\end{ITeX}
+ここで，\verb|\thepage|はページ番号を出力するコマンドです。
+
+そして，landscape環境\textbf{内}で\verb|\thispagestyle|コマンドを使って
+ページスタイルを指定すればOKです。
+landscape環境は改ページを伴うので，
+環境の外で使うと違うページのスタイルが変更されてしまうことに注意してください。
+\begin{ITeX}
+\begin{landscape}
+\thispagestyle{yoko}
+
+ここの紙だけ横置き
+\end{landscape}
+\end{ITeX}
+
+かなり面倒ですが，
+これならかなり自由に設定できるので，
+簡単な方法が見つからないときは是非これを試してみて下さい。
+

@@ -1,0 +1,196 @@
+%タイトル
+\title{\LaTeXe 入門}
+\author{R. Morita}
+
+\input{/Users/User/Documents/TeX/preamble/mypreamble}
+
+%パッケージ
+\usepackage{layout}					%ページレイアウト出力
+\usepackage{lscape}					%横置き（紙は縦）
+%\usepackage{pdflscape}				%横置き（紙も横置き）
+\usepackage{tcfaspin}					%文字を回すのだ！
+\usepackage{pythontex}				%PythonTeX
+\usepackage[deluxe]{otf}				%フォント
+\usepackage[noalphabet]{pxchfon}
+
+
+%フォント
+\setminchofont{ipam.ttf}
+\setboldminchofont{GenEiGothicM-Bold}
+\setmediumgothicfont{GenEiGothicM-SemiBold}				%ゴシック = 源暎
+\setboldgothicfont{GenEiGothicM-Bold}
+\setxboldgothicfont{GenEiGothicM-Heavy}
+
+
+%tcolorboxのlibraryとsetup
+\tcbuselibrary{skins, listings, documentation}
+\tcbset{%
+	%keywords bold = false,%			%謎エラー（未定義?）
+	color command = colcom,%
+	color environment = colenv,%
+	}
+
+
+%hyperrefのsetup
+\hypersetup{%
+	pdftitle = {LaTeX2e入門マニュアル},%
+	pdfauthor = {R. Morita},%
+	pdfkeywords = {TeX; LaTeX}
+	}
+
+
+%ページレイアウト
+%jsarticleの初期値に設定
+\setlength{\oddsidemargin}{0pt}
+\setlength{\topmargin}{4pt}
+\setlength{\headheight}{20pt}
+\setlength{\textheight}{634pt}
+\setlength{\textwidth}{453pt}
+\setlength{\marginparsep}{18pt}
+\setlength{\marginparwidth}{18pt}
+%ヘッダー周り
+\setlength{\headsep}{60pt}
+\setlength{\voffset}{-40pt}
+
+
+%ヘッダー&フッター
+\fancypagestyle{normal}{%
+	%reset
+	\fancyhf{}
+	%layout
+	\setlength{\oddsidemargin}{0pt}
+	\setlength{\topmargin}{4pt}
+	\setlength{\headheight}{20pt}
+	\setlength{\textheight}{634pt}
+	\setlength{\textwidth}{453pt}
+	\setlength{\marginparsep}{18pt}
+	\setlength{\marginparwidth}{18pt}
+	\setlength{\headsep}{60pt}
+	\setlength{\voffset}{-40pt}
+	%ヘッダー
+	\lhead{\leftmark}
+	\rhead{\rightmark}
+	\renewcommand{\headrule}{}
+	%フッター
+	\cfoot{\thepage}
+	}
+\fancypagestyle{title}{%
+	%reset
+	\fancyhf{}
+	%page layout
+	\setlength{\textwidth}{210mm}
+	\setlength{\hoffset}{-2.9cm}
+	\setlength{\oddsidemargin}{0mm}
+	\setlength{\marginparsep}{0mm}
+	\setlength{\marginparwidth}{0mm}
+	\setlength{\textheight}{210mm}
+	\setlength{\voffset}{-1in}
+	\setlength{\topmargin}{0mm}
+	\setlength{\headheight}{0mm}
+	\setlength{\headsep}{0mm}
+	\setlength{\footskip}{0mm}
+	}
+\pagestyle{normal}
+
+
+%色
+\definecolor{lightcyan}{rgb}{.875,1,1}
+\definecolor{lightyellow}{rgb}{1,1,.9375}
+\definecolor{forestgreen}{RGB}{34, 139, 34}
+\definecolor{gold}{RGB}{255, 215, 0}
+\definecolor{darkcyan}{RGB}{0, 139, 139}
+\definecolor{colcom}{RGB}{0, 0, 255}
+\definecolor{colenv}{RGB}{0, 100, 0}
+
+
+%TikZ
+\newcommand{\TikZ}{%
+	Ti{\textit{k}}Z%
+	}
+
+
+%入出力ディスプレイ
+\newtcblisting{IOTeX}{%
+	skin = bicolor,%
+	drop shadow,%
+	listing side text,%
+	colframe = blue!5!black,%
+	colback = lightcyan,%
+	colbacklower = lightyellow,%
+	fontlower = {\setlength{\mathindent}{1zw}},%
+	after = {\noindent},%
+	listing options = {style=tcblatex, texcsstyle=*\color{blue}},%
+	}
+
+\newtcblisting{IOTeX*}{%
+	skin = bicolor,%
+	drop shadow,%
+	colframe = blue!5!black,%
+	colback = lightcyan,%
+	colbacklower = lightyellow,%
+	fontlower = {\setlength{\mathindent}{1zw}},%
+	after = {\noindent},%
+	listing options = {style=tcblatex, texcsstyle=*\color{blue}},%
+	}
+
+\newtcolorbox{IOtcb}{%
+	skin = bicolor,%
+	drop shadow,%
+	sidebyside,%
+	colframe = blue!5!black,%
+	colback = lightcyan,%
+	colbacklower = lightyellow,%
+	after = {\noindent},%
+	fontlower = {\setlength{\mathindent}{1zw}},%
+	}
+
+
+%別行立ての入力表示
+\newtcblisting{ITeX}{%
+	boxrule = 0pt,%
+	size = minimal,%
+	left = 5zw,%
+	colback = lightcyan,%
+	listing options = {style=tcblatex, texcsstyle=*\color{blue}},%
+	listing only
+	}
+
+
+
+%以下不要
+
+%入出力ディスプレイ（環境、verbatimは打ってね）
+\newcommand{\IOchange}{%
+	\vspace{3pt}
+	\end{minipage} &
+	\begin{minipage}[c]{0.4\hsize}
+	}
+\newenvironment{IOdisplay}{%
+	\begin{center}
+	\arrayrulewidth=2pt
+	\arrayrulecolor{white}
+	\begin{tabular}{>{\columncolor{lightcyan}}l|>{\columncolor{lightyellow}}l}
+	\multicolumn{1}{>{\columncolor{cyan}}l|}{\bf {\textcolor[gray]{1}{入力}}} 
+	&
+	\multicolumn{1}{>{\columncolor{orange}}l}{\bf {\textcolor[gray]{1}{出力}}}
+	\tabularnewline
+	\begin{minipage}[c]{0.4\hsize}
+	\vspace{6pt}
+	}{%
+	\end{minipage} \tabularnewline
+	\end{tabular}
+	\end{center}
+	\vspace{\baselineskip}
+	}
+
+
+
+
+
+%マニュアルの書き方のルール
+%	自分の言葉で書く
+%	1行目に「%第n章」と入れる
+%	2行目に \chapter{題名} を入れ、1行あけて章の概要説明
+%	節間は3行あける
+%	小節間は2行あける
+

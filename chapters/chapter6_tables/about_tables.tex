@@ -1,0 +1,482 @@
+%第6章
+\chapter{表}
+\label{ch:tables}
+
+この章では表の書き方とその自動配置の仕方を説明します。
+表を書く場面は少なくないと思うので，是非マスターしましょう。
+
+
+
+\section{表の書き方}
+表を書くにはtabular環境を使います。
+例えば，右下のような表を書くには，
+左下のように入力します。
+
+\begin{IOTeX}
+\begin{center}
+\begin{tabular}{rlc}
+ID & 名前 & 年齢 \\
+1 & 堂成道 橡数 & 30 \\
+2 & てふ 太郎 & 36 \\
+3 & らてふ 次郎 & 25
+\end{tabular}
+\end{center}
+\end{IOTeX}
+
+center環境は，表を紙面の中央に配置する命令ですので，
+表自体には関係がありません。
+center環境の中で使われているtabular環境が，
+表を出力するための命令となっています。
+使い方は，
+\begin{ITeX}
+\begin{tabular}{列指定}
+内容
+\end{tabular}
+\end{ITeX}
+で，この列指定は，
+
+\begin{tabular}{cl}
+l & 左寄せ(left) \\
+c & 中央寄せ(center) \\
+r & 右寄せ(right)
+\end{tabular}
+
+から，列の数だけ選んで並べます。
+上の例では，3列を右，左，中央の順で並べたかったので，
+\verb|\begin{tabular}{rlc}|としたというわけです。
+
+表の中身での行の区切りは\verb|\\|，
+列の区切りは\verb|&|で行います。
+第\ref{ch:formulas}章\ref{sec:align}節で扱ったalign環境などと同じですね。
+
+表は1つの大きな文字のように扱われます。
+つまり，上のようにcenter環境に入れずに文章中に打つと，
+\colorbox{lightyellow}{%
+\begin{tabular}{rlc}
+ID & 名前 & 年齢 \\
+1 & 堂成道 橡数 & 30 \\
+2 & てふ 太郎 & 36 \\
+3 & らてふ 次郎 & 25
+\end{tabular}}
+のようになってしまうということです。
+基本的には文章中に表を入れたいわけではないと思うので，
+center環境や後述のtable環境に入れておくのがよいでしょう。
+
+
+
+\section{罫線}
+横線は\verb|\hline|というコマンドで引くことができます。
+
+\begin{IOTeX}
+\begin{tabular}{rlc} \hline
+ID & 名前 & 年齢 \\ \hline
+1 & 堂成道 橡数 & 30 \\ \hline
+2 & てふ 太郎 & 36 \\ \hline
+3 & らてふ 次郎 & 25 \\ \hline
+\end{tabular}
+\end{IOTeX}
+
+\verb|\hline|はその行の上側に線を引く，といったコマンドですので，
+一番下に罫線を引くには，
+最終行で改行してから\verb|\hline|を使う必要があります。
+
+縦線は，列指定のときに\verb!|!を線を入れたいところに書けば，
+それで出力されます。
+
+\begin{IOTeX}
+\begin{tabular}{|r|l|c|} \hline
+ID & 名前 & 年齢 \\ \hline
+1 & 堂成道 橡数 & 30 \\ \hline
+2 & てふ 太郎 & 36 \\ \hline
+3 & らてふ 次郎 & 25 \\ \hline
+\end{tabular}
+\end{IOTeX}
+
+なお，この罫線で区切られた1つの箱を「セル」と言います。
+下の節でセルという単語を使っていくので覚えておいてください。
+
+また，\verb|\hline|を2回使うとその部分の横線が2重に，
+列指定で\verb!r||c!のように\verb!|!を2重にするとその部分の縦線が2重になります。
+
+\verb|\cline{列番号-列番号}|というコマンドを使うと，
+部分的に横線が引けます。
+
+\begin{IOTeX}
+\begin{tabular}{|ccc|} \hline
+虫 & 食 & い \\ \cline{1-2}
+穴 & あ & き \\ \cline{2-3}
+め & い & ろ \\ \hline
+\end{tabular}
+\end{IOTeX}
+
+なお，bookstabパッケージでも罫線を引くことができます。
+ただ，横書き文化圏では縦線を引かないため，
+縦線は引けない仕様となっています。
+こちらは説明しないので興味があったら調べてみて下さい。
+
+
+
+\section{表のレイアウト}
+表の周りの余白，行や列の間隔，罫線の太さなどを変更することができます。
+
+表をcenter環境に入れて紙面の中央に置くという場合が多いと思いますが，
+flushleft環境やflushright環境を使って左寄せや右寄せをするときもあると思います。
+ただ，こうしたときに，中央配置のときには見えなかった左右のスペースがあることに気付くと思います。
+これをなくすには，列指定で
+\begin{ITeX}
+{@{}lcr@{}}
+\end{ITeX}
+のように\verb|@{}|をいれてください。
+この\verb|@{何か}|は，「何か」を表の前後や列と列の間に入れるためのものです。
+この中身を空にすることによって，
+デフォルトで入ってしまうスペースを打ち消すことができます。
+
+行送り（行の間隔）は，
+各行の改行（\verb|\\|）の後に[長さ]と付ければ，
+その長さ分だけ増やすことができます。
+ただ，\verb|\hline|のある行の行送りを減らすと変な感じになるので注意です。
+\begin{IOTeX}
+\begin{tabular}{|r|l|c|} \hline
+ID & 名前 & 年齢 \\ \hline
+1 & 堂成道 橡数 & 30 \\ [10pt]
+2 & てふ 太郎 & 36 \\
+3 & らてふ 次郎 & 25 \\ \hline
+\end{tabular}
+\end{IOTeX}
+
+全体の行送りを一律で変更したいときは，
+\verb|\arraystretch|というコマンドを再定義して，
+\begin{ITeX}
+\renewcommand{\arrastretch}{倍率}
+\end{ITeX}
+とすれば，行送りがデフォルトの倍率倍されます。
+
+また，arrayパッケージを読み込んで，
+\verb|\extrarowheight|という長さを設定することによって，
+行送りを一律で増やすことができます。
+\begin{ITeX}
+\setlength{\extrarowheight}{長さ}
+\end{ITeX}
+
+列の間隔は，\verb|\tabcolsep|をいじって，
+\begin{ITeX}
+\setlength{\tabcolsep}{長さ}
+\end{ITeX}
+とすれば，その長さ分\verb|&|の両脇が空きます。
+
+罫線の太さは，
+\verb|\arrayrulewidth|を調整して，
+\begin{ITeX}
+\setlength{\arrayrulewidth}{太さ}
+\end{ITeX}
+とします。
+
+また，2重罫線の間隔は，
+\begin{ITeX}
+\setlength{\doublerulesep}{長さ}
+\end{ITeX}
+を使って変えることができます。
+
+
+
+\section{左右のセルをまとめる}
+左右のセルをまとめて1つのセルにするには，
+\verb|\multicolumn| というコマンドを使います。
+使い方は，
+\begin{ITeX}
+\multicolumn{まとめるセル数}{列指定}{内容}
+\end{ITeX}
+です。
+配置は，tabular環境と同様lcrから選びます。
+これを使うことで，
+例えば次のような表を作ることができます。
+
+\begin{IOTeX*}
+\begin{tabular}{rlc}
+\multicolumn{3}{c}{\textgt{社員表}} \\
+ID & \multicolumn{1}{c}{名前} & 年齢 \\
+1 & 堂成道 橡数 & 30 \\
+2 & てふ 太郎 & 36 \\
+3 & らてふ 次郎 & 25
+\end{tabular}
+\end{IOTeX*}
+
+一番上の社員表の部分では，
+3列をまとめて1つのセルにし，それを中央揃えにしています。
+また，名前のところでは，
+左寄せの列中で部分的に中央揃えに直す，
+ということをしています。
+
+罫線ももちろん引けます。
+\verb|\multicolumn|コマンドの列指定で縦線を引くのを忘れないようにしましょう。
+
+\begin{IOTeX*}
+\begin{tabular}{|r|l|c|} \hline
+\multicolumn{3}{|c|}{\textgt{社員表}} \\ \hline
+ID & \multicolumn{1}{|c|}{名前} & 年齢 \\ \hline
+1 & 堂成道 橡数 & 30 \\ \hline
+2 & てふ 太郎 & 36 \\ \hline
+3 & らてふ 次郎 & 25 \\ \hline
+\end{tabular}
+\end{IOTeX*}
+
+
+
+\section{上下のセルをまとめる}
+上下のセルをまとめるには，
+multirowパッケージに入っている
+\verb|\multirow| コマンドを使います。
+まずはプリアンブルで
+\begin{ITeX}
+\usepackage{multirow}
+\end{ITeX}
+と読み込んでください。
+
+使い方は，
+\begin{ITeX}
+\multirow{まとめるセル数}{幅}{内容}
+\end{ITeX}
+です。
+幅は長さを自分で指定してもよいですが，
+「*」とすれば自動で長さを計算してくれるのでこれで大丈夫だと思います。
+%この配置は，tcb（top，center，below）から選びます。
+これを使えば，次のような表を作ることができます。
+
+\begin{IOTeX*}
+\begin{tabular}{|c|c|cc|} \hline
+\multirow{3}{*}{パターン} & A & あ & い \\ \cline{2-4}
+& B & う & え \\ \cline{2-4}
+& C & お & か \\ \hline
+\end{tabular}
+\end{IOTeX*}
+
+ただ，このmultirowには問題があり，
+上下でまとめている部分の左右のセルが複数行に渡る場合，
+multirowの内容の中央や下揃えがずれてしまいます。
+また，まとめるセル数は，実際まとめている数と違っても
+エラーを吐かず動作してしまいます。
+よって，上で示したくらいの軽い表を作るくらいなら便利なのですが，
+ちょっと複雑な表を作るときは使いづらいです。
+
+それくらいの複雑な表を作るときは，
+tabular環境ではなくtcolorboxを使いましょう。
+tcolorboxはかなり自由に表を作れる環境です。
+それゆえにドキュメントが500ページほどあるので，
+ここでは解説しきれません。
+tcolorboxについてはまたどこかで説明しようと思います...
+日本語のサイトだと，
+下に示すものがまとまっていて情報量も多いので，
+とりあえずリンクだけ貼っておきますね。\\
+「\href{http://texmedicine.hatenadiary.jp/entry/2015/12/17/000339}{tcolorboxの基本-物理とTeXに関する話題}」
+
+
+
+\section{横幅を指定する}
+普通に表を書くだけでは，横幅は内容によって勝手に決まってしまいます。
+このとき，中身を長くすると紙面からはみ出してしまうこともあって，
+不便に思うときもあるかもしれません。
+この横幅をこちらで指定することもできます。
+列指定を以下のように変更すれば，
+その列の幅が指定した長さになります。
+
+\begin{tabular}{ccl}
+l & $\rightarrow$ & \verb|p{長さ}| \\
+c & $\rightarrow$ & \verb|>{\centering}p{長さ}| \\
+r & $\rightarrow$ & \verb|>{\raggedleft}p{長さ}| \\
+\end{tabular}
+
+一番右の列に\verb|\centering|を入れるとうまくいきませんが，
+これは右に空の列を追加することで回避できます。
+
+また，表自体の横幅を指定するには，
+tabularxパッケージのtabularx環境を使います。
+まずはプリアンブルに
+\begin{ITeX}
+\usepackage{tabularx}
+\end{ITeX}
+と書きましょう。
+tabularx環境の使い方は，
+\begin{ITeX}
+\begin{tabularx}{幅}{列指定}
+...
+\end{tabularx}
+\end{ITeX}
+です。
+列指定にXを指定したところは，
+幅が自由に変わります。
+長い文を書くと勝手に改行してくれます。
+
+%\begin{IOTeX*}
+%\begin{tabularx}{80mm}{|l|X|c|} \hline
+%\multicolumn{3}{|c|}{\textgt{社員表}} \\ \hline
+%ID & \multicolumn{1}{|c|}{名前} & 年齢 \\ \hline
+%1 & 堂成道 橡数 & 30 \\ \hline
+%2 & てふ 太郎 & 36 \\ \hline
+%3 & らてふ 次郎 & 25 \\ \hline
+%\end{tabularx}
+%\end{IOTeX*}
+
+
+
+\section{セルの色を変える}
+セルの色を変えて強調したいときもあるかと思います。
+行，列でまとめて変えたり，1つのセルだけ指定して変えることもできます。
+これはcolortblパッケージを使えばできますが，
+第\ref{ch:pictures}章\ref{sec:colors}節で説明した
+xcolorパッケージにtableオプションを付けて
+\begin{ITeX}
+\usepackage[table]{xcolor}
+\end{ITeX}
+とすればcolortblパッケージも読み込まれますので，
+こちらでよいと思います。
+
+色の付け方
+第\ref{ch:pictures}章\ref{sec:colors}節で説明した通りですので，
+わからなくなったらそちらをご覧ください。
+
+行で一括で色を指定するには，
+\verb|\rowcolor|コマンドを使って以下のようにします。
+\begin{IOTeX}
+\begin{tabular}{|c|c|c|} \hline
+\rowcolor{red} 1行目 & 1行目 & 1行目 \\ \hline
+\rowcolor{orange} 2行目 & 2行目 & 2行目 \\ \hline
+3行目 & 3行目 & 3行目 \\ \hline
+\end{tabular}
+\end{IOTeX}
+
+また，列でまとめて色を指定するには，以下のようにします。
+
+\begin{IOTeX*}
+\begin{tabular}{|>{\columncolor{red}}c|>{\columncolor{orange}}c|c|} \hline
+1列目 & 2列目 & 3列目 \\ \hline
+1列目 & 2列目 & 3列目 \\ \hline
+\end{tabular}
+\end{IOTeX*}
+
+行と列の色指定が被ってしまったときは，
+\verb|\rowcolor|が優先されます。
+
+1つのセルだけの色を変えるときは，
+\verb|\multicolumn|コマンドを使って以下のようにします。
+
+\begin{IOTeX*}
+\begin{tabular}{|c|c|c|} \hline
+白 & 白 & 白 \\ \hline
+白 & \multicolumn{1}{|>{\columncolor{orange}}c|}{橙} & 白 \\ \hline
+白 & 白 & 白 \\ \hline
+\end{tabular}
+\end{IOTeX*}
+
+また，\verb|\usepackage[table]{xcolor}|としていれば，
+\begin{ITeX}
+\rowcolors{列数}{色1}{色2}
+\end{ITeX}
+というコマンドを使えます。
+これは，指定した行から
+1行ごとに色1と色2を交互に繰り返すコマンドです。
+ここまでくるとExcelと同じような表が作れますね。
+
+\begin{IOTeX}
+\rowcolors{3}{white}{orange}
+\begin{tabular}{|c|c|c|c|} \hline
+1列目 & 2列目 & 3列目 & 4列目 \\ \hline
+1列目 & 2列目 & 3列目 & 4列目 \\ \hline
+1列目 & 2列目 & 3列目 & 4列目 \\ \hline
+1列目 & 2列目 & 3列目 & 4列目 \\ \hline
+1列目 & 2列目 & 3列目 & 4列目 \\ \hline
+1列目 & 2列目 & 3列目 & 4列目 \\ \hline
+\end{tabular}
+\end{IOTeX}
+
+
+
+\section{ページまたぎのできる表}
+tabular環境で作る表はページまたぎができません。
+したがって，長めの表になると，
+前ページを大きく残したまま次のページに出力されてしまいます。
+これは紙面の無駄ですし，見づらいので嫌だという人も少なくないと思います。
+
+ページまたぎをするには，
+tabular環境の代わりにlongtable環境を使います。
+ただ，longtable環境を使うには
+longtableパッケージを読み込む必要があるので，
+まずはプリアンブルに \verb|\usepackage{longtable}| と書いてください。
+
+longtable環境の使い方はtabular環境と同じです。
+特に例を示す必要もないと思うので，
+必要になったら使ってみて下さい。
+
+
+
+\section{表に図を挿入する}
+表中に画像を挿入するには，
+第\ref{ch:pictures}章第\ref{sec:insert-pictures}節で触れたように，
+minipage環境を使います。
+
+
+
+\section{表の配置}
+表を自動配置するには，table環境を使います。
+図のときと同様，表にもキャプションとラベルを付けることができます。
+表のキャプションは上に付けるのが標準ですので，
+例えば以下のようにします。
+
+\begin{ITeX}
+\begin{table}
+\caption{3次の魔法陣}
+\label{tab:magic-table}
+\begin{center}
+\begin{tabular}{|c|c|c|} \hline
+2 & 9 & 4 \\ \hline
+7 & 5 & 3 \\ \hline
+6 & 1 & 8 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{ITeX}
+
+以下，説明を加えますが，基本的にfigure環境と同じです。
+
+table環境のオプションは，
+figures環境のオプションと同じなので，
+表\ref{tab:options-of-figure}を参照してください。
+なお，「H」はfloatパッケージを読み込んでいないと
+使えませんので注意してください。
+
+\begin{wraptable}{r}{10zw}
+\vspace*{-\intextsep}
+\begin{tabular}{|c|c|c|} \hline
+ま & わ & り \\ \hline
+こ & み & 。\\ \hline
+\end{tabular}
+\end{wraptable}
+
+また，回り込み配置をしたければ，
+wrapfigパッケージのwraptable環境を使ってください。
+使い方は第\ref{ch:pictures}章\ref{sec:wrapfig}節で説明したwrapfigure環境と同じですので，
+そちらを見て下さい。
+
+表の番号は自動的に「表1」，「表2」，...のように付きます。
+これを「Table1」のようにしたければ，
+jsarticle，jsbookなら
+\begin{ITeX}
+\documentclass[english]{jsarticle}
+\end{ITeX}
+のように，englishオプションを付けます。
+それ以外のドキュメントクラスでは，
+\begin{ITeX}
+\renewcommand{\tablename}{Table}
+\end{ITeX}
+のようにプリアンブルに書いておきます。
+
+\verb|\caption{説明}| で表に説明を付けることができますが，
+\verb|\listoftables| とすれば
+その説明を使った表目次をその位置に出力することができます。
+また，オプションを付ければそれが表目次に表示されます。
+
+また，回り込み配置についてもここで触れてしまいます。
+表の回り込み配置は，wrapfigパッケージのwraptable環境を使えば簡単にできます。
+使い方は図の回り込み配置用のwrapfigure環境と同じなので，
+詳しくは第\ref{ch:pictures}章\ref{sec:wrapfig}節を読んでください。
+
+

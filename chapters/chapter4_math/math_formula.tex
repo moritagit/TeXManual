@@ -1,0 +1,682 @@
+%第4章
+\chapter{数式}
+\label{ch:formulas}
+この章では数式を扱いたいと思います。
+数式を打つために{\TeX}を使い始める人が大半だと思いますので，
+頑張っていきましょう。
+
+
+
+\section{数式の基礎}
+数式は，{\$}または\verb|\[ \]|で挟んだ部分に書きます。
+文章中に数式を入れたいときは，{\$}で挟めばよいです。
+例えば$y = ax + b$こんな風に（\verb|$y = ax + b$|）。
+
+重要な数式は文章とは別で1行使いたいですよね。
+そんなときは\verb|\[ \]|で挟んで，
+\begin{ITeX}
+\[ y = ax + b \]|
+\end{ITeX}
+のようにすれば，
+\[ y = ax + b \]
+のようになります。
+
+上の例を見ていただけるとわかると思うのですが，
+数式中に半角スペース（やtab）を入れても出力されません
+（つまり，入れないのと同じです）。
+見やすくするために適宜半角スペースを入れるのがよいと思います。
+
+また，数式は，AMS（米国数学会）が開発した
+「amsmath, amssymb」というパッケージで拡張することができます。
+とりあえずプリアンブル（\verb|\documentclass|と\verb|\begin{document}|の間）に
+\begin{ITeX}
+\usepackage{amsmath, amssymb}|
+\end{ITeX}
+と書いてください。
+
+
+
+\section{上付き文字と下付き文字}
+指数，例えば$x^2$を出力するには，「\verb|^|」を用いて，\\
+\hspace{5zw} \verb|$ x^2 $| \\
+とすればよいです。
+この，「${}^{2}$」のような，文字などの右肩につく文字を「上付き文字」といいます。
+上付き文字が複数になるときは，\{\}でくくって \\
+\hspace{5zw} \verb|$ x^{n-1} $| $\rightarrow$ $x^{n-1}$ \\
+とします。
+くくらないと変なことになったりするので気を付けて下さい。
+
+$a_n$のように文字の右下につく文字を「下付き文字」と言います。
+下付き文字を出力するには，「\verb|_|」を用いて，\\
+\hspace{5zw} \verb|$ a_n $| $\rightarrow$ $a_n$ \\
+とすればよいです。
+上付き文字と同様，下付き文字が複数になるときは \\
+\hspace{5zw} \verb|$ a_{n-1} $| $\rightarrow$ $a_{n-1}$ \\
+のようにすればよいです。
+
+下にいくつか例を挙げておきます。
+なお，\verb|\mathrm|は，
+デフォルトではイタリック体になってしまう数式中の文字をローマン体にするコマンドです。
+\[ \begin{array}{lcl}
+\verb|a_{ij}| & \rightarrow & a_{ij} \\
+\verb|{v_0}^2| & \rightarrow & {v_0}^2 \\
+\verb|\mathrm{^{1}_{1}H}| & \rightarrow & \mathrm{^{1}_{1}H} \\
+\verb|a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0| & \rightarrow & a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0
+\end{array} \]
+
+
+
+\section{演算記号}
+次は演算記号についてです。
+$+, -, =$はキーボードから打ったものをそのまま使えますが，
+他の色々な記号はコマンド（\verb|\|で始まるもの）を使って出力します。
+例えば，掛け算記号の$\times$は，\verb|\times|というコマンドを使えば出力できます。
+また，掛け算やベクトルの内積を表す「$\cdot$」は，\verb|\cdot|で出せます。
+
+こういったものを下にまとめておきます。
+ただ，あまり充実させてはいないので，
+ここに載っていないものは是非自分で調べてみて下さい。
+
+\begin{minipage}{0.25\hsize}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|+| & $+$ \\
+\verb|-| & $-$ \\
+\verb|\pm| & $\pm$ \\
+\verb|\mp| & $\mp$ \\
+\verb|\times| & $\times$ \\
+%\verb|\div| & $\div$ \\
+\verb|*| & $*$ \\
+\verb|\circ| & $\circ$ \\
+\verb|\bullet| & $\bullet$ \\
+\verb|\cdot| & $\cdot$ \\
+\verb|\cap| & $\cap$ \\
+\verb|\cup| & $\cup$ \\
+\verb|\vee| & $\vee$ \\
+\verb|\wedge| & $\wedge$ \\
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\hsize}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|=| & $=$ \\
+\verb|\equiv| & $\equiv$ \\
+\verb|\sim| & $\sim$ \\
+\verb|\simeq| & $\simeq$ \\
+\verb|\approx| & $\approx$ \\
+\verb|\propto| & $\propto$ \\
+\verb|\perp| & $\perp$ \\
+\verb|\parallel| & $\parallel$ \\
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\hsize}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|<| & $<$ \\
+\verb|\leq| & $\leq$ \\
+\verb|\ll| & $\ll$ \\
+\verb|>| & $>$ \\
+\verb|\geq| & $\geq$ \\
+\verb|\gg| & $\gg$ \\
+\verb|\subset| & $\subset$ \\
+\verb|\subseteq| & $\subseteq$ \\
+\verb|\supset| & $\supset$ \\
+\verb|\supseteq| & $\supseteq$ \\
+\verb|\in| & $\in$ \\
+\verb|\ni| & $\ni$ \\
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\hsize}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\prime| & $\prime$ \\
+\verb|\emptyset| & $\emptyset$ \\
+\verb|\nabla| & $\nabla$ \\
+\verb|\angle| & $\angle$ \\
+\verb|\triangle| & $\triangle$ \\
+\verb|\forall| & $\forall$ \\
+\verb|\exists| & $\exists$ \\
+\verb|\neg| & $\neg$ \\
+\end{tabular}
+\end{minipage}
+
+amsmathパッケージを読み込むともっと多くの記号を使えるようになります。
+こちらもとりあえず使えそうなものだけ挙げておきます。
+
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\therefore| & $\therefore$ \\
+\verb|\because| & $\because$ \\
+\verb|\leqq| & $\leqq$ \\
+\verb|\geqq| & $\geqq$ \\
+\verb|\fallingdotseq| & $\fallingdotseq$ \\
+\end{tabular}
+
+
+
+
+\section{分数}
+分数は\verb|\frac|というコマンドを使って出力します。
+使い方は，
+\begin{ITeX}
+\frac{分子}{分母}
+\end{ITeX}
+です。
+\begin{IOTeX}
+\[ \frac{1}{2} \]
+\[ \frac{13}{100} \]
+\[ \frac{1}{1 + x^2} \]
+\end{IOTeX}
+
+
+
+\section{平方根}
+平方根は\verb|\sqrt|というコマンドで出力できます。
+使い方は，
+\begin{ITeX}
+\sqrt{ルートの中}
+\end{ITeX}
+です。
+\begin{IOTeX}
+\[ \sqrt{2} \]
+\[ \sqrt{10} \]
+\[ \sqrt{b^2 - 4ac} \]
+\[ \sqrt{\frac{1}{2}} \]
+\end{IOTeX}
+
+
+
+\section{括弧}
+普通に使う括弧としては
+\begin{ITeX}
+(), {}, [], ||
+\end{ITeX}
+の4つくらいだと思います。
+()と[]はそのまま打てば出せます。
+ただ，\verb|{}|は{\TeX}では特殊な働きをするので，
+そのまま打っても出力されません。
+\verb|{}|を出すには，\verb|\|をつけて\verb|\{ \}|とします。
+
+普通に()をつけただけでは，
+中に分数を入れたときなどにサイズが合わず不格好になってしまいます。
+こういうときのために\verb|\bigl|などのコマンドが用意されていますが，
+基本は\verb|\left|と\verb|\right|を付けて
+\begin{ITeX}
+\left( \right)
+\end{ITeX}
+などとします。
+
+\begin{IOTeX*}
+\[ (x - 1)(x - 5) = x^2 - 6x + 5 \]
+\[ n \left( \frac{3}{2} R \right) T  \]
+\[ \left\{ \left( x - \frac{3}{5} \right) + \frac{1}{2} \right\} \]
+\end{IOTeX*}
+
+
+
+\section{ギリシャ文字}
+ギリシャ文字はコマンドを使って出力します。
+小文字は英語名（alphaなど）をそのままコマンドにしたもの
+（つまり\verb|\|をつけたもの）で出力できます。
+大文字は小文字のスペルの1文字目を大文字にするだけです。
+また，$o (\text{omicron})$は英語のo(オー)のイタリック体\textit{o}と同じなので用意されていません。
+とりあえず下にまとめておきます。
+
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\alpha| & $\alpha$ \\
+\verb|\beta| & $\beta$ \\
+\verb|\gamma| & $\gamma$ \\
+\verb|\delta| & $\delta$ \\
+\verb|\epsilon| & $\epsilon$ \\
+\verb|\zeta| & $\zeta$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\eta| & $\eta$ \\
+\verb|\theta| & $\theta$ \\
+\verb|\iota| & $\iota$ \\
+\verb|\kappa| & $\kappa$ \\
+\verb|\lambda| & $\lambda$ \\
+\verb|\mu| & $\mu$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\nu| & $\nu$ \\
+\verb|\xi| & $\xi$ \\
+\verb|\textit{o}| & $\textit{o}$ \\
+\verb|\pi| & $\pi$ \\
+\verb|\rho| & $\rho$ \\
+\verb|\sigma| & $\sigma$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\tau| & $\tau$ \\
+\verb|\upsilon| & $\upsilon$ \\
+\verb|\phi| & $\phi$ \\
+\verb|\chi| & $\chi$ \\
+\verb|\psi| & $\psi$ \\
+\verb|\omega| & $\omega$ \\
+\end{tabular}
+
+一部の文字には変体文字が用意されています。
+
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\varepsilon| & $\varepsilon$ \\
+\verb|\vartheta| & $\vartheta$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\varphi| & $\varphi$ \\
+\verb|\varrho| & $\varrho$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\varsigma| & $\varsigma$ \\
+\verb|\varphi| & $\varphi$ \\
+\end{tabular}
+
+大文字は以下の11個以外はアルファベットと同じです。
+
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\Gamma| & $\Gamma$ \\
+\verb|\Delta| & $\Delta$ \\
+\verb|\Theta| & $\Theta$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\Lambda| & $\Lambda$ \\
+\verb|\Xi| & $\Xi$ \\
+\verb|\Pi| & $\Pi$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\Psi| & $\Psi$ \\
+\verb|\Omega| & $\Omega$ \\
+\end{tabular}
+
+
+
+\section{矢印}
+矢印も色々出せます。
+
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\uparrow| & $\uparrow$ \\
+\verb|\Uparrow| & $\Uparrow$ \\
+\verb|\downarrow| & $\downarrow$ \\
+\verb|\Downarrow| & $\Downarrow$ \\
+\verb|\updownarrow| & $\updownarrow$ \\
+\verb|\Updownarrow| & $\Updownarrow$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\rightarrow(\to)| & $\rightarrow$ \\
+\verb|\Rightarrow| & $\Rightarrow$ \\
+\verb|\leftarrow(\gets)| & $\leftarrow$ \\
+\verb|\Leftarrow| & $\Leftarrow$ \\
+\verb|\leftrightarrow| & $\leftrightarrow$ \\
+\verb|\Leftrightarrow| & $\Leftrightarrow$ \\
+\end{tabular}
+
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\longrightarrow| & $\longrightarrow$ \\
+\verb|\Longrightarrow| & $\Longrightarrow$ \\
+\verb|\longleftarrow| & $\longleftarrow$ \\
+\verb|\Longleftarrow| & $\Longleftarrow$ \\
+\verb|\longleftrightarrow| & $\Longleftrightarrow$ \\
+\verb|\Longleftrightarrow| & $\Longleftrightarrow$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\mapsto| & $\mapsto$ \\
+\verb|\longmapsto| & $\longmapsto$ \\
+\verb|\rightharpoonup| & $\rightharpoonup$ \\
+\verb|\rightharpoondown| & $\rightharpoondown$ \\
+\verb|\nearrow| & $\nearrow$ \\
+\verb|\searrow| & $\searrow$ \\
+\end{tabular}
+
+
+
+\section{式の上下に付けるもの}
+数式の上下には，矢印や線，点といった色々なものを付けることができます。
+
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\bar{x}| & $\bar{x}$ \\
+\verb|\tilde{x}| & $\tilde{x}$ \\
+\verb|\vec{x}| & $\vec{x}$ \\
+\verb|\dot{x}| & $\dot{x}$ \\
+\verb|\ddot{x}| & $\ddot{x}$ \\
+\end{tabular}
+
+また，伸縮するものもあります。
+
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\overline{a + b}| & $\overline{a + b}$ \\
+\verb|\underline{a + b}| & $\underline{a + b}$ \\
+\\
+\verb|\widehat{abc}| & $\widehat{abc}$ \\
+\verb|\widetilde{abc}| & $\widetilde{abc}$ \\
+\end{tabular}
+\begin{tabular}{lc}
+入力 & 出力 \\ \hline
+\verb|\overrightarrow{a + b}| & $\overrightarrow{a + b}$ \\
+\verb|\overleftarrow{a + b}| & $\overleftarrow{a + b}$ \\
+\\
+\verb|\overbrace{abc}| & $\overbrace{abc}$ \\
+\verb|\underbrace{abc}| & $\underbrace{abc}$ \\
+\end{tabular}
+
+\verb|\overbrace|と\verb|\underbrace|については，以下のような使い方もできます。
+
+\begin{IOTeX*}
+\[
+{}_m \mathrm{P}_n = \overbrace{m \cdot (m-1) \cdot \dots (m-n+1)}^{n \text{コ}}
+\]
+\[
+{}_m \mathrm{P}_n = \underbrace{m \cdot (m-1) \cdot \dots (m-n+1)}_{n \text{コ}}
+\]
+\end{IOTeX*}
+
+また，矢印の上に文字を書きたいときもあると思います。
+そのときは，
+\begin{ITeX}
+\stackrel{数式}{矢印等}
+\end{ITeX}
+を使えばよいです。
+
+\begin{IOTeX}
+\[
+x \stackrel{f}{\rightarrow} y
+\]\[
+U \stackrel{\mathrm{def}}{=} n C_V T
+\]
+\end{IOTeX}
+
+
+
+\section{数式の書体とフォント}
+第\ref{ch:right-words}章\ref{sec:char-in-math}節で説明していますが，
+数式の中にはイタリック体にしないものもあります。
+しかし，数式モード中では自動でイタリック体になってしまいます。
+これをアップライト体（立体）に戻すために，
+\verb|\mathrm|というコマンドが用意されています。
+また，amsmathパッケージの\verb|\text|コマンドを使えば数式中にテキストを入れることができます。
+
+\begin{IOTeX}
+\[ x_\mathrm{max} \]
+\[ x + \mathrm{Const.} \]
+\[ x \, \mathrm{cm^2} \]
+\[ v_{\text{水平}} \]
+\[ f(x) = x^2 (\text{二次関数}) \]
+\end{IOTeX}
+
+他にも色々なフォント・字体があるので，一気に下の表にまとめてしまいます。
+
+\begin{tabular}{clcll}
+\textbullet & 立体 & ： & \verb|\mathrm| &  \\
+\textbullet & 筆記体 & ： & \verb|\mathcal| & eucalパッケージの使用で形状変化 \\
+\textbullet & 太字 & ： & \verb|\bm| & bmパッケージの使用が必要 \\
+\textbullet & RSFS & ： & \verb|\mathsrc| & mathrsfsパッケージの使用が必要 \\
+\textbullet & RSFS & ： & \verb|\mathcal| & rsrsoパッケージの使用で，筆記体がマイルドなRSFS体に \\
+\textbullet & ドイツ文字 & ： & \verb|\mathfrak| & \\
+\textbullet & 黒板文字 & ： & \verb|\mathbb| & \\
+\end{tabular}
+
+下に例を示します。
+筆記体ははみ出ました。
+ごめんなさい。
+
+\begin{IOTeX}
+\begin{align*}
+&
+\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \\
+&
+\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \\
+&
+\bm{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \\
+&
+\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \\
+&
+\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \\
+\end{align*}
+\end{IOTeX}
+
+bmパッケージについてですが，
+nextmathやmathpazo等の数式フォントを設定するパッケージを使用している場合は
+それらの後に読み込むようにしてください。
+
+
+
+\section{数学関数}
+sinやcos, logといった関数は，
+イタリック体ではなく立体で書くことになっています
+（第\ref{ch:right-words}章\ref{sec:char-in-math}節）。
+これを書くために，
+それぞれの関数に\verb|\|をつけた命令が用意されています。
+気を付けてみて下さい。
+\[ \times sin x \ \ \ \bigcirc \sin x \]
+
+
+
+\section{数式番号と参照}
+いままで，別行立ての数式は\verb|\[\]|で出力する，
+と言っていましたが，
+他にも色々方法はあります。
+例えば，equation環境というものがあります。
+これは，\verb|\[\]|のように別行立ての数式を出力し，
+更に数式番号を自動で付けてくれます。
+下の例では，第\ref{ch:formulas}章の1つめの数式ということで，
+(4.1)という番号が付けられています。
+
+\begin{IOTeX}
+\begin{equation}
+y = ax + b
+\end{equation}
+
+\begin{equation*}
+y = cx + d
+\end{equation*}
+\end{IOTeX}
+
+もし数式番号を付けたくないときのために，
+equation*環境というものが用意されています。
+これはほぼ\verb|\[\]|と同じものになります。
+
+数字でない，例えば$*$のような番号を付けたいときは，
+\verb|\tag|というコマンドを使って，
+\begin{IOTeX}
+\begin{equation*}
+v = v_0 + at \tag{$*$}
+\end{equation*}
+\end{IOTeX}
+のようにします。
+()が不要なときは\verb|\tag*|というコマンドを使えばOKです。
+
+
+{\TeX}では，数式の参照を自動で行うことができます。
+数式の参照とは，「式(4.1)において...」などのようなものです。
+これは，数式にラベルを張り，それを参照する，という形で行います。
+使い方ですが，
+
+\begin{IOTeX}
+\begin{equation}
+y = ax^2 + bx + c \label{eq:parabola}
+\end{equation}
+
+\pageref{eq:parabola}ページの式~(\ref{eq:parabola})において，$a=0$のとき...
+\end{IOTeX}
+
+のようにします。
+参照したい式に\verb|\label|コマンドでラベルを貼り，
+後に使いたいところで\verb|\ref|を用いてその式番号を出力することができます。
+また，その式のあるページ数を知りたいときのために，
+\verb|\pageref|というコマンドも用意されているので，
+必要に応じて使ってみてください。
+また，式の参照には\verb|\eqref|というコマンドが用意されています。
+これはキレイに参照番号等を出してくれるので，
+数式の参照においてはこちらを使ってもいいと思います。
+
+なお，第\ref{ch:references-contents-link}章\ref{sec:references}節で説明している通りですが，
+2回実行しないと正しく参照が表示されないので，
+そこは注意してください。
+
+
+
+
+\section{数式の頭揃え}
+\label{sec:align}
+
+式変形を書くときは，
+数行に渡って$=$などの位置で揃えて数式を書きたいときもあります。
+例えば下のようなものです。
+\begin{align*}
+I & = \int_0^{\infty} \frac{1}{1 + x^2} \ dx \\
+	& = \int_0^{\frac{\pi}{2}} \frac{1}{1 + \tan^2 \theta} \cdot \frac{1}{\cos^2 \theta} \ d\theta \\
+	& = \int_0^{\frac{\pi}{2}} 1 \ d\theta = \left[ \theta \right]_0^{\frac{\pi}{2}} \\
+	& = \frac{\pi}{2}
+\end{align*}
+これを出力するには，
+align環境を使います。
+この環境はamsmathパッケージで定義されているので，
+まずはプリアンブル（\verb|\documentclass|と\verb|\begin{document}|の間）に
+\begin{ITeX}
+\usepackage{amsmath}
+\end{ITeX}
+と書いてください。
+
+使い方ですが，揃える位置に\verb|&|を書き，
+改行する位置に\verb|\\|を書けばOKです。
+デフォルトでは各行に式番号がついてしまいますが，
+不要なところには\verb|\notag|を付ければその行にはつきません。
+
+\begin{IOTeX*}
+\begin{align}
+I & = \int_0^{\infty} \frac{1}{1 + x^2} \ dx \\
+  & = \int_0^{\frac{\pi}{2}} \frac{1}{1 + \tan^2 \theta} \cdot \frac{1}{\cos^2 \theta} \ d\theta \\
+  & = \int_0^{\frac{\pi}{2}} 1 \ d\theta = \left[ \theta \right]_0^{\frac{\pi}{2}} \notag \\
+  & = \frac{\pi}{2}
+\end{align}
+\end{IOTeX*}
+
+数式番号が不要ならばalign*環境を用いて下さい。
+また，align環境は表と同じように何列でも揃えられるようになっています。
+例えば，次のように複数の数式を揃えられるということです。
+\begin{IOTeX*}
+\begin{align*}
+x & = r \cos\theta \cos\varphi, & y & = r \cos\theta \sin\varphi, & z & = r \sin\theta \\
+r & = a, & \theta & = \frac{\pi}{2}, & \varphi & = \frac{\pi}{3}
+\end{align*}
+\end{IOTeX*}
+
+\verb|&|で揃え，\verb|\\|で改行するのは，
+第\ref{ch:tables}章で扱う表と全く同じなので，
+{\TeX}に慣れてくれば自然と行えるようになると思います。
+
+align環境では数式各行に式番号が振られますが，
+複数行の数式全体に1つの番号を振りたいときは，
+equation環境とsplit環境を使って，
+\begin{IOTeX}
+\begin{equation}
+  \begin{split}
+    e^x & = \sum_{n=0}^{\infty} \frac{1}{n!} x^n \\
+      & = 1 + x + \frac{1}{2!} x^2 + \frac{1}{3!} x^3 + \dots 
+  \end{split}
+\end{equation}
+\end{IOTeX}
+
+他にも，
+\verb|\fbox|を使うときに便利なaligned環境，
+数式間の空白を自分で制御できるalignat環境，
+1つの数式が複数行に渡るときに使えるmultiline環境などがあります。
+また，align環境の途中で一旦テキスト（すなわち，一般に，など）を入れてから
+もう一度数式に戻りたいときには\verb|\intertext{テキスト}|というコマンドが便利です。
+ここに書いてあることで足りないときは是非調べてみて下さい。
+
+
+
+\section{場合分け}
+場合分けはcases環境を用いて出力できます。
+
+\begin{IOTeX}
+\[
+| x | =
+\begin{cases}
+x & (x \leq 0) \\
+-x & (x < 0)
+\end{cases}
+\]
+\end{IOTeX}
+
+
+
+\section{行列}
+amsmathパッケージで，
+数種類の行列用の環境が定義されています。
+
+\begin{IOTeX}
+\[
+\begin{matrix}
+a & b \\
+c & d
+\end{matrix}
+\]
+\[
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\]
+\[
+\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}
+\]
+\[
+\begin{Bmatrix}
+a & b \\
+c & d
+\end{Bmatrix}
+\]
+\[
+\begin{vmatrix}
+a & b \\
+c & d
+\end{vmatrix}
+\]
+\[
+\begin{Vmatrix}
+a & b \\
+c & d
+\end{Vmatrix}
+\]
+\end{IOTeX}
+
+表やalign環境と同じで，
+列の区切りを\verb|&|，
+行の区切りを\verb|\\|で行います。
+
+また，
+\begin{ITeX}
+\hdotsfor{列数}
+\end{ITeX}
+というコマンドで，複数列に渡る点々を書くことができます。
+
+\begin{IOTeX}
+\[
+A = 
+\begin{pmatrix}
+a_{11} & \dots & a_{1n}\\
+\hdotsfor{3} \\
+a_{m1} & \dots & a_{mn}
+\end{pmatrix}
+\]
+\end{IOTeX}
+

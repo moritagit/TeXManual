@@ -1,0 +1,287 @@
+%第7章
+\chapter{相互参照・目次・リンク}
+\label{ch:references-contents-link}
+
+この章では，相互参照と目次，
+そしてリンクを扱います。
+これらは文書内を検索する際に非常に便利ですので，
+是非使えるようになっておきましょう。
+
+
+
+\section{相互参照}
+\label{sec:references}
+
+\verb|\label{ラベル}|としてラベルを付けた
+章や節，図や表，数式などは，
+\verb|\ref{ラベル}| コマンドを使って参照することができます。
+また，そのページ数を参照したいときは，
+\verb|\pageref{ラベル}|というコマンドを使います。
+ただ，2回実行しないと正しく数字が現れないことに注意してください。
+このラベル名は，章はch:，節はsec:，図はfig:，表はtab:，数式はeq:で
+始める，というように統一しておくとよいです。
+それぞれへのラベルの付け方は，
+今まで扱った通りですので，
+そちらをご覧ください。
+
+2回実行しないといけないのは，
+1回目の実行でlabelの情報を別のファイルに書き込み，
+2回目の実行でrefにlabelの情報を与えていくからです。
+これは次節で扱う目次でも同じです。
+{\TeX}には2回実行しないと正しく表示されないものが
+しばしばあるので，2回実行する癖をつけてもいいかもしれません。
+
+ここで注意なのですが，
+間違って同じ名前のラベルを2個設定してしまうと，
+1回目の実行ではエラーを吐かないのですが，
+2回目の実行からエラーしてしまいます。
+なお，僕の環境では「!LaTeX Error: Missing \verb|\begin{document}|」
+と出ました。
+これを解決するには，
+ラベルの情報を記録している.tocファイルを削除するしかありません。
+これに気付くには，エラーの前に出る
+「LaTeX Warning」で，同じラベルが2個あるといった主旨のものが
+ありますので，
+これを見つけたら.tocファイルを削除してください。
+
+
+
+\section{目次}
+目次を出力するには，
+\begin{ITeX}
+\tableofcontents
+\end{ITeX}
+とするだけでOKです。
+ただ，2回実行しないとちゃんと出力されないので
+注意してください。
+
+他にも，\verb|\listoffigures|，\verb|\listoftables|で
+図目次，表目次が出力されます。
+第\ref{ch:pictures}章第\ref{subsec:pictures-auto-distribution}節でも触れましたが，
+\verb|\caption{説明}|の説明がそのまま目次となります。
+これをもっと短めにしたければ，
+オプションで指定してください。
+
+目次にどこまで細かく見出しを出力するかは簡単に変更できます。
+節（\verb|\section|）までにするには，
+\begin{ITeX}
+\setcounter{tocdepth}{1}
+\end{ITeX}
+小節（\verb|\subsection|）までなら
+\begin{ITeX}
+\setcounter{tocdepth}{2}
+\end{ITeX}
+とすればよいです。
+
+また，「*」つきの，番号が付かない見出しについて
+（\verb|\section*{はじめに}|など）は，
+番号だけでなく目次にも出力されません。
+これを目次に出力したかったら，
+\begin{ITeX}
+\section*{はじめに}
+\addcontentsline{toc}{section}{はじめに}
+\end{ITeX}
+または
+\begin{ITeX}
+\section*{はじめに}|
+\addcontentsline{toc}{section}{\numberline{}はじめに}
+\end{ITeX}
+のようにします。
+後者は，他の節等で番号が入っている分だけ字下げします。
+
+なお，ドキュメントクラスがbookのときは，
+序文や後書きは\verb|\frontmatter|，\verb|\backmatter|を使う方がよいです。
+
+
+
+\section{リンク}
+リンクについて説明します。
+リンクを貼るには，hyperrefパッケージを使います。
+オプションにドライバ名を指定できますが，
+\verb|\documentclass|にdvipdfmxオプションを付けておけば十分でしょう。
+また，日本語を使うには，hyperrefの後で
+pxjahyperパッケージを読み込む必要があります。
+まずはプリアンブルに
+\begin{ITeX}
+\usepackage{hyperref}|
+\usepackage{pxjahyper}|
+\end{ITeX}
+と書きましょう。
+
+
+\subsection{PDF内リンク}
+hyperref（とpxjahyper）を読み込めば，
+目次や相互参照，また次章で扱う参考文献は
+自動的にリンクが有効になり，
+クリックすれば参照場所に飛べるようになります。
+
+また，この他にも，好きな文字にリンクを貼ることができます。
+そのためにまず，リンクで飛ぶ先の文字を以下のようにしてください。
+\begin{ITeX}
+\hypertarget{リンク名}{リンク先文字}
+\end{ITeX}
+次に，リンクを有効にしたい文字を次のようにしてください。
+\begin{ITeX}
+\hyperlink{リンク名}{リンク元文字}
+\end{ITeX}
+このようにすれば，リンク元文字をクリックするだけで
+リンク先文字に飛ぶことができます。
+
+
+\subsection{WEBページへのリンク}
+WEBページへのリンクとは
+つまりURLのことですが，
+これにリンクをつけるには
+\begin{ITeX}
+\url{URL}|
+\href{URL}{テキスト}
+\end{ITeX}
+のようにします。
+URLには{\TeX}では特殊文字として扱われるものが
+入っていることが多いですが（ex. \%，\~，\_など），
+そのまま入れて大丈夫です。
+
+{\TeX}の実行結果としてPDFを開いているときは
+リンクが使えないことがありますが，
+最初からPDFとして開けば基本的には
+リンクは有効になっています。
+
+例えば，この章は \\
+「\url{https://texwiki.texjp.org/?hyperref}」\\
+と \\
+「\href{http://www.isc.meiji.ac.jp/~mizutani/tex/link_slide/hyperlink.html}{ハイパーリンク付きLaTeX文書}」\\
+というサイトを参考にしました。
+
+
+\subsection{その他}
+他にも，メールアドレスや外部ファイルをリンク先にすることができます。
+メールアドレスを指定するときは，
+\begin{ITeX}
+\href{mailto:アドレス}{テキスト}
+\end{ITeX}
+としてください
+（テキストにはアドレスを使うのがよいと思います）。
+
+外部ファイルを参照するには，
+\begin{ITeX}
+\href{ファイル名}{テキスト}
+\end{ITeX}
+とします。
+ここで，このファイル名はパスで指定します。
+パスについては第\ref{ch:file-management}章まで。
+
+また，画像には
+\verb|\hyperimage{画像のURL}|，
+としてリンクを貼ることができます。
+
+
+\subsection{hyperrefのオプションとPDFの文書情報}
+hyperrefを使えば楽にリンクが貼れることがわかりました。
+ただ，デフォルトだと枠で囲まれる形になるので，
+これが嫌ならオプションを付けて変更します。
+また，同時にPDFに文書情報をつけることもできますので，
+そちらも一緒に扱います。
+
+以下に示したもの以外にも多くのオプションがありますが，
+使いそうなものだけ抜粋したので
+もし不足していれば
+「\href{https://texwiki.texjp.org/?hyperref}{TeX Wiki hyperref}」や
+hyperrefのドキュメント等を見てください。
+
+\begin{table}[H]
+\label{tab:options-of-hyperef}
+\begin{center}
+\begin{longtable}{lp{35zw}}
+colorlinks &
+	リンクを枠囲いでなく文字色の変化で表す。
+	デフォルトはfalse。
+	colorlinks=trueとして変更する。\\
+hidelinks &
+	リンクの色や枠を無効にする。
+	デフォルトはfalse。\\
+anchorcolor &
+	anchorテキストの色。
+	デフォルトはblack。\\
+linkcolor &
+	PDF内参照用のリンクの色。
+	デフォルトはred。\\
+linkbordercolor &
+	PDF内参照用のリンクの色。
+	デフォルトはred。\\
+urlcolor &
+	URL参照用リンクの色。
+	デフォルトはcyan。\\
+urlbordercolor &
+	URL参照用リンクの枠囲いの色。
+	デフォルトはcyan。\\
+citecolor &
+	参考文献参照用のリンクの色。
+	デフォルトはgreen。\\
+citebordercolor &
+	参考文献用リンクの枠囲いの色。
+	デフォルトはgreen。\\
+filecolor &
+	外部ファイル参照用のリンクの色。
+	デフォルトはcyan。\\
+filebordercolor &
+	外部ファイル参照用リンクの枠囲いの色。
+	デフォルトは[rgb]\{0, .5, .5\}。\\
+bookmarks &	
+	PDFにしおりをつける。
+	デフォルトはfalse。
+	変更はcolorlinksのときと同様。\\
+bookmarksnumbered &
+	しおりに章番号等をつける。
+	デフォルトはfalse。\\
+pdftitle &
+	PDFのタイトルを設定する。
+	デフォルトでは何も設定されていない（空）。\\
+pdfauthor &
+	PDFの作者を設定する。
+	デフォルトでは空。\\
+pdfkeywords &
+	PDFのキーワードを設定する。
+	デフォルトでは空。
+\end{longtable}
+\end{center}
+\end{table}
+
+以上が使いそうなオプションとなります。
+このオプションは本来，
+\begin{ITeX}
+\usepackage{hyperref}|
+\end{ITeX}
+のオプションに設定するものですが，
+長くなりすぎる場合があるので別にコマンドが用意されています。
+\verb|\hypersetup{}|の引数にオプションを入れていけば大丈夫です。
+例えばこのマニュアルの設定は以下のようになっています。
+
+\begin{ITeX}
+%文書情報とリンク
+\hypersetup{%
+    bookmarks=true,%
+    bookmarksnumbered=true,%
+    hidelinks,%
+    colorlinks=true,%
+    linkcolor=black,%
+    urlcolor=cyan,%
+    citecolor=black,%
+    filecolor=magenta,%
+    setpagesize=false,%
+    pdftitle={LaTeX2e入門マニュアル},%
+    pdfauthor={R. Morita},%
+    pdfkeywords={TeX; LaTeX}
+    }
+\end{ITeX}
+
+もしリンクを貼りたくないラベルがあれば，
+\verb|\ref*{label}|のように
+\verb|\ref|コマンドに「*」をつけてください。
+
+なお，このhyperrefは曲者らしく，
+使うと色々な弊害があるらしいです。
+今のところ特に実害はないので気にしていませんが，
+ちょっと凝ったことをしようとしている人はご注意を。
+ネットでは，graphicxの後に読み込むとエラーしたなどという記事もあるので，
+困ったらその辺を見てみて下さい。
+

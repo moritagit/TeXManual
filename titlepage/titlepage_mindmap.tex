@@ -1,0 +1,91 @@
+%タイトルのデザイン（mindmap ver.）
+
+\pagestyle{title}
+\samepage
+\begin{tikzpicture}
+%name points
+\coordinate (O) at (0, 0);
+\coordinate (L) at (-10.5, 0);
+\coordinate (R) at (10.5, 0);
+\coordinate (AL) at (-10.5, 14.85);
+\coordinate (AR) at (10.5, 14.85);
+\coordinate (BL) at (-10.5, -14.85);
+\coordinate (BR) at (10.5, -14.85);
+\coordinate (latex) at (-3, 7.5);
+\coordinate (intro) at (3, -7.5);
+
+%back ground
+\fill [fill=lightyellow] (BL) rectangle (AR);
+
+%mind map
+\begin{scope}[
+	mindmap,
+	every node/.style = {concept, circular drop shadow,execute at begin node = \hskip0pt},
+	root concept/.append style = {concept color = black, fill = white, line width = 1ex, text = black, font = \bfseries\Huge},
+	text = white,
+	plain text/.style = {concept color = red, faded/.style = {concept color = red!50}},
+	deco/.style = {concept color = gold, faded/.style = {concept color = gold!50}},
+	math/.style = {concept color = blue, faded/.style = {concept color = blue!50}},
+	float/.style = {concept color = forestgreen, faded/.style = {concept color = forestgreen!50}},
+	page layout/.style = {concept color = orange, faded/.style = {concept color = orange!50}},
+	link/.style = {concept color = cyan, faded/.style = {concept color = cyan!50}},
+	others/.style = {concept color = darkcyan, faded/.style = {concept color = darkcyan!50}},
+	info/.style = {concept color = gray, faded/.style = {concept color = gray!50}},	
+	grow cyclic,
+	level 1/.append style = {level distance = 4.5cm, sibling angle = 90, font = \sffamily\bfseries\large},
+	level 2/.append style = {level distance = 2.7cm, sibling angle = 60, font = \sffamily}]
+\node [root concept] at (latex) {\LaTeXe} % root
+	child [deco] { node {Decoration}
+		child { node {space} }
+		child { node {line {\&} dot} }
+		child { node {box} }
+		child { node {itemize} }
+		}
+	child [float] { node {Float}
+		child { node {picture} }
+		child { node {table} }
+		child { node {distribution} }
+		child { node {color} }
+		}
+	child [math] { node {Math}
+		child { node {math formula} }
+		child { node {font} }
+		child { node {reference} }
+		child { node {matrix} }
+		}
+	child [plain text] { node {Text}
+		child { node {ruby} }
+		child { node {margin {\&} footnote} }
+		child { node {text} }
+		child { node {font} }
+		child { node {comment out} }
+		};
+
+\node [root concept] at (intro) {入門} % root
+	child [others] { node {Others}
+		child { node {file management} }
+		child { node {package} }
+		child { node {how to write} }
+		}	
+	child [info] { node {%
+		\the\year/\the\month/\the\day \\
+		R. Morita
+		} }
+	child [link] { node {Link {\&} Reference}
+		child { node {PDF} }
+		child { node {web site} }
+		child { node {table of contents} }
+		}
+	child [page layout] { node {Page Layout}
+		child { node {documentclass} }
+		child { node {paper margin} }
+		child { node {footer} }
+		child { node {header} }
+		child { node {landscape} }
+		};
+\end{scope}
+
+%grid
+%\draw [step=1cm, very thin, black!25!white] (BL) grid (AR);
+
+\end{tikzpicture}

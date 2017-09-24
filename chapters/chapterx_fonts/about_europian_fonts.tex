@@ -1,0 +1,166 @@
+%第x章
+\chapter{欧文フォントについて}
+この章では欧文フォントについて説明していこうと思います。
+欧文文字（アルファベット）などや数式のフォントを自分の好きなフォントにすることができます。
+キレイな文書を作るのならフォントにも拘らねばなりませんね。
+
+
+
+\section{欧文フォントの5要素}
+{\LaTeXe}において，フォントは以下の5つの要素によって管理されています。
+それらを軽く説明していきます。
+
+
+\subsection{エンコーディング}
+コンピューターは文字というものを直接扱うことはできません。
+扱えるのは0と1という数字だけです。
+そこで，コンピューターで文字を扱おうとしたとき，
+文字に通し番号を振ってその番号で管理する，
+という方法が取られました。
+一般に，この番号の振り方をエンコーディング（encoding）と言います。
+
+しかし，この小節で扱うのは，
+一般的によく使われるUTF-8やShift-JISなどの話ではなく，
+{\TeX}の中でのエンコーディングについての話です。
+
+{\TeX}のデフォルトのエンコーディングはOT1というものですが，
+今はT1エンコーディングを使うのがよいです。
+エンコーディングをT1に変更するには，
+プリアンブル（\verb|\documentclass|と\verb|\begin{document}|の間）に
+\begin{ITeX}
+\usepackage[T1]{fontenc}
+\end{ITeX}
+と書けばOKです。
+
+
+\subsection{ファミリ（書体）}
+エンコーディングをT1にしたら，
+ファミリ（family）もデフォルトのComputer Modernから
+T1エンコーディングと相性のいいLatin Modernに変えましょう。
+とりあえずプリアンブルに
+\begin{ITeX}
+\usepackage{lmodern}
+\end{ITeX}
+と書いてください。
+
+これらのファミリ（書体）には，以下の字体があります。
+基本的な使いどころも以下にまとめておきます。
+
+\begin{tabular}{clcl}
+\textbullet & セリフ体 & ： & 本文 \\
+\textbullet & サンセリフ体 & ： & 見出し \\
+\textbullet & タイプライタ体 & ： & コンピューターへの入力を表す部分 \\
+\end{tabular}
+
+「セリフ（serif）」とは，線の端についた飾りのことです。
+例えばIやWなどの上下についている横棒がセリフです。
+
+また，「サンセリフ（sans serif）」についてですが，
+sansが「ない」という意味を持つので，
+これはセリフのない，つまり飾りがないということを表します。
+\textsf{I}や\textsf{W}を見ていただければ違いが判ると思います。
+サンセリフ体は飾りがないのに加え，
+線の太さがほぼ一定となっています。
+
+これら3つの字体を切り替えるには，
+それぞれ以下の表のようにします。
+なお，本文でのデフォルトはセリフ体です。
+
+{\setlength{\tabcolsep}{3pt}
+\begin{tabular}{clcl}
+\textbullet & セリフ体（Serif, Roman） & ： & \verb|\textrm{文字}| or \verb|{\rmfamily 文字}| \\
+\textbullet & サンセリフ体（\textsf{Sans Serif}） & ： & \verb|\textsf{文字}| or \verb|{\sffamily 文字}| \\
+\textbullet & タイプライタ体(\texttt{Typewriter Type}) & ： & \verb|\texttt{文字}| or \verb|{\ttfamily 文字}| \\
+\end{tabular}
+}
+
+なお，切り替え方は2通りありますが，
+今は\verb|\text...{}|を使うのがよいとされています。
+
+
+\subsection{シリーズ}
+次はシリーズ（series）についてです。
+ウェイト（weight）ともいわれます。
+これは文字の太さを管理します。
+一般的には（単ウェイトなら）次のコマンドで切り替えます。
+
+\begin{tabular}{clcl}
+\textbullet & Medium & ： & \verb|\textmd{文字}| or \verb|{\mdseries 文字}| \\
+\textbullet & Boldface & ： & \verb|\textbf{文字}| or \verb|{\bfseries 文字}|
+\end{tabular}
+
+本文中のデフォルトはMediumです。
+単ウェイトなどといった話は，次章の和文フォントについてで扱います。
+
+
+
+\subsection{シェープ}
+シェープ（shape）とは，アップライト（Upright），イタリック（\textit{Italic}）といった
+文字の形のことです。
+
+以下のコマンドで切り替えます。
+
+\begin{tabular}{clcl}
+\textbullet & Upright & ： & \verb|\textup{文字}| or \verb|{\upshape 文字}| \\
+\textbullet & \textit{Italic} & ： & \verb|\textit{文字}| or \verb|{\itshape 文字}| \\
+\textbullet & \textsc{Small Caps} & ： & \verb|\textsc{文字}| or \verb|{\scshape 文字}|
+\end{tabular}
+
+本文中のデフォルトはUprightです。
+これらの他に\textsl{Slanted}という，
+文字を機械的に斜めにした物が用意されているフォントもありますが，
+これはイタリック体があれば不要です。
+一応紹介しておくと，\verb|\textsl|や\verb|\scshape|で切り替えられます。
+
+
+\subsection{サイズ}
+これはそのまま文字サイズのことです。
+ポイント（pt）という単位で表されることが多いです。
+文字サイズの変更については，
+第{\ref{ch:plane-text}}章第{\ref{sec:char-size}}節で解説した通りです。
+
+ではこれらの用意されたサイズにしかできないのかというと，
+そんなことはありません。
+\begin{ITeX}
+\fontsize{文字サイズ}{行送り}
+\end{ITeX}
+というコマンドを使えば，
+好きなフォントサイズ行送りに設定できます。
+例えば，
+\begin{ITeX}
+\fontsize{12pt}{20pt}
+\end{ITeX}
+とすれば，
+フォントは12pt，行送りは20ptとなります。
+
+
+
+\section{フォントの変更について}
+今度書き足すと思います。気が向いたら。
+
+とりあえずおすすめは，
+\begin{ITeX}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[scaled]{helvet}
+\renewcommand{\ttdefault}{pcr}
+\end{ITeX}
+とプリアンブルに書くことです。
+
+何をしているかだけ説明しておくと，
+\begin{itemize}
+\item エンコードをT1にする
+\item TC(Text Companion)文字を使えるようにする
+\item エンコードの違いを吸収（up{\LaTeX}と相性悪？）
+\item 欧文フォント，数式フォントをTimes Romanにする
+\item 欧文サンセリフ体のフォントをHelveticaにする
+\item 欧文タイプライタ体のフォントをCoulierにする
+\end{itemize}
+です。
+
+
+この辺の話は美文書作成入門等の方が圧倒的に詳しいので，
+そちらをご覧ください。
+

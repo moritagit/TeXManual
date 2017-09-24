@@ -1,0 +1,179 @@
+%第3章
+\chapter{環境}
+
+先の章までで平の文書は打てるようになりました。
+この章では，「環境」を使って箇条書きや中央揃え，右寄せなどをしていきます。
+
+
+
+\section{環境}
+まず，環境（environment）というものについて説明しようと思います。
+環境とは，\verb|\begin{...}|と\verb|\end{...}|で対になった命令のことを言います。
+\verb|\begin{○○}|...\verb|\end{○○}|となっている環境のことを○○環境と言います。
+環境の内章は外章とは異なることが多く，例えばフォントや文字サイズを環境内で変えても，
+その環境の外のフォント・文字サイズは変わりません。
+
+では，以下でいくつかの例を見ていきましょう。
+
+
+
+\section{quote環境と文字寄せ}
+quote環境は，文章を引用するときに使うためのものです。
+文頭にスペースが入ってそれっぽくなります。
+
+\begin{IOTeX}
+普通の部分だよ～
+\begin{quote}
+ここはquote環境の中。\\
+\tiny ここで色々変えても
+\end{quote}
+元に戻る～
+\end{IOTeX}
+
+
+また，文字の位置を変え，中央揃えや右寄せにすることもできます。
+
+\begin{center}
+\begin{tabular}{ll}
+flushleft環境 & 左寄せ \\
+flushright環境 & 右寄せ \\
+center環境 & 中央揃え
+\end{tabular}
+\end{center}
+
+なお，1行なら，これらはそれぞれ，
+\verb|\raggedleft|，\verb|\centering|，\verb|\raggedright|
+というコマンドでも実現できます。
+
+
+
+\section{箇条書き}
+また別の環境の例として箇条書きを挙げたいと思います。
+
+
+\subsection{itemize環境}
+普通に「\textbullet」などで始まる箇条書きです。
+
+\begin{IOTeX}
+箇条書きといっても
+\begin{itemize}
+\item 記号
+\item 番号
+\item 見出し
+\end{itemize}
+といったパターンがあります。
+\end{IOTeX}
+
+
+また，itemize環境を入れ子にすると，
+記号が変わっていきます。
+
+\begin{IOTeX}
+\begin{itemize}
+\item 1段階目
+  \begin{itemize}
+  \item 2段階目
+    \begin{itemize}
+    \item 3段階目
+      \begin{itemize}
+      \item 4段階目
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+\end{IOTeX}
+
+なお，頭の記号を変えることもできます。
+
+この頭の記号を出力する命令は，
+第1～4段階目についてそれぞれ，
+\begin{ITeX}
+\labelitemi, \labelitemii, \labelitemiii, \labelitemiv
+\end{ITeX}
+です。
+これを定義し直せば記号を変えることができます。
+例えば，1段階目の記号{\textbullet}（\verb|\textbullet|）を和文の「・」（中黒）に変えるときは，
+\begin{ITeX}
+\renewcommand{\labelitemi}{・}
+\end{ITeX}
+をプリアンブル（\verb|\documentclass|と\verb|\begin{document}|の間）に書けばOKです。
+
+また，一部の記号だけ変えたいときは，
+その部分の\verb|\item|命令にオプションをつけて，
+\begin{ITeX}
+\item[☆]
+\end{ITeX}
+などのようにしてください。
+
+
+\subsection{enumerate環境}
+これは番号で始まる箇条書きです。
+
+\begin{IOTeX}
+箇条書きといっても
+\begin{enumerate}
+\item 記号
+\item 番号
+\item 見出し
+\end{enumerate}
+といったパターンがあります。
+\end{IOTeX}
+
+また，enumerate環境を入れ子にすると，
+数字の種類が変わっていきます。
+
+\begin{IOTeX}
+\begin{enumerate}
+\item 1段階目
+  \begin{enumerate}
+  \item 2段階目
+       \begin{enumerate}
+       \item 3段階目
+           \begin{enumerate}
+           \item 4段階目
+           \end{enumerate}
+        \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+\end{IOTeX}
+
+こちらでも頭の番号を変えることを考えます。
+第1～4段階目を出力する命令はそれぞれ，
+\begin{ITeX}
+\labelenumi, \labelenumii, \labelenumiii, \labelenumiv
+\end{ITeX}
+であるので，これらを定義直せばOKです。
+具体的に事例を見ていきましょう。
+第1段階の番号を変えることを考えます。
+その他の段階については，iをii, iii, ivに変えてください。
+
+まず，数字の後のピリオドを取るには，
+\begin{ITeX}
+\renewcommand{\labelitemi}{\theenumi}
+\end{ITeX}
+また，数字に()をつけるには，
+\begin{ITeX}
+\renewcommand{\labelitemi}{(\theenumi)}
+\end{ITeX}
+ローマ数字（小文字）（i., ii., iii., iv.）にするには，
+\begin{ITeX}
+\renewcommand{\theenumi}{\roman{enumi}}
+\end{ITeX}
+をそれぞれプリアンブルに書いてください。
+
+ローマ数字（小文字）の他にも，
+算用数字（デフォルト），英小文字，英大文字，ローマ数字（大文字）といったものを使うこともできます。
+そのためにはそれぞれ
+\verb|\arabic, \alph, \Alph, \Roman|を使えばよいです。
+
+また，参考ですが，enumitemパッケージを読み込めば，
+この番号の設定を簡単にすることができます。
+例えば，
+\begin{ITeX}
+\begin{enumerate}[label=例 \arabic*]
+\end{ITeX}
+とすれば，番号の付き方が「例 \ 1，例 \ 2，例 \ 3...」となります
+（空白も反映されます）。
+このオプション部分の\verb|\arabic*|は，他の\verb|\roman*|などにすることもできます。
+その際，*を忘れないようにしてください。 
+

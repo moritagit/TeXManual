@@ -1,0 +1,292 @@
+%第x章
+%commandlineでの操作, mapファイル等の話未実装
+\chapter{和文フォントについて}
+
+この章では和文フォントについて扱っていこうと思います。
+{\TeX}の標準フォントがきもい，
+フォントを色々変えてみたい，
+なんて人も少なくないと思います。
+pxchfonパッケージを使いこなせばフォントは自由自在に変えられるので，
+楽しんでいきましょう。
+
+
+
+\section{和文フォントについて}
+まずはさらっと和文フォントについての一般的なことを書いておこうと思います。
+
+和文フォントには大きく分けて2種類，明朝体とゴシック体があります。
+明朝体は本文によく使われるフォントで，
+例えば線の右端に三角形の飾り（ウロコ）がついているものがそうです。
+欧文文字のセリフ体に対応します。
+ゴシック体はタイトルなどによく使われるフォントで，
+こちらは飾りがなく均一な太さの線で書かれているものです。
+欧文文字のサンセリフ体に対応します。
+使い分けは述べた通りですが，
+読みやすさからゴシック体を本文に使うこともあります。
+
+フォントの中には，サイトでの公開や商用利用の際に
+年間契約をしなければならないものも多いです。
+フォントを変える際にはしっかりその辺を調べてからの方が安全ですので
+覚えておいてください。
+
+
+
+\section{書体の切り替え}
+文字を明朝体またはゴシック体にするには，
+
+\begin{tabular}{lclcl}
+明朝体 & ： & \verb|\textmc{文字}| & or & \verb|{\mcfamily 文字}| \\
+ゴシック体 & ： & \verb|\textgt{文字}| & or & \verb|{\gtfamily 文字}|
+\end{tabular}
+
+とします。
+\verb|\...family|と書体を変えたい文字を\verb|{}|でくくらないと，
+それ以降の文字全てがその書体になってしまうので注意してください。
+
+また，\verb|\textbf|や\verb|\bfseries|でも和文文字はゴシック体になります。
+ただ，これだと\textbf{あA}のように欧文文字がセリフ体のままとなり，
+デザインとしての一貫性が崩れてしまいます。
+
+これに追加で\verb|\textsf|や\verb|\sffamily|を使えば，
+\textsf{\textbf{あA}}のように欧文文字もちゃんとセリフ体となります。
+
+また，書体の切り替えは上に挙げた\verb|\text...|と\verb|\...family|のどちらでもできますが，
+いまは\verb|\text...|を使うのがよいとされていますので，
+こちらを使うようにした方がよいかと思います。
+
+
+
+\section{和文フォントを変える}
+和文フォントを変えるやり方について気が向いたら説明しようと思います。
+ただ，次節のpxchfonを使うやり方の方が圧倒的に簡単ですので，
+そちらをおすすめします。
+
+
+
+\section{pxchfonパッケージを使う}
+和文フォントの設定に便利なpxchfonというパッケージがあります。
+まずはプリアンブルに
+\begin{ITeX}
+\usepackage{pxchfon}
+\end{ITeX}
+と書いてください。
+
+
+\subsection{基本的な使い方（単ウェイトの場合）}
+まずは基本的な使い方を学んでいきましょう。
+なお，タイトルにある「単ウェイト」とは，
+例えば太字（ゴシック体）の中に極太，中太などの太さの違いがない，
+くらいの意味だと思っておいてください。
+
+パッケージの読み込みの際につけるオプションは色々ありますが，
+和文フォントのみを変える場合が多いと思うので，
+noalphabetを指定して
+\begin{ITeX}
+\usepackage[noalphabet]{pxchfon}
+\end{ITeX}
+としておけばとりあえず大丈夫です。
+
+使い方ですが，非常に簡単で，プリアンブルに
+\begin{ITeX}
+\setminchofont{フォントのファイル名}
+\setgothicfont{フォントのファイル名}
+\end{ITeX}
+と書くだけで，
+それぞれ元の明朝体，ゴシック体だった部分が指定したフォントになります。
+
+フォントのファイルは，windowsであればwindowsフォルダ内の
+fontsというフォルダに入っていると思います。
+拡張子は「.ttf」，「.ttc」，「.otf」のどれかだと思います。
+これらの拡張子はそれぞれ，
+True Type Font, True Type Collection, Open Type Font
+を約めたものです。
+これらの意味が気になる方は是非調べてみてください。
+
+例を挙げてみます。
+例えば次をプリアンブルに書けば，
+明朝体が「IPA明朝」，ゴシック体が「IPAゴシック」になります
+（デフォルトと変わりません）。
+\begin{ITeX}
+\setminchofont{ipam.ttf}
+\setgothicfont{ipag.ttf}
+\end{ITeX}
+
+ただ，ttcファイルは少し異なります。
+ttcは，その名前からわかるように，True TypeのフォントのCollectionとなっています。
+よって，そのコレクションの中のどのフォントを使うかまで指定する必要があります。
+これは，\verb|\setminchofont|や\verb|\setgothicfont|コマンドのオプションで指定します。
+例えば，msgothic.ttcには「MSゴシック」と「MSPゴシック」が含まれ，
+それぞれの番号は0と1です。
+よって，例えばゴシック体を「MSゴシック」にしたければ，
+\begin{ITeX}
+\setgothicfont[0]{msgothic.ttc}
+\end{ITeX}
+とします。
+
+これで単ウェイトでフォントを変えることはできるようになりました。
+大体の文書は明朝体とゴシック体が1つずつあれば（つまり単ウェイトでも）作れるので，
+ここまでの説明で十分な人も少なくないと思います。
+色々フォントを変えてみて下さい。
+
+
+\subsection{多ウェイトの場合}
+次は多ウェイトの指定方法について説明しようと思います。
+単ウェイトの説明からわかると思いますが，
+多ウェイトとは明朝体，ゴシック体の中に太さの違うフォントが複数含まれるといったような意味です。
+{\TeX}では，明朝体とゴシック体それぞれに3ウェイトずつと丸ゴシックの計7つまで設定することができます。
+
+多ウェイトにするにはまず，otfパッケージをdeluxeオプション付きで，
+pxchfonの前で読み込みます。
+つまり，次のようにするということです。
+\begin{ITeX}
+\usepackage[deluxe]{otf}
+\usepackage[noalphabet]{pxchfon}
+\end{ITeX}
+
+それぞれの書体，ウェイトの設定は，次のようなコマンドで行います。
+
+\begin{flushleft}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lcl}
+\verb|\setlightminchofont[<番号>]{<フォントファイル名>}| & ： & 明朝・細ウェイト（\verb|\mcfamily\ltseries|）\\
+\verb|\setmediumminchofont[<番号>]{<フォントファイル名>}| & ： & 明朝・中ウェイト（\verb|\mcfamily\mdseries|）\\
+\verb|\setboldminchofont[<番号>]{<フォントファイル名>}| & ： & 明朝・太ウェイト（\verb|\mcfamily\bfseries|）\\
+\verb|\setmediumgothicfont[<番号>]{<フォントファイル名>}| & ： & ゴシック・中ウェイト（\verb|\gtfamily\mdseries|）\\
+\verb|\setboldgothicfont[<番号>]{<フォントファイル名>}| & ： & ゴシック・太ウェイト（\verb|\gtfamily\bfseries|）\\
+\verb|\setxboldgothicfont[<番号>]{<フォントファイル名>}| & ： & ゴシック・極太ウェイト（\verb|\gtfamily\ebseries|）\\
+\verb|\setmarugothicfont[<番号>]{<フォントファイル名>}| & ： & 丸ゴシック（\verb|\mgfamily|）
+\end{tabular}
+\end{flushleft}
+
+また，このとき，\verb|\setminchofont|と\verb|\setgothicfont|は
+それぞれ明朝体，ゴシック体の3ウェイト全てのフォントを指定したフォントにします。
+例えば，中ゴシックは使わず，太ゴシックと極太ゴシックの2ウェイトでいいというときは，
+\begin{ITeX}
+\setgothicfont{GenShinGothic-Bold.ttf}
+\setxboldgothicfont{GenShinGothic-Heavy.ttf}
+\end{ITeX}
+のようにして指定することもできます。
+
+
+
+\subsection{様々なオプション}
+パッケージを読み込むときに付けることのできるオプションについて説明していきます。
+
+{\setlength{\tabcolsep}{3pt}
+\begin{tabular}{clcp{36zw}}
+\textbullet & alphabet & ： &
+欧文フォントも指定したフォントで置き換える。
+\verb|\rmfamily|が明朝体，\newline
+\verb|\sffamily|がゴシック体に対応する。\\
+\textbullet & noalphabet & ： &
+alphabetの否定。
+欧文フォントは置き換えない。\\
+\textbullet & oneweight & ： &
+小塚フォントでOTFを単ウェイトで用いるときに指定する。
+詳しくはドキュメント参照のこと。\\
+\textbullet & プリセット指定 & ： &
+フォントを一括で指定する。
+具体的なオプション名やフォント名は下で扱う。
+\end{tabular}
+}
+
+プリセット指定について説明しようと思います。
+これは，よく使う設定をオプションで設定できるようにしてくれている，
+というものです。
+
+例えば，本文を，
+「欧文フォントは置き換えず，和文フォントのみ明朝体もゴシック体も単ウェイトのIPAフォントにする」，
+というのはよくある設定です。
+これをオプションで一括設定することができます。
+具体的には，
+\begin{ITeX}
+\usepackage[ipa]{pxchfon}
+\end{ITeX}
+とするだけで，
+\begin{ITeX}
+\usepackage[noalphabet]{pxchfon}
+\setminchofont{ipam.ttf}
+\setgothicfont{ipag.ttf}　　　　　
+\end{ITeX}
+と打つのと同じ効果を得られます。
+
+このような一括設定が用意されているフォントは他にも色々あります。
+以下にオプションとフォント名だけ全て列挙しておきます。
+明朝，ゴシックと各ウェイトでそれぞれどのフォントが使用されるのかは
+ドキュメントにすべて書いてあるので，
+これを使うときは是非見ておいてください。
+
+単ウェイト用のオプションは以下の通りです。
+
+{\setlength{\tabcolsep}{3pt}
+\begin{tabular}{clcl}
+\textbullet & noembed & ： & フォントを埋め込まない \\
+\textbullet & ms & ： & MSフォント \\
+\textbullet & ipa & ： & IPAフォント \\
+\textbullet & ipaex & ： & IPAexフォント
+\end{tabular}
+}
+
+多ウェイト用のオプションは以下の通りです。
+なお，これらを使用するときは，
+otfパッケージをdeluxeオプションを付けて読み込むのを忘れないでください。
+
+{\setlength{\tabcolsep}{3pt}
+\begin{tabular}{clcl}
+\textbullet & ms-hg & ： & MSフォント＋HGフォント \\
+\textbullet & ipa-hg & ： & IPAフォント＋HGフォント \\
+\textbullet & ipaex-hg & ： & IPAexフォント＋HGフォント \\
+\textbullet & moga-mobo & ： & Mogaフォント＋Moboフォント \\
+\textbullet & moga-mobo-ex & ： & MogaExフォント＋MoboExフォント \\
+\textbullet & moga-maruberi & ： & Mogaフォント＋モトヤLマルベリ3等幅 \\
+\textbullet & kozuka-pro & ： & 小塚フォント（Pro版） \\
+\textbullet & kozuka-pr6 & ： & 小塚フォント（Pr6版） \\
+\textbullet & kozuka-pr6n & ： & 小塚フォント（Pr6n版） \\
+\textbullet & hiragino-pro & ： & ヒラギノフォント基本6書体セット（Pro/Std版）＋明朝W2 \\
+\textbullet & hiragino-pron & ： & ヒラギノフォント基本6書体セット（Pro/StdN版）＋明朝W2 \\
+\textbullet & hiragino-elcapitan-pro & ： & ヒラギノフォント（Mac OS X El Capitan 搭載;Pro/Std版）＋明朝W2 \\
+\textbullet & hiragino-elcapitan-pron & ： & ヒラギノフォント（Mac OS X El Capitan 搭載;Pro/StdN版）＋明朝W2 \\
+\textbullet & morisawa-pro & ： & モリサワフォント基本7書体（Pro版） \\
+\textbullet & morisawa-pr6n & ： & モリサワフォント基本7書体（Pr6N版） \\
+\textbullet & yu-win & ： & 游書体（Windows8.1搭載版） \\
+\textbullet & yu-win10 & ： & 游書体（Windows10搭載版） \\
+\textbullet & yu-osx & ： & 游書体（Mac OS X搭載版）
+\end{tabular}
+}\\
+
+以上に挙げた以外にも様々なオプションがありますが，
+普通に使うならこのくらいで大丈夫です。
+もっと細かいところまで設定したい人は是非ドキュメントを読んでみて下さい
+（日本語なので普通に読めます）。
+
+
+\subsection{注意点}
+pxchfonパッケージを使用する際の注意点を列挙しておきます。
+
+\begin{itemize}
+\item ドライバはdvipdfmxを用いる
+\item 等幅のフォントのみが使用可能である
+\item otfパッケージはpxchfonの前で読み込む
+\end{itemize}
+
+また，以上ではフォントを埋め込まない場合については扱っていません。
+もしフォントを埋め込みたくない場合は，
+検索したりドキュメントを参照したりしてください。
+
+このパッケージはフォントの埋め込みまでしてくれるみたいなので本当に便利です。
+mapファイルを用意したりする必要がなくなるので，圧倒的に簡単ですね。
+
+また，この部分を書くのに，
+「\href{http://zrbabbler.sp.land.to/pxchfon.html}{PXchfonパッケージ～pLaTeX文書のフォントを簡単に変更～}」
+を参考にしました。
+
+
+
+\section{色々なフォント}
+蛇足ですが色々なフォントを随時紹介していこうと思います。
+
+商用利用できるものは
+\href{https://fontbear.net/}{https://fontbear.net/}
+というサイトにまとめられているので
+是非見てみて下さい。
+
