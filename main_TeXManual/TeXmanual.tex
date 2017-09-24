@@ -1,8 +1,7 @@
 \documentclass[dvipdfmx, a4paper, 14Q, fleqn]{jreport}
 \usepackage{../preamble/preamble_TeXManual}
 \begin{document}
-%\subimport{../titlepage/}{titlepage_mindmap}
-\maketitle
+\includepdf[offset = 0mm -14mm]{../titlepage/titlepage_mindmap.pdf}
 \subimport{../chapters/chapter0_introduction/}{introduction}
 \tableofcontents
 \subimport{../chapters/chapter1_preparation/}{before_making_document}
@@ -17,7 +16,7 @@
 \subimport{../chapters/chapterx_fonts/}{about_europian_fonts}	%書き足し予定(未定)
 \subimport{../chapters/chapterx_fonts/}{about_japanese_fonts}	%書き足し予定(未定)
 %\subimport{../chapters/chapterx_about_bibliography/}{how_to_write_bibliography} 	%未実装
-\subimport{../chapters/chapterx_file_management/}{file_management}	%強いpackageの話追加
+\subimport{../chapters/chapterx_file_management/}{file_management}	%standalone追加
 \subimport{../chapters/chapterx_right_words/}{how_to_write_right_words}		%随時更新
 \subimport{../chapters/chapterx_useful_packages/}{useful_packages}　			%随時更新
 \subimport{../chapters/chapterx_others/}{other_topics}

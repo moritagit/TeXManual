@@ -1,7 +1,58 @@
-%タイトルのデザイン（mindmap ver.）
+%Design of title（mindmap ver.）
+\documentclass[class=jreport, crop=false, preview=false, tikz, dvipdfmx, a4paper, 14Q]{standalone}
 
+%package & library
+\usetikzlibrary{calc, patterns, decorations, angles, calendar, backgrounds, shadows, mindmap}
+\usepackage{fancyhdr}
+
+%header & footer
+\fancypagestyle{normal}{%
+	%reset
+	\fancyhf{}
+	%layout
+	\setlength{\oddsidemargin}{0pt}
+	\setlength{\topmargin}{4pt}
+	\setlength{\headheight}{20pt}
+	\setlength{\textheight}{634pt}
+	\setlength{\textwidth}{453pt}
+	\setlength{\marginparsep}{18pt}
+	\setlength{\marginparwidth}{18pt}
+	\setlength{\headsep}{60pt}
+	\setlength{\voffset}{-40pt}
+	%header
+	\lhead{\leftmark}
+	\rhead{\rightmark}
+	\renewcommand{\headrule}{}
+	%footer
+	\cfoot{\thepage}
+	}
+\fancypagestyle{title}{%
+	%reset
+	\fancyhf{}
+	%page layout
+	\setlength{\textwidth}{210mm}
+	\setlength{\hoffset}{-2.9cm}
+	\setlength{\oddsidemargin}{0mm}
+	\setlength{\marginparsep}{0mm}
+	\setlength{\marginparwidth}{0mm}
+	\setlength{\textheight}{297mm}
+	\setlength{\voffset}{-1in}
+	\setlength{\topmargin}{0mm}
+	\setlength{\headheight}{0mm}
+	\setlength{\headsep}{0mm}
+	\setlength{\footskip}{0mm}
+	}
 \pagestyle{title}
-\samepage
+
+%color
+\definecolor{lightcyan}{rgb}{.875,1,1}
+\definecolor{lightyellow}{rgb}{1,1,.9375}
+\definecolor{forestgreen}{RGB}{34, 139, 34}
+\definecolor{gold}{RGB}{255, 215, 0}
+\definecolor{darkcyan}{RGB}{0, 139, 139}
+
+
+\begin{document}
 \begin{tikzpicture}
 %name points
 \coordinate (O) at (0, 0);
@@ -89,3 +140,4 @@
 %\draw [step=1cm, very thin, black!25!white] (BL) grid (AR);
 
 \end{tikzpicture}
+\end{document}

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  23 SEP 2017 04:01
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  25 SEP 2017 02:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2711,6 +2711,27 @@ Package: layout 2014/10/28 v1.2c Show layout parameters
 \PositionY=\count326
 \ArrowLength=\count327
 )
+(c:/w32tex/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/w32tex/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+)
+\AM@pagewidth=\dimen326
+\AM@pageheight=\dimen327
+
+(c:/w32tex/share/texmf-dist/tex/latex/pdfpages/ppdvipdfmx.def
+File: ppdvipdfmx.def 2017/01/14 v0.5h Pdfpages driver for dvipdfmx (AM)
+)
+\AM@pagebox=\box106
+\AM@global@opts=\toks48
+\AM@toc@title=\toks49
+\c@AM@survey=\count328
+\AM@templatesizebox=\box107
+)
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
@@ -2720,9 +2741,6 @@ Package: tcfaspin 2017/06/18 v0.2a
 (c:/w32tex/share/texmf-dist/tex/latex/animate/animate.sty
 Package: animate 2017/02/03 PDF animations from files and inline graphics
 
-(c:/w32tex/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/ifdraft.sty
 Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
 )
@@ -2738,7 +2756,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count328
+\c@abspage=\count329
 Package zref Info: New property: abspage on input line 62.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
@@ -2748,33 +2766,33 @@ Package zref Info: New property list: LastPage on input line 55.
 (c:/w32tex/share/texmf-dist/tex/latex/media9/pdfbase.sty
 Package: pdfbase 2017/01/24 v0.13 driver independent access to low-level PDF fe
 atures
-\g@pbs@page@int=\count329
-\g_pbs_obj_int=\count330
-\g_pbs_oc_int=\count331
+\g@pbs@page@int=\count330
+\g_pbs_obj_int=\count331
+\g_pbs_oc_int=\count332
 )
 (c:/w32tex/share/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2016/03/11 v0.6 support package for ocgx2.sty
 )
-\@anim@box=\box106
-\@anim@measbox=\box107
-\@anim@tmpdima=\dimen326
-\@anim@tmpdimb=\dimen327
-\@anim@num=\count332
-\@anim@curframe=\count333
-\@anim@curframe@zb=\count334
-\@anim@resizeflags=\count335
-\@anim@skipfram=\count336
-\@anim@mulframecnt=\count337
+\@anim@box=\box108
+\@anim@measbox=\box109
+\@anim@tmpdima=\dimen328
+\@anim@tmpdimb=\dimen329
+\@anim@num=\count333
+\@anim@curframe=\count334
+\@anim@curframe@zb=\count335
+\@anim@resizeflags=\count336
+\@anim@skipfram=\count337
+\@anim@mulframecnt=\count338
 \@anim@@tmlnfile=\read5
-\@anim@tmpcnt=\count338
-\c@@anim@ltxcnt=\count339
-\@anim@curlayer=\count340
-\@anim@lineno=\count341
-\@anim@curfield=\count342
-\@anim@@resizeflags=\count343
+\@anim@tmpcnt=\count339
+\c@@anim@ltxcnt=\count340
+\@anim@curlayer=\count341
+\@anim@lineno=\count342
+\@anim@curfield=\count343
+\@anim@@resizeflags=\count344
 )
-\tcfs@boxa=\box108
-\tcfs@boxb=\box109
+\tcfs@boxa=\box110
+\tcfs@boxb=\box111
 )
 (c:/w32tex/share/texmf-dist/tex/latex/pythontex/pythontex.sty
 Package: pythontex 2016/07/21 v0.15 execute and typeset Python code and other l
@@ -2789,11 +2807,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count344
+\FV@CodeLineNo=\count345
 \FV@InFile=\read6
-\FV@TabBox=\box110
-\c@FancyVerbLine=\count345
-\FV@StepNumber=\count346
+\FV@TabBox=\box112
+\c@FancyVerbLine=\count346
+\FV@StepNumber=\count347
 \FV@OutFile=\write6
 ) (c:/w32tex/share/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
@@ -2801,32 +2819,32 @@ tim
 )
 (c:/w32tex/share/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count347
-\output=\toks48
-\linenoprevgraf=\count348
-\linenumbersep=\dimen328
-\linenumberwidth=\dimen329
-\c@linenumber=\count349
-\c@pagewiselinenumber=\count350
-\c@LN@truepage=\count351
-\c@internallinenumber=\count352
-\c@internallinenumbers=\count353
-\quotelinenumbersep=\dimen330
-\bframerule=\dimen331
-\bframesep=\dimen332
-\bframebox=\box111
+\linenopenalty=\count348
+\output=\toks50
+\linenoprevgraf=\count349
+\linenumbersep=\dimen330
+\linenumberwidth=\dimen331
+\c@linenumber=\count350
+\c@pagewiselinenumber=\count351
+\c@LN@truepage=\count352
+\c@internallinenumber=\count353
+\c@internallinenumbers=\count354
+\quotelinenumbersep=\dimen332
+\bframerule=\dimen333
+\bframesep=\dimen334
+\bframebox=\box113
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count354
-\c@FV@TrueTabCounter=\count355
-\FV@TabBox@Group=\box112
+\c@FV@TrueTabGroupLevel=\count355
+\c@FV@TrueTabCounter=\count356
+\FV@TabBox@Group=\box114
 \FV@TmpLength=\skip86
-\c@FV@HighlightLinesStart=\count356
-\c@FV@HighlightLinesStop=\count357
-\FV@BreakIndent=\dimen333
-\FV@BreakSymbolSepLeft=\dimen334
-\FV@BreakSymbolSepRight=\dimen335
-\FV@BreakSymbolIndentLeft=\dimen336
+\c@FV@HighlightLinesStart=\count357
+\c@FV@HighlightLinesStop=\count358
+\FV@BreakIndent=\dimen335
+\FV@BreakSymbolSepLeft=\dimen336
+\FV@BreakSymbolSepRight=\dimen337
+\FV@BreakSymbolIndentLeft=\dimen338
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
@@ -2834,23 +2852,23 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 562.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-\FV@BreakSymbolIndentRight=\dimen337
-\c@FancyVerbLineBreakLast=\count358
-\FV@LineBox=\box113
-\FV@LineIndentBox=\box114
+\FV@BreakSymbolIndentRight=\dimen339
+\c@FancyVerbLineBreakLast=\count359
+\FV@LineBox=\box115
+\FV@LineIndentBox=\box116
 )
 (c:/w32tex/share/texmf-dist/tex/latex/xstring/xstring.sty
 (c:/w32tex/share/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write7
-\integerpart=\count359
-\decimalpart=\count360
+\integerpart=\count360
+\decimalpart=\count361
 )
 Package: xstring 2013/07/29  v1.7b  String manipulations (C Tellechea)
 )
 (c:/w32tex/share/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks49
-\pgfopts@list@add@b@toks=\toks50
+\pgfopts@list@add@a@toks=\toks51
+\pgfopts@list@add@b@toks=\toks52
 )
 (c:/w32tex/share/texmf-dist/tex/latex/caption/newfloat.sty
 Package: newfloat 2015/09/17 v1.1-109 Defining new floating environments (AR)
@@ -2872,13 +2890,13 @@ Package newfloat Info: Trying Plan B...
 \pytx@codefile=\write8
 \openout8 = `TeXmanual.pytxcode'.
 
-\c@pytx@FancyVerbLineTemp=\count361
-\c@pytx@py@default@default=\count362
-\c@pytx@pycon@default@default=\count363
-\c@pytx@sympy@default@default=\count364
-\c@pytx@sympycon@default@default=\count365
-\c@pytx@pylab@default@default=\count366
-\c@pytx@pylabcon@default@default=\count367
+\c@pytx@FancyVerbLineTemp=\count362
+\c@pytx@py@default@default=\count363
+\c@pytx@pycon@default@default=\count364
+\c@pytx@sympy@default@default=\count365
+\c@pytx@sympycon@default@default=\count366
+\c@pytx@pylab@default@default=\count367
+\c@pytx@pylabcon@default@default=\count368
 )
 (c:/w32tex/share/texmf-dist/tex/platex/japanese-otf/otf.sty
 Package: otf 2013/11/17 v1.7b6 psitau, u0.17 ttk
@@ -2900,17 +2918,17 @@ LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
 (c:/w32tex/share/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
 Package: ajmacros 2005/12/25 13:52 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
 >
-\@tempcntc=\count368
-\@tempcntd=\count369
-\@tempcnte=\count370
-\@tempcntf=\count371
+\@tempcntc=\count369
+\@tempcntd=\count370
+\@tempcnte=\count371
+\@tempcntf=\count372
 ))
 (c:/w32tex/share/texmf-dist/tex/platex/pxchfon/pxchfon.sty
 Package: pxchfon 2017/01/13 v0.8
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '3.96'
-\tcb@waterbox=\box115
+\tcb@waterbox=\box117
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '3.96'
 )) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
@@ -2923,7 +2941,7 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '3.96'
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
 ))
-\c@tcblisting=\count372
+\c@tcblisting=\count373
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbdocumentation.code.tex
 Library (tcolorbox): 'tcbdocumentation.code.tex' version '3.96'
@@ -2968,7 +2986,7 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 (c:/w32tex/share/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2016/10/21 v1.2a non floating margin notes for LaTeX
-\c@mn@abspage=\count373
+\c@mn@abspage=\count374
 )
 .................................................
 . LaTeX info: "xparse/define-environment"
@@ -3068,7 +3086,7 @@ File: siunitx-abbreviations.cfg 2017/02/01 v2.7c siunitx: Abbreviated units
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 3.
-\AtBeginShipoutBox=\box116
+\AtBeginShipoutBox=\box118
 Package hyperref Info: Link coloring ON on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -3077,7 +3095,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/w32tex/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count374
+\c@section@level=\count375
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -3088,22 +3106,25 @@ LaTeX Info: Redefining \nameref on input line 3.
 \openout9 = `TeXmanual.out'.
 
  ABD: EveryShipout initializing macros
-\c@lstlisting=\count375
+\c@lstlisting=\count376
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
+(c:/w32tex/share/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+)
 No file pythontex-files-TeXmanual/TeXmanual.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on inp
 ut line 3.
-\c@listing=\count376
+\c@listing=\count377
 Package newfloat Info: float type `listing'=16 on input line 3.
-\c@sublisting=\count377
+\c@sublisting=\count378
 Package marginnote Info: either \pdflastxpos or \pdfoutput not available
 (marginnote)             or \pdfoutput set to 0.
 (marginnote)             Extended position detection mode deactivated.
-\c__siunitx_mathsf_int=\count378
+\c__siunitx_mathsf_int=\count379
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
@@ -3152,39 +3173,25 @@ LaTeX Font Info:    Try loading font information for OT1+lmss on input line 3.
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c__siunitx_mathtt_int=\count379
+\c__siunitx_mathtt_int=\count380
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 6.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 6.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 6.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 6.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 6.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 6.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
- [1
+File: ../titlepage/titlepage_mindmap.pdf Graphic file (type pdf)
+
+<../titlepage/titlepage_mindmap.pdf>
+File: ../titlepage/titlepage_mindmap.pdf Graphic file (type pdf)
+ <../titlepage/titlepage_mindmap.pdf>
+File: ../titlepage/titlepage_mindmap.pdf Graphic file (type pdf)
+
+<../titlepage/titlepage_mindmap.pdf>
+File: ../titlepage/titlepage_mindmap.pdf Graphic file (type pdf)
+ <../titlepage/titlepage_mindmap.pdf>
+File: ../titlepage/titlepage_mindmap.pdf Graphic file (type pdf)
+
+<../titlepage/titlepage_mindmap.pdf> [1
 
 ]
 (../chapters/chapter0_introduction/introduction.tex
@@ -3198,16 +3205,20 @@ LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
 (Font)              scaled to size 19.95642pt on input line 5.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 5.
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 13.85594pt on input line 8.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 13.85594pt on input line 8.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 7.1204pt on input line 9.
+(Font)              scaled to size 13.85594pt on input line 7.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 7.
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
+(Font)              scaled to size 13.85594pt on input line 7.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
+(Font)              scaled to size 13.85594pt on input line 7.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 7.1204pt on input line 8.
 
-Overfull \hbox (8.86523pt too wide) in paragraph at lines 9--12
+Overfull \hbox (8.86523pt too wide) in paragraph at lines 8--11
 \JY1/hmc/m/n/10 ュアルです。 細かいとこは飛ばしてとりあえずすぐ使えるようになり
 たいという人を想定して書いているの
  []
@@ -3224,7 +3235,7 @@ Overfull \hbox (8.8652pt too wide) in paragraph at lines 26--29
 方について説明していきます。 細かい
  []
 
-) [1
+) [2
 
 ] (./TeXmanual.toc
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
@@ -3233,16 +3244,16 @@ LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
 (Font)              scaled to size 9.6222pt on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
- [2
+ [3
 
-] [3] [4])
+] [4] [5])
 \tf@toc=\write10
 \openout10 = `TeXmanual.toc'.
 
 
-(../chapters/chapter1_preparation/before_making_document.tex [5]
+(../chapters/chapter1_preparation/before_making_document.tex [6]
 第 1 章
-[6
+[7
 
 ]
 Overfull \hbox (8.8652pt too wide) in paragraph at lines 74--76
@@ -3250,7 +3261,7 @@ Overfull \hbox (8.8652pt too wide) in paragraph at lines 74--76
 た。 次章から実際に文章を書いていき
  []
 
-) (../chapters/chapter2_plane_text/how_to_write_plane_text.tex [7]
+) (../chapters/chapter2_plane_text/how_to_write_plane_text.tex [8]
 第 2 章
 
 Overfull \hbox (4.05411pt too wide) in paragraph at lines 13--16
@@ -3258,7 +3269,7 @@ Overfull \hbox (4.05411pt too wide) in paragraph at lines 13--16
 とは追々説明しますので， かる～く読
  []
 
-[8
+[9
 
 ]
 Overfull \hbox (69.44385pt too wide) in paragraph at lines 101--105
@@ -3325,13 +3336,21 @@ LaTeX Font Info:    Try loading font information for TS1+pcr on input line 128.
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 ) (./TeXmanual.listing)
-[9]
+[10]
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 137.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 137.
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
 (Font)              scaled to size 11.54663pt on input line 137.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
 (Font)              scaled to size 11.54663pt on input line 137.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 137.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 152.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 152.
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3365,7 +3384,7 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
 (Font)              scaled to size 11.54663pt on input line 209.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 11.54663pt on input line 209.
-[10]
+[11]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 4.8111pt on input line 230.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
@@ -3375,6 +3394,8 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 6.73553pt on input line 231.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 7.69775pt on input line 232.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 7.69775pt on input line 232.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 23.94002pt on input line 239.
@@ -3404,7 +3425,7 @@ Overfull \hbox (4.05414pt too wide) in paragraph at lines 267--271
 です。 また， これらは併用もできます。 
  []
 
-[11]
+[12]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3464,7 +3485,7 @@ Overfull \hbox (4.05411pt too wide) in paragraph at lines 313--316
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [12]
+) [13]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 358.
 
 
@@ -3481,7 +3502,9 @@ Overfull \hbox (4.05411pt too wide) in paragraph at lines 366--374
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[13]
+[14]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 392.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 392.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
@@ -3521,7 +3544,7 @@ Overfull \hbox (4.05414pt too wide) in paragraph at lines 425--429
 の仕方については後々ページレイアウトの
  []
 
-[14] [15]
+[15] [16]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3551,7 +3574,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[16]
+[17]
 Overfull \hbox (8.86523pt too wide) in paragraph at lines 586--592
 \JY1/hmc/m/it/10 出力が気に入らなかったときは， 様々なオプションでその設定を変
 えることができます。 それについては （不
@@ -3562,7 +3585,7 @@ Overfull \hbox (8.86523pt too wide) in paragraph at lines 586--592
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapter3_environment/about_environment.tex [17]
+(../chapters/chapter3_environment/about_environment.tex [18]
 第 3 章
 
 Overfull \hbox (25.05972pt too wide) in paragraph at lines 10--15
@@ -3596,7 +3619,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[18
+[19
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -3627,7 +3650,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[19]
+[20]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3666,7 +3689,7 @@ Overfull \hbox (1.24635pt too wide) in paragraph at lines 164--168
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapter4_math/math_formula.tex [20]
+(../chapters/chapter4_math/math_formula.tex [21]
 第 4 章
 
 Overfull \hbox (3.73819pt too wide) in paragraph at lines 4--7
@@ -3684,7 +3707,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [21
+) [22
 
 ]
 Overfull \hbox (53.342pt too wide) detected at line 65
@@ -3700,7 +3723,7 @@ Overfull \hbox (15.32224pt too wide) in paragraph at lines 80--142
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [22]
+) [23]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -3741,13 +3764,13 @@ Overfull \hbox (3.49738pt too wide) in paragraph at lines 200--206
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[23] [24]
+[24] [25]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-(./TeXmanual.listing) [25]
+(./TeXmanual.listing) [26]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3768,7 +3791,7 @@ Overfull \hbox (17.18756pt too wide) in paragraph at lines 405--411
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[26]
+[27]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3798,7 +3821,7 @@ Overfull \hbox (79.56459pt too wide) in paragraph at lines 449--449
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[27]
+[28]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3820,7 +3843,7 @@ Overfull \hbox (4.05414pt too wide) in paragraph at lines 516--525
 してくれるので， 数式の参照においては
  []
 
-[28]
+[29]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3838,7 +3861,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[29]
+[30]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3861,7 +3884,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[30]
+[31]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3873,7 +3896,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing))
-(../chapters/chapter5_pictures/about_pictures.tex [31]
+(../chapters/chapter5_pictures/about_pictures.tex [32]
 第 5 章
 \openout4 = `TeXmanual.listing'.
 
@@ -3898,7 +3921,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--97
 角を
  []
 
-[32
+[33
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -3924,7 +3947,7 @@ ze
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 
-LaTeX Warning: Reference `ch:reference-contents-link' on page 33 undefined on i
+LaTeX Warning: Reference `ch:reference-contents-link' on page 34 undefined on i
 nput line 149.
 
 
@@ -3933,7 +3956,7 @@ Overfull \hbox (4.05411pt too wide) in paragraph at lines 141--150
 て出力されます。 この図を参照するとき
  []
 
-[33]
+[34]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3957,7 +3980,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 (../chapters/chapter5_pictures/figures_for_pictures/fig_left_right.tex)
 (../chapters/chapter5_pictures/figures_for_pictures/fig_left_right.tex)
-[34]
+[35]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3973,7 +3996,7 @@ figure}\JY1/hmc/m/it/10 と\T1/pcr/m/n/10 \begin{subfigure}\JY1/hmc/m/it/10 の�
 
 File: ../chapters/chapter5_pictures/figures_for_pictures/wakan.jpg Graphic file
  (type bmp)
-<../chapters/chapter5_pictures/figures_for_pictures/wakan.jpg> [35]
+<../chapters/chapter5_pictures/figures_for_pictures/wakan.jpg> [36]
 Overfull \hbox (4.43192pt too wide) in paragraph at lines 309--312
 [][]\JY1/hmc/m/it/10 図を文書の右とか左に配置したいときもあるかと思います。 例
 えばこのように。
@@ -4022,7 +4045,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [36]
+) [37]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4071,7 +4094,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapter6_tables/about_tables.tex [37]
+(../chapters/chapter6_tables/about_tables.tex [38]
 第 6 章
 
 Overfull \hbox (4.05411pt too wide) in paragraph at lines 5--7
@@ -4101,7 +4124,7 @@ Overfull \hbox (62.90154pt too wide) in paragraph at lines 44--47
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[38
+[39
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4126,7 +4149,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[39]
+[40]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -4168,7 +4191,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[40]
+[41]
 Overfull \hbox (5.09044pt too wide) in paragraph at lines 210--212
 []\JY1/hmc/m/it/10 罫線ももちろん引けます。 \T1/pcr/m/n/10 \multicolumn \JY1/hm
 c/m/it/10 コマンドの列指定で縦線を引くのを忘れないようにしましょ
@@ -4197,7 +4220,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[41]
+[42]
 Overfull \hbox (8.86523pt too wide) in paragraph at lines 253--260
 \JY1/hmc/m/it/10 エラーを吐かず動作してしまいます。 よって， 上で示したくらいの
 軽い表を作るくらいなら便利なのですが，
@@ -4225,7 +4248,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [42]
+) [43]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4256,7 +4279,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[43]
+[44]
 Overfull \hbox (4.05414pt too wide) in paragraph at lines 394--398
 \JY1/hmc/m/it/10 したまま次のページに出力されてしまいます。 これは紙面の無駄で
 すし， 見づらいので嫌だという人も少な
@@ -4273,13 +4296,13 @@ e}
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [44]
+) [45]
 
 Package caption Warning: \label without proper reference on input line 154.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:options-of-figure' on page 45 undefined on input 
+LaTeX Warning: Reference `tab:options-of-figure' on page 46 undefined on input 
 line 442.
 
 \openout4 = `TeXmanual.listing'.
@@ -4306,7 +4329,7 @@ n/10 wrapt-
  []
 
 ) (../chapters/chapter8_references_contents_links/references_contents_links.tex
-[45]
+[46]
 第 7 章
 \openout4 = `TeXmanual.listing'.
 
@@ -4324,7 +4347,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [46
+) [47
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4366,7 +4389,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [47]
+) [48]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4400,7 +4423,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--199
 tm/m/n/10 false\JY1/hmc/m/it/10 。 \T1/ptm/m/n/10 col-or-
  []
 
-[48]
+[49]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -4416,7 +4439,7 @@ Overfull \hbox (0.2655pt too wide) in paragraph at lines 254--258
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_pagelayout/pagelayout.tex [49]
+(../chapters/chapterx_pagelayout/pagelayout.tex [50]
 第 8 章
 
 Overfull \hbox (49.56537pt too wide) in paragraph at lines 5--14
@@ -4464,7 +4487,7 @@ Overfull \hbox (29.65387pt too wide) in alignment at lines 70--110
  [] [] 
  []
 
-[50
+[51
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4482,7 +4505,7 @@ Package caption Warning: \label without proper reference on input line 414.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `length-unit' on page 51 undefined on input line 133.
+LaTeX Warning: Reference `length-unit' on page 52 undefined on input line 133.
 
 
 Overfull \hbox (4.05414pt too wide) in paragraph at lines 136--141
@@ -4490,9 +4513,9 @@ Overfull \hbox (4.05414pt too wide) in paragraph at lines 136--141
 試行錯誤でいい感じのところを見つける
  []
 
-[51]
-One-sided document style.
 [52]
+One-sided document style.
+[53]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -4551,7 +4574,7 @@ Overfull \hbox (1.46825pt too wide) in paragraph at lines 214--218
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [53]
+) [54]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4577,7 +4600,7 @@ Overfull \hbox (4.05411pt too wide) in paragraph at lines 283--287
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [54]
+) [55]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4629,25 +4652,25 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [55]
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [56]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [57]
 Overfull \hbox (4.05414pt too wide) in paragraph at lines 437--442
 \JY1/hmc/m/it/10 右からはみ出てしまうようなときなどに使えます。 例えば次のよう
 な横にながーい表でも， 次ページのよう
@@ -4658,12 +4681,12 @@ Overfull \hbox (204.7462pt too wide) in paragraph at lines 444--449
 [][] 
  []
 
-[57]
+[58]
 Overfull \hbox (23.7462pt too wide) in paragraph at lines 454--459
 [][] 
  []
 
-[58
+[59
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4700,7 +4723,7 @@ c/m/it/10 パッケージと合わせて， いい感じに設定していきま
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [59
+) [60
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4727,7 +4750,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_fonts/about_europian_fonts.tex [60]
+(../chapters/chapterx_fonts/about_europian_fonts.tex [61]
 第 9 章
 
 Overfull \hbox (8.86523pt too wide) in paragraph at lines 3--6
@@ -4750,7 +4773,7 @@ Overfull \hbox (11.1397pt too wide) in paragraph at lines 26--32
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [61
+) [62
 
 ]
 (I search kanjifont definition file: . . ) (I search font definition file: . .
@@ -4794,14 +4817,14 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [62]
+) [63]
 \openout4 = `TeXmanual.listing'.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_fonts/about_japanese_fonts.tex [63]
+(../chapters/chapterx_fonts/about_japanese_fonts.tex [64]
 第 10 章
 
 Overfull \hbox (4.05414pt too wide) in paragraph at lines 17--26
@@ -4839,7 +4862,7 @@ Overfull \hbox (13.31567pt too wide) in paragraph at lines 53--56
 が， いまは\T1/pcr/m/n/10 \text...
  []
 
-[64
+[65
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4887,7 +4910,7 @@ Overfull \hbox (8.8652pt too wide) in paragraph at lines 126--130
 た。 大体の文書は明朝体とゴシック体
  []
 
-[65]
+[66]
 Overfull \hbox (4.05411pt too wide) in paragraph at lines 133--137
 []\JY1/hmc/m/it/10 次は多ウェイトの指定方法について説明しようと思います。 単ウ
 ェイトの説明からわかると思いますが，
@@ -4938,7 +4961,7 @@ Overfull \hbox (4.05411pt too wide) in paragraph at lines 193--196
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [66]
+) [67]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4962,15 +4985,15 @@ Overfull \hbox (4.05411pt too wide) in paragraph at lines 257--261
 うならこのくらいで大丈夫です。 もっと
  []
 
-[67]
+[68]
 Overfull \hbox (4.05411pt too wide) in paragraph at lines 272--275
 []\JY1/hmc/m/it/10 また， 以上ではフォントを埋め込まない場合については扱ってい
 ません。 もしフォントを埋め込みたくな
  []
 
-) (../chapters/chapterx_file_management/file_management.tex [68]
+) (../chapters/chapterx_file_management/file_management.tex [69]
 第 11 章
-[69
+[70
 
 ]
 Overfull \hbox (4.05411pt too wide) in paragraph at lines 85--89
@@ -4987,7 +5010,7 @@ mple1.jpg>
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [70]
+) [71]
 Overfull \hbox (6.06567pt too wide) in paragraph at lines 126--131
 \JY1/hmc/m/it/10 改ページしたくないときは\T1/pcr/m/n/10 \input \JY1/hmc/m/it/10
  を使ってください）。 これで \T1/ptm/m/n/10 main \JY1/hmc/m/it/10 を実行すれば
@@ -5021,7 +5044,7 @@ Overfull \hbox (66.95432pt too wide) in paragraph at lines 182--188
 /hmc/m/it/10 で書いた\T1/pcr/m/n/10 \includegraphics
  []
 
-[71]
+[72]
 Overfull \hbox (17.75719pt too wide) in paragraph at lines 192--201
 \JY1/hmc/m/it/10 決可能で， \T1/ptm/m/n/10 chap-ter1.tex \JY1/hmc/m/it/10 内で
 他のファイルを読み込んでいるところ （\T1/pcr/m/n/10 \include\JY1/hmc/m/it/10 ，
@@ -5058,7 +5081,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_right_words/how_to_write_right_words.tex [72]
+(../chapters/chapterx_right_words/how_to_write_right_words.tex [73]
 第 12 章
 
 Overfull \hbox (4.05411pt too wide) in paragraph at lines 11--14
@@ -5076,9 +5099,9 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [73
+) [74
 
-] [74]
+] [75]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -5107,7 +5130,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [75]
+) [76]
 Overfull \hbox (4.05411pt too wide) in paragraph at lines 207--214
 []\JY1/hmc/m/it/10 ただ， これでは複雑な数式は表現しづらいし読みづらくもあると
 思う人もいるかもしれません。 その場合
@@ -5120,7 +5143,7 @@ ac \JY1/hmc/m/it/10 などを使っていただければ， 大きく分数が�
 なると思います。 た
  []
 
-) (../chapters/chapterx_useful_packages/useful_packages.tex [76]
+) (../chapters/chapterx_useful_packages/useful_packages.tex [77]
 第 13 章
 
 Overfull \hbox (3.47469pt too wide) in paragraph at lines 31--41
@@ -5143,7 +5166,7 @@ e \JY1/hmc/m/it/10 や\T1/pcr/m/n/10 \gram \JY1/hmc/m/it/10 といったコマ�
 出力できます。 また，
  []
 
-[77
+[78
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -5190,7 +5213,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [78]
+) [79]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -5224,7 +5247,7 @@ Overfull \hbox (0.33485pt too wide) in paragraph at lines 187--196
 <a0,fr8> <a0,fr9> <a0,fr10> <a0,fr11> <a0,fr12> <a0,fr13> <a0,fr14> <a0,fr15>
 <a0,fr16> <a0,fr17> <a0,fr18> <a0,fr19> <a0,fr20> <a0,fr21> <a0,fr22>
 <a0,fr23> <a0,fr24> <a0,fr25> <a0,fr26> <a0,fr27> <a0,fr28> <a0,fr29>
-<a0,fr30> <a0,fr31> [79] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5>
+<a0,fr30> <a0,fr31> [80] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5>
 <a1,fr6> <a1,fr7> <a1,fr8> <a1,fr9> <a1,fr10> <a1,fr11> <a1,fr12> <a1,fr13>
 <a1,fr14> <a1,fr15> <a1,fr16> <a1,fr17> <a1,fr18> <a1,fr19> <a1,fr20>
 <a1,fr21> <a1,fr22> <a1,fr23> <a1,fr24> <a1,fr25> <a1,fr26> <a1,fr27>
@@ -5233,7 +5256,7 @@ Overfull \hbox (0.33485pt too wide) in paragraph at lines 187--196
 <a2,fr12> <a2,fr13> <a2,fr14> <a2,fr15> <a2,fr16> <a2,fr17> <a2,fr18>
 <a2,fr19> <a2,fr20> <a2,fr21> <a2,fr22> <a2,fr23> <a2,fr24> <a2,fr25>
 <a2,fr26> <a2,fr27> <a2,fr28> <a2,fr29> <a2,fr30> <a2,fr31>)
-(../chapters/chapterx_others/other_topics.tex [80]
+(../chapters/chapterx_others/other_topics.tex [81]
 第 14 章
 
 Overfull \hbox (4.05411pt too wide) in paragraph at lines 3--6
@@ -5268,7 +5291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--51
 
  []
 
-) (../bibliography/bibliography.tex [81
+) (../bibliography/bibliography.tex [82
 
 ]
 Overfull \hbox (32.11058pt too wide) in paragraph at lines 19--22
@@ -5287,14 +5310,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 ) 
 AED: lastpage setting LastPage
 Package atenddvi Info: Last page = 83.
-[82
+[83
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 25.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 24.
  (./TeXmanual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `TeXmanual.out' has not changed.
 (rerunfilecheck)             Checksum: 033DBF95AA58186E70DC5363435768C3;9638.
 
@@ -5308,15 +5331,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 46460 strings out of 493671
- 902150 string characters out of 6151255
- 1051848 words of memory out of 5000000
- 48687 multiletter control sequences out of 15000+600000
- 145311 words of font info for 271 fonts, out of 8000000 for 9000
+ 47011 strings out of 493671
+ 911121 string characters out of 6151255
+ 1065478 words of memory out of 5000000
+ 49220 multiletter control sequences out of 15000+600000
+ 119095 words of font info for 223 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  84i,21n,163p,10478b,3294s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on TeXmanual.dvi (83 pages, 846412 bytes).
+Output written on TeXmanual.dvi (83 pages, 848060 bytes).
