@@ -1,3 +1,7 @@
+\documentclass[class=jreport, crop=false, preview=false, dvipdfmx, a4paper, 14Q, fleqn]{standalone}
+\usepackage{../../preamble/preamble_TeXManual}
+\begin{document}
+
 \chapter{その他の話題}
 
 まだ触れられていない話題の中で僕が知っているものについて，
@@ -7,7 +11,7 @@
 {
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{clcp{27zw}}
+\begin{longtable}{clcp{27zw}}
 \textbullet & 索引 & ： &
 文書の終わりに索引を付けることができます。\\
 \textbullet & 引用・参考文献 & ： &
@@ -17,7 +21,8 @@
 欧文フォント（アルファベット等）についての話です。\\
 \textbullet & 縦書き & ： &
 {\TeX}で縦書きをすることもできます。
-小説等を書きたい人などには必須ですね。\\
+小説等を書きたい人などには必須ですね。
+tarticleやtbookといったドキュメントクラスを使えばすぐにできます。\\
 \textbullet & マクロの作り方 & ： &
 コマンドや環境を自分で作ることができます。
 xparseパッケージを使うとより高度なものが作れると思います。\\
@@ -28,16 +33,33 @@ listingsパッケージについて紹介します。
 \textbullet & \TikZ & ： &
 {\TeX}で図を描きます。
 簡単な線画ならすぐ描けるようになります。
-回路図なんかも描けるので非常に便利です。\\
+回路図なんかも描けるので非常に便利です。
+公式ドキュメントがかなり充実しているので，
+描きたいものをドキュメントから探し，
+そのあたりの説明を読むことで大体のものは描けます。
+このマニュアルのタイトルのページもこの{\TikZ}で作りました。
+図が必要になったときは是非試してみて下さい。 \\
 \textbullet & tcolorbox & ： &
 表において色付きやセルの結合をもっと自由に行いたい場合，
-tcolorboxパッケージが便利です。\\
+tcolorboxパッケージが便利です。
+日本語のサイトもちらほらありますが，
+これも公式ドキュメントが充実しているので，
+そちらを使ってもいいかもしれません。\\
 \textbullet & スタイルファイル（.sty）の作り方 & ： &
 スタイルファイル，つまりパッケージを自分で作ることができます。
 意外と簡単にできるので，よく使うマクロが増えてきたら作ってみるのもいいと思います。\\
 \textbullet & クラスファイル（.cls）の作り方 & ： &
 クラスファイル（jsarticleなど）を自分で作ることができます。
 ページレイアウトなどが決まったときはクラスファイルにしてしまってもよいかもしれません。\\
+\textbullet & 化学式 & ： &
+化学式，化学反応式や複雑な構造式といったものも書くことができます。
+これにはmhchemパッケージとchemfigパッケージを使います。
+「\href{http://doratex.hatenablog.jp/entry/20131203/1386068127}{TeXによる化学組版}」
+と
+「\href{http://doratex.hatenablog.jp/entry/20141212/1418393703}{chemfigパッケージによる構造式描画}」
+の2つのサイトを読めばかなり多くの化学式を打てるようになります。
+また，公式ドキュメントも充実しているので，
+是非見てみて下さい。\\
 \textbullet & オンラインで{\TeX}をする & ： &
 {Cloud\TeX}などを使えば，オンラインでも{\TeX}ができます。\\
 \textbullet & Python\TeX & ： &
@@ -46,6 +68,8 @@ Ruby，Pythonなどのプログラミング言語と{\TeX}を組み合わせる�
 それを実行することができます。
 {\TeX}に用意されているマクロだけでは作れないものも
 作ることができる可能性を秘めた面白いパッケージです。
-\end{tabular}
+\end{longtable}
 }
 
+
+\end{document}
