@@ -1,55 +1,40 @@
-%タイトル
+%% title
 \title{\LaTeXe 入門}
 \author{R. Morita}
 
+%% input mypreamble
 \input{/Users/User/Documents/TeX/preamble/mypreamble}
 
-%パッケージ
-\usepackage{layout}					%ページレイアウト出力
-\usepackage{pdfpages}				%PDF挿入
-\usepackage{lscape}					%横置き（紙は縦）
-%\usepackage{pdflscape}				%横置き（紙も横置き）
-\usepackage[version=3]{mhchem}	%化学式
+
+%% packages
+\usepackage{layout}					%output page layout
+\usepackage{pdfpages}				%include PDF
+\usepackage{lscape}					%put rightside up
+%\usepackage{pdflscape}				%put paper like landscape
+\usepackage[version=3]{mhchem}	%chemical furmula
 \usepackage{chemfig}
-\usepackage{tcfaspin}					%文字を回すのだ！
+\usepackage{tcfaspin}					%spin spin spin a spin
 %\usepackage{pythontex}				%PythonTeX
 
 
-%フォント
+%% font
 \setminchofont{ipam.ttf}
 \setboldminchofont{GenEiGothicM-Bold}
-\setmediumgothicfont{GenEiGothicM-SemiBold}				%ゴシック = 源暎
+\setmediumgothicfont{GenEiGothicM-SemiBold}				%gothic = 源暎
 \setboldgothicfont{GenEiGothicM-Bold}
 \setxboldgothicfont{GenEiGothicM-Heavy}
 
 
-%tcolorboxのlibraryとsetup
-\tcbuselibrary{skins, listings, documentation}
-\tcbset{%
-	%keywords bold = false,%			%謎エラー（未定義?）
-	color command = colcom,%
-	color environment = colenv,%
-	}
-
-
-%hyperrefのsetup
+%% set up for hyperref
 \hypersetup{%
-	bookmarksnumbered = true,%
-	hidelinks,%
-	colorlinks = true,%
-	linkcolor = black,%
-	urlcolor = cyan,%
-	citecolor = black,%
-	filecolor = magenta,%
-	setpagesize = false,%
-	pdftitle = {LaTeX2e入門マニュアル},%
-	pdfauthor = {R. Morita},%
-	pdfkeywords = {TeX; LaTeX}
+	pdftitle = {LaTeX2e入門マニュアル},
+	pdfauthor = {R. Morita},
+	pdfkeywords = {TeX; LaTeX},
 	}
 
 
-%ページレイアウト
-%jsarticleの初期値に設定
+%% page layout
+%set all layout ajdusted to jsarticle
 \setlength{\oddsidemargin}{0pt}
 \setlength{\topmargin}{4pt}
 \setlength{\headheight}{20pt}
@@ -57,7 +42,7 @@
 \setlength{\textwidth}{453pt}
 \setlength{\marginparsep}{18pt}
 \setlength{\marginparwidth}{18pt}
-%ヘッダー周り
+%header
 \setlength{\headsep}{60pt}
 \setlength{\voffset}{-40pt}
 
@@ -104,7 +89,7 @@
 \pagestyle{normal}
 
 
-%色
+%% colors
 \definecolor{lightcyan}{rgb}{.875,1,1}
 \definecolor{lightyellow}{rgb}{1,1,.9375}
 \definecolor{forestgreen}{RGB}{34, 139, 34}
@@ -120,7 +105,7 @@
 	}
 
 
-%入出力ディスプレイ
+%% I/O display
 \newtcblisting{IOTeX}{%
 	skin = bicolor,%
 	drop shadow,%
@@ -156,7 +141,7 @@
 	}
 
 
-%別行立ての入力表示
+%% Input display
 \newtcblisting{ITeX}{%
 	boxrule = 0pt,%
 	size = minimal,%

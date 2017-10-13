@@ -1,0 +1,15 @@
+%文書情報とリンク
+\hypersetup{%
+    bookmarks=true,%
+    bookmarksnumbered=true,%
+    hidelinks,%
+    colorlinks=true,%
+    linkcolor=black,%
+    urlcolor=cyan,%
+    citecolor=black,%
+    filecolor=magenta,%
+    setpagesize=false,%
+    pdftitle={LaTeX2e入門マニュアル},%
+    pdfauthor={R. Morita},%
+    pdfkeywords={TeX; LaTeX}
+    }

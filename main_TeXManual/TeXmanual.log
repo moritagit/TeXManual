@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  14 OCT 2017 03:23
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  14 OCT 2017 04:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1823,34 +1823,103 @@ Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \tcb@out=\write4
 \tcb@record@out=\write5
 )
+(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.11'
+(c:/w32tex/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/w32tex/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen286
+\pgffor@skip=\dimen287
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count270
+\pgfplotmarksize=\dimen288
+)
+\tikz@lastx=\dimen289
+\tikz@lasty=\dimen290
+\tikz@lastxsaved=\dimen291
+\tikz@lastysaved=\dimen292
+\tikzleveldistance=\dimen293
+\tikzsiblingdistance=\dimen294
+\tikz@figbox=\box93
+\tikz@figbox@bg=\box94
+\tikz@tempbox=\box95
+\tikz@tempbox@bg=\box96
+\tikztreelevel=\count271
+\tikznumberofchildren=\count272
+\tikznumberofcurrentchild=\count273
+\tikz@fig@count=\count274
+
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count275
+\pgfmatrixcurrentcolumn=\count276
+\pgf@matrix@numberofcolumns=\count277
+)
+\tikz@expandcount=\count278
+
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+\tcb@waterbox=\box97
+
+(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.11'
+)) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.11'
 (c:/w32tex/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count270
-\lst@gtempboxa=\box93
-\lst@token=\toks40
-\lst@length=\count271
-\lst@currlwidth=\dimen286
-\lst@column=\count272
-\lst@pos=\count273
-\lst@lostspace=\dimen287
-\lst@width=\dimen288
-\lst@newlines=\count274
-\lst@lineno=\count275
-\lst@maxwidth=\dimen289
+\lst@mode=\count279
+\lst@gtempboxa=\box98
+\lst@token=\toks42
+\lst@length=\count280
+\lst@currlwidth=\dimen295
+\lst@column=\count281
+\lst@pos=\count282
+\lst@lostspace=\dimen296
+\lst@width=\dimen297
+\lst@newlines=\count283
+\lst@lineno=\count284
+\lst@maxwidth=\dimen298
 
 (c:/w32tex/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count276
-\lst@skipnumbers=\count277
-\lst@framebox=\box94
+\c@lstnumber=\count285
+\lst@skipnumbers=\count286
+\lst@framebox=\box99
 )
 (c:/w32tex/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.11'
+(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.11'
+(c:/w32tex/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+))
+\c@tcblisting=\count287
+))
 (c:/w32tex/share/texmf-dist/tex/latex/0_added_packages/plistings/plistings.sty
 Package: plistings 2015/12/07 v0.10 Japanese support of listings package
-\ltj@lst@frame@lslimit=\dimen290
+\ltj@lst@frame@lslimit=\dimen299
 \lst@inputfile=\read4
 ) (c:/w32tex/share/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write6
@@ -1865,13 +1934,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (c:/w32tex/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen291
-\captionmargin@=\dimen292
-\captionwidth=\dimen293
-\caption@tempdima=\dimen294
-\caption@indent=\dimen295
-\caption@parindent=\dimen296
-\caption@hangindent=\dimen297
+\captionmargin=\dimen300
+\captionmargin@=\dimen301
+\captionwidth=\dimen302
+\caption@tempdima=\dimen303
+\caption@indent=\dimen304
+\caption@parindent=\dimen305
+\caption@hangindent=\dimen306
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -1885,7 +1954,7 @@ p \iftdir \sbox \@tempboxa {#1\hskip 1zw#2}\else \sbox \@tempboxa {#1: #2}\fi \
 ifdim \wd \@tempboxa >\hsize \iftdir #1\hskip 1zw#2\relax \par \else #1: #2\rel
 ax \par \fi \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa
  \hfil }\fi \vskip \belowcaptionskip .
-\c@ContinuedFloat=\count278
+\c@ContinuedFloat=\count288
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1893,68 +1962,17 @@ Package caption Info: longtable package is loaded.
 (c:/w32tex/share/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 ))
-\c@subfigure=\count279
-\c@subtable=\count280
+\c@subfigure=\count289
+\c@subtable=\count290
 )
 (c:/w32tex/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen298
-\WF@size=\dimen299
-\c@WF@wrappedlines=\count281
-\WF@box=\box95
-\WF@everypar=\toks41
+\wrapoverhang=\dimen307
+\WF@size=\dimen308
+\c@WF@wrappedlines=\count291
+\WF@box=\box100
+\WF@everypar=\toks43
 Package: wrapfig 2003/01/31  v 3.6
 )
-(c:/w32tex/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(c:/w32tex/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen300
-\pgffor@skip=\dimen301
-\pgffor@stack=\toks42
-\pgffor@toks=\toks43
-))
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
-de.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count282
-\pgfplotmarksize=\dimen302
-)
-\tikz@lastx=\dimen303
-\tikz@lasty=\dimen304
-\tikz@lastxsaved=\dimen305
-\tikz@lastysaved=\dimen306
-\tikzleveldistance=\dimen307
-\tikzsiblingdistance=\dimen308
-\tikz@figbox=\box96
-\tikz@figbox@bg=\box97
-\tikz@tempbox=\box98
-\tikz@tempbox@bg=\box99
-\tikztreelevel=\count283
-\tikznumberofchildren=\count284
-\tikznumberofcurrentchild=\count285
-\tikz@fig@count=\count286
-
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count287
-\pgfmatrixcurrentcolumn=\count288
-\pgf@matrix@numberofcolumns=\count289
-)
-\tikz@expandcount=\count290
-
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
@@ -1976,11 +1994,11 @@ ex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen311
 \pgfdecoratedinputsegmentremainingdistance=\dimen312
 \pgf@decorate@distancetomove=\dimen313
-\pgf@decorate@repeatstate=\count291
+\pgf@decorate@repeatstate=\count292
 \pgfdecorationsegmentamplitude=\dimen314
 \pgfdecorationsegmentlength=\dimen315
 )
-\tikz@lib@dec@box=\box100
+\tikz@lib@dec@box=\box101
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 braryangles.code.tex
@@ -1989,8 +2007,8 @@ File: tikzlibraryangles.code.tex 2013/08/28 v3.0.1a (rcs-revision 1.1)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box101
-\pgf@layerboxsaved@background=\box102
+\pgf@layerbox@background=\box102
+\pgf@layerboxsaved@background=\box103
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 braryshadows.code.tex
@@ -2011,7 +2029,7 @@ File: tikzlibrarycalendar.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.3)
 (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
 File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count292
+\pgfcalendarcurrentjulian=\count293
 )))
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarymindmap.code.tex
@@ -2042,7 +2060,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks44
 \XKV@tempa@toks=\toks45
 )
-\XKV@depth=\count293
+\XKV@depth=\count294
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/currfile/currfile.sty
@@ -2052,7 +2070,7 @@ nt input file
 (c:/w32tex/share/texmf-dist/tex/latex/filehook/filehook.sty
 Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
-\c@currfiledepth=\count294
+\c@currfiledepth=\count295
 )
 (c:/w32tex/share/texmf-dist/tex/latex/gincltex/gincltex.sty
 (c:/w32tex/share/texmf-dist/tex/latex/svn-prov/svn-prov.sty
@@ -2072,7 +2090,7 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (c:/w32tex/share/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box103
+\collectedbox=\box104
 )
 \tc@llx=\dimen316
 \tc@lly=\dimen317
@@ -2092,16 +2110,16 @@ Package trimclip Info: No clipping driver 'tc-dvipdfmx.def' available.
 
 (c:/w32tex/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count295
+\c@checkoddpage=\count296
 )
 (c:/w32tex/share/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box104
-\sift@deathcycles=\count296
+\@vwid@box=\box105
+\sift@deathcycles=\count297
 \@vwid@loff=\dimen324
 \@vwid@roff=\dimen325
 ))
-\gincltex@box=\box105
+\gincltex@box=\box106
 )
 (c:/w32tex/share/texmf-dist/tex/latex/filemod/filemod-expmin.sty
 Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
@@ -2689,10 +2707,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
 (c:/w32tex/share/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
 Package: ajmacros 2005/12/25 13:52 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
 >
-\@tempcntc=\count297
-\@tempcntd=\count298
-\@tempcnte=\count299
-\@tempcntf=\count300
+\@tempcntc=\count298
+\@tempcntd=\count299
+\@tempcnte=\count300
+\@tempcntf=\count301
 ))
 (c:/w32tex/share/texmf-dist/tex/platex/pxchfon/pxchfon.sty
 Package: pxchfon 2017/01/13 v0.8
@@ -2702,43 +2720,43 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldmincho=\mathgroup10
 LaTeX Info: Redefining \bm on input line 207.
 )
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 53.
-Package hyperref Info: Option `colorlinks' set `true' on input line 53.
-Package hyperref Info: Option `setpagesize' set `false' on input line 53.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 54.
+Package hyperref Info: Option `colorlinks' set `true' on input line 54.
+Package hyperref Info: Option `setpagesize' set `false' on input line 54.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tools/layout.sty
 Package: layout 2014/10/28 v1.2c Show layout parameters
-\oneinch=\count301
-\cnt@paperwidth=\count302
-\cnt@paperheight=\count303
-\cnt@hoffset=\count304
-\cnt@voffset=\count305
-\cnt@textheight=\count306
-\cnt@textwidth=\count307
-\cnt@topmargin=\count308
-\cnt@oddsidemargin=\count309
-\cnt@evensidemargin=\count310
-\cnt@headheight=\count311
-\cnt@headsep=\count312
-\cnt@marginparsep=\count313
-\cnt@marginparwidth=\count314
-\cnt@marginparpush=\count315
-\cnt@footskip=\count316
-\fheight=\count317
-\ref@top=\count318
-\ref@hoffset=\count319
-\ref@voffset=\count320
-\ref@head=\count321
-\ref@body=\count322
-\ref@foot=\count323
-\ref@margin=\count324
-\ref@marginwidth=\count325
-\ref@marginpar=\count326
-\Interval=\count327
-\ExtraYPos=\count328
-\PositionX=\count329
-\PositionY=\count330
-\ArrowLength=\count331
+\oneinch=\count302
+\cnt@paperwidth=\count303
+\cnt@paperheight=\count304
+\cnt@hoffset=\count305
+\cnt@voffset=\count306
+\cnt@textheight=\count307
+\cnt@textwidth=\count308
+\cnt@topmargin=\count309
+\cnt@oddsidemargin=\count310
+\cnt@evensidemargin=\count311
+\cnt@headheight=\count312
+\cnt@headsep=\count313
+\cnt@marginparsep=\count314
+\cnt@marginparwidth=\count315
+\cnt@marginparpush=\count316
+\cnt@footskip=\count317
+\fheight=\count318
+\ref@top=\count319
+\ref@hoffset=\count320
+\ref@voffset=\count321
+\ref@head=\count322
+\ref@body=\count323
+\ref@foot=\count324
+\ref@margin=\count325
+\ref@marginwidth=\count326
+\ref@marginpar=\count327
+\Interval=\count328
+\ExtraYPos=\count329
+\PositionX=\count330
+\PositionY=\count331
+\ArrowLength=\count332
 )
 (c:/w32tex/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
@@ -2755,11 +2773,11 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 (c:/w32tex/share/texmf-dist/tex/latex/pdfpages/ppdvipdfmx.def
 File: ppdvipdfmx.def 2017/01/14 v0.5h Pdfpages driver for dvipdfmx (AM)
 )
-\AM@pagebox=\box106
+\AM@pagebox=\box107
 \AM@global@opts=\toks48
 \AM@toc@title=\toks49
-\c@AM@survey=\count332
-\AM@templatesizebox=\box107
+\c@AM@survey=\count333
+\AM@templatesizebox=\box108
 )
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
@@ -2772,15 +2790,15 @@ Package: l3regex 2017/02/10 v6878 L3 Experimental regular expressions
 
 (c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
 Package: l3tl-build 2017/02/10 v6878 L3 Experimental token list construction
-\l__tl_build_start_index_int=\count333
-\l__tl_build_index_int=\count334
+\l__tl_build_start_index_int=\count334
+\l__tl_build_index_int=\count335
 )
 (c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
 Package: l3tl-analysis 2016/12/28 v6805 L3 Experimental token lists analysis
-\l__tl_analysis_normal_int=\count335
-\l__tl_analysis_index_int=\count336
-\l__tl_analysis_nesting_int=\count337
-\l__tl_analysis_type_int=\count338
+\l__tl_analysis_normal_int=\count336
+\l__tl_analysis_index_int=\count337
+\l__tl_analysis_nesting_int=\count338
+\l__tl_analysis_type_int=\count339
 )
 (c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
 Package: l3flag 2017/02/10 v6878 L3 Experimental flags
@@ -2788,52 +2806,52 @@ Package: l3flag 2017/02/10 v6878 L3 Experimental flags
 (c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
 Package: l3str-convert 2016/12/28 v6805 L3 Experimental string encoding convers
 ions
-\l__str_internal_int=\count339
-\c__str_replacement_char_int=\count340
+\l__str_internal_int=\count340
+\c__str_replacement_char_int=\count341
 )
-\l__regex_internal_a_int=\count341
-\l__regex_internal_b_int=\count342
-\l__regex_internal_c_int=\count343
-\l__regex_balance_int=\count344
-\l__regex_group_level_int=\count345
-\l__regex_mode_int=\count346
-\l__regex_catcodes_int=\count347
-\l__regex_default_catcodes_int=\count348
-\c__regex_catcode_D_int=\count349
-\c__regex_catcode_S_int=\count350
-\c__regex_catcode_L_int=\count351
-\c__regex_catcode_O_int=\count352
-\c__regex_catcode_A_int=\count353
-\c__regex_all_catcodes_int=\count354
-\l__regex_show_lines_int=\count355
-\l__regex_min_state_int=\count356
-\l__regex_max_state_int=\count357
-\l__regex_left_state_int=\count358
-\l__regex_right_state_int=\count359
-\l__regex_capturing_group_int=\count360
-\l__regex_min_pos_int=\count361
-\l__regex_max_pos_int=\count362
-\l__regex_current_pos_int=\count363
-\l__regex_start_pos_int=\count364
-\l__regex_success_pos_int=\count365
-\l__regex_current_char_int=\count366
-\l__regex_current_catcode_int=\count367
-\l__regex_last_char_int=\count368
-\l__regex_case_changed_char_int=\count369
-\l__regex_current_state_int=\count370
-\l__regex_step_int=\count371
-\l__regex_min_active_int=\count372
-\l__regex_max_active_int=\count373
-\l__regex_replacement_csnames_int=\count374
-\l__regex_match_count_int=\count375
-\l__regex_submatch_int=\count376
-\l__regex_zeroth_submatch_int=\count377
+\l__regex_internal_a_int=\count342
+\l__regex_internal_b_int=\count343
+\l__regex_internal_c_int=\count344
+\l__regex_balance_int=\count345
+\l__regex_group_level_int=\count346
+\l__regex_mode_int=\count347
+\l__regex_catcodes_int=\count348
+\l__regex_default_catcodes_int=\count349
+\c__regex_catcode_D_int=\count350
+\c__regex_catcode_S_int=\count351
+\c__regex_catcode_L_int=\count352
+\c__regex_catcode_O_int=\count353
+\c__regex_catcode_A_int=\count354
+\c__regex_all_catcodes_int=\count355
+\l__regex_show_lines_int=\count356
+\l__regex_min_state_int=\count357
+\l__regex_max_state_int=\count358
+\l__regex_left_state_int=\count359
+\l__regex_right_state_int=\count360
+\l__regex_capturing_group_int=\count361
+\l__regex_min_pos_int=\count362
+\l__regex_max_pos_int=\count363
+\l__regex_current_pos_int=\count364
+\l__regex_start_pos_int=\count365
+\l__regex_success_pos_int=\count366
+\l__regex_current_char_int=\count367
+\l__regex_current_catcode_int=\count368
+\l__regex_last_char_int=\count369
+\l__regex_case_changed_char_int=\count370
+\l__regex_current_state_int=\count371
+\l__regex_step_int=\count372
+\l__regex_min_active_int=\count373
+\l__regex_max_active_int=\count374
+\l__regex_replacement_csnames_int=\count375
+\l__regex_match_count_int=\count376
+\l__regex_submatch_int=\count377
+\l__regex_zeroth_submatch_int=\count378
 )
 (c:/w32tex/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2016/12/20 v1.1 interfaceforuprightgreeklettersforuseinchemi
 stry (CN)
-\l__chemgreek_tmpa_int=\count378
-\g__chemgreek_tmpa_int=\count379
+\l__chemgreek_tmpa_int=\count379
+\g__chemgreek_tmpa_int=\count380
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -2885,7 +2903,7 @@ stry (CN)
 . Defining command \selectchemgreekmapping with sig. 'm' on line 491.
 .................................................
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count380
+\l__mhchem_ce_distanceFromLastComma_int=\count381
 \__mhchem_arrow_extPgfLength_skip=\skip86
 \mhchem@minispace@tmp=\skip87
 \mhchem@minibackspace@tmp=\skip88
@@ -2896,7 +2914,7 @@ stry (CN)
 \mhchem@smallbondwidth=\skip93
 \mhchem@bondtmp@minussidebearingleft=\skip94
 \mhchem@bondtmp@minussidebearingright=\skip95
-\l__mhchem_option_version_int=\count381
+\l__mhchem_option_version_int=\count382
 \mhchem@option@minusmathsidebearingleft=\dimen328
 \mhchem@option@minusmathsidebearingright=\dimen329
 \mhchem@option@minustextsidebearingleft=\dimen330
@@ -2916,17 +2934,17 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 9.5822pt on input line 208.
 )
-\CF@cnt@atomingroup=\count382
-\CF@cnt@groupnumber=\count383
-\CF@cnt@atomnumber=\count384
-\CF@cnt@cycle=\count385
+\CF@cnt@atomingroup=\count383
+\CF@cnt@groupnumber=\count384
+\CF@cnt@atomnumber=\count385
+\CF@cnt@cycle=\count386
 \CF@dim=\dimen336
-\CF@lewis@box=\box108
-\CF@box@boxa=\box109
-\CF@box@boxb=\box110
-\CF@stuff@box=\box111
+\CF@lewis@box=\box109
+\CF@box@boxa=\box110
+\CF@box@boxb=\box111
+\CF@stuff@box=\box112
 \CF@unused=\write7
-\CF@compound@cnt=\count386
+\CF@compound@cnt=\count387
 \CF@arrow@size=\dimen337
 )
 Package: chemfig 2015/12/01 v1.2d Draw molecule with an easy syntax
@@ -2952,7 +2970,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count387
+\c@abspage=\count388
 Package zref Info: New property: abspage on input line 62.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
@@ -2962,142 +2980,34 @@ Package zref Info: New property list: LastPage on input line 55.
 (c:/w32tex/share/texmf-dist/tex/latex/media9/pdfbase.sty
 Package: pdfbase 2017/01/24 v0.13 driver independent access to low-level PDF fe
 atures
-\g@pbs@page@int=\count388
-\g_pbs_obj_int=\count389
-\g_pbs_oc_int=\count390
+\g@pbs@page@int=\count389
+\g_pbs_obj_int=\count390
+\g_pbs_oc_int=\count391
 )
 (c:/w32tex/share/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2016/03/11 v0.6 support package for ocgx2.sty
 )
-\@anim@box=\box112
-\@anim@measbox=\box113
+\@anim@box=\box113
+\@anim@measbox=\box114
 \@anim@tmpdima=\dimen338
 \@anim@tmpdimb=\dimen339
-\@anim@num=\count391
-\@anim@curframe=\count392
-\@anim@curframe@zb=\count393
-\@anim@resizeflags=\count394
-\@anim@skipfram=\count395
-\@anim@mulframecnt=\count396
+\@anim@num=\count392
+\@anim@curframe=\count393
+\@anim@curframe@zb=\count394
+\@anim@resizeflags=\count395
+\@anim@skipfram=\count396
+\@anim@mulframecnt=\count397
 \@anim@@tmlnfile=\read5
-\@anim@tmpcnt=\count397
-\c@@anim@ltxcnt=\count398
-\@anim@curlayer=\count399
-\@anim@lineno=\count400
-\@anim@curfield=\count401
-\@anim@@resizeflags=\count402
+\@anim@tmpcnt=\count398
+\c@@anim@ltxcnt=\count399
+\@anim@curlayer=\count400
+\@anim@lineno=\count401
+\@anim@curfield=\count402
+\@anim@@resizeflags=\count403
 )
-\tcfs@boxa=\box114
-\tcfs@boxb=\box115
-)
-(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '4.11'
-\tcb@waterbox=\box116
-(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.11'
-)) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '4.11'
-(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
-Library (tcolorbox): 'tcblistingscore.code.tex' version '4.11'
-(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '4.11'
-(c:/w32tex/share/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 69.
+\tcfs@boxa=\box115
+\tcfs@boxb=\box116
 ))
-\c@tcblisting=\count403
-))
-(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbdocumentation.code.tex
-Library (tcolorbox): 'tcbdocumentation.code.tex' version '4.11'
-(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
-Library (tcolorbox): 'tcbxparse.code.tex' version '4.11'
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tcboxverb with sig. ' O{} v ' on line 128.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tcbsidebyside with sig. ' +O{} +m +m ' on line 280.
-.................................................
-) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
-Library (tcolorbox): 'tcbexternal.code.tex' version '4.11'
-) (c:/w32tex/share/texmf-dist/tex/latex/psnfss/pifont.sty
-Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
-
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . . . )
-LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
- (c:/w32tex/share/texmf-dist/tex/latex/psnfss/upzd.fd
-File: upzd.fd 2001/06/04 font definitions for U/pzd.
-)
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . . . )
-LaTeX Font Info:    Try loading font information for U+psy on input line 64.
- (c:/w32tex/share/texmf-dist/tex/latex/psnfss/upsy.fd
-File: upsy.fd 2001/06/04 font definitions for U/psy.
-))
-(c:/w32tex/share/texmf-dist/tex/latex/marvosym/marvosym.sty
-Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
-)
-(c:/w32tex/share/texmf-dist/tex/latex/base/makeidx.sty
-Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-)
-(c:/w32tex/share/texmf-dist/tex/latex/marginnote/marginnote.sty
-Package: marginnote 2016/10/21 v1.2a non floating margin notes for LaTeX
-\c@mn@abspage=\count404
-)
-.................................................
-. LaTeX info: "xparse/define-environment"
-. 
-. Defining environment 'docKey' with sig. ' O{} +O{} m m +m ' on line 347.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \docAuxCommand with sig. 'sm' on line 362.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \docAuxEnvironment with sig. 'sm' on line 367.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \docAuxKey with sig. 'sO{}m' on line 376.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \docColor with sig. 'sm' on line 381.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \docCounter with sig. 'sm' on line 386.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \docLength with sig. 'sm' on line 391.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \docValue with sig. 'sm' on line 396.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tcb@ref@doc with sig. 'msm' on line 406.
-.................................................
-)
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 48.
-Package hyperref Info: Option `colorlinks' set `true' on input line 48.
-Package hyperref Info: Option `setpagesize' set `false' on input line 48.
-)
 
 LaTeX Warning: Unused global option(s):
     [14Q].
@@ -3163,7 +3073,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/w32tex/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count405
+\c@section@level=\count404
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -3174,7 +3084,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 \openout8 = `TeXmanual.out'.
 
  ABD: EveryShipout initializing macros
-\c@lstlisting=\count406
+\c@lstlisting=\count405
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -3187,10 +3097,7 @@ Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 . 
 . Activating mapping `default' on line 3.
 .................................................
-Package marginnote Info: either \pdflastxpos or \pdfoutput not available
-(marginnote)             or \pdfoutput set to 0.
-(marginnote)             Extended position detection mode deactivated.
-\c__siunitx_mathsf_int=\count407
+\c__siunitx_mathsf_int=\count406
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
 
 
@@ -3246,7 +3153,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmss on input line 3.
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c__siunitx_mathtt_int=\count408
+\c__siunitx_mathtt_int=\count407
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
@@ -4802,12 +4709,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
  ) 
 Here is how much of TeX's memory you used:
- 47737 strings out of 493671
- 932802 string characters out of 6151255
- 1111185 words of memory out of 5000000
- 49921 multiletter control sequences out of 15000+600000
- 117894 words of font info for 225 fonts, out of 8000000 for 9000
+ 46760 strings out of 493671
+ 913722 string characters out of 6151255
+ 1093801 words of memory out of 5000000
+ 48994 multiletter control sequences out of 15000+600000
+ 117204 words of font info for 223 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 84i,21n,163p,10478b,3109s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 84i,21n,163p,10478b,3111s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on TeXmanual.dvi (89 pages, 919120 bytes).
+Output written on TeXmanual.dvi (89 pages, 916040 bytes).
