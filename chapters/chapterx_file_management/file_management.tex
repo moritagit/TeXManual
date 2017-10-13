@@ -64,7 +64,7 @@
 今いるディレクトリより上のファイルを指定するときは「../ファイル名」とします。
 上や下に行った数だけ「/」が書かれることになります
 
-ここで，windowsではパスの区切りが円マーク（￥）や
+ここで，windowsではパスの区切りが円マーク（\textyen）や
 バックスラッシュ（\verb|\|）となっていますが，
 {\TeX}でのパスの区切りは全てスラッシュ（/）ですので，
 注意してください。
@@ -278,7 +278,9 @@ docmuteパッケージを用いれば，
 その場合は，第\ref{ch:packages}章\ref{sec:install-packages}節を見て
 自分でインストールしてもよいですが，
 後のstandaloneパッケージがほぼdocmuteの上位互換となっているので，
-そちらを使ってもよいと思います。
+そちらを使った方がよいと思います。
+とりあえずこれはシンプルなパッケージなので，
+わかりやすい説明のために取り上げておきます。
 
 使い方を説明します。
 main.texの中身が以下のようになっているとします。
@@ -395,7 +397,7 @@ main.texの中身は上と同じとしますので，省略します。
 
 ドキュメントクラスにはstandaloneを指定し，
 オプションでclass=jsarticle等とします。
-jsarticle等につけるオプション（dcipdfmxやa4paper等）も普通につけることができます。
+jsarticle等につけるオプション（dvipdfmxやa4paper等）も普通につけることができます。
 crop=flaseやpreview=falseですが，
 僕はよくわからないまま使っているので是非自分で調べてみて下さい。
 
@@ -427,6 +429,21 @@ subpreamblesオプションを外してください。
 「\href{https://ja.sharelatex.com/learn/Multi-file_LaTeX_projects}{Multi-file LaTeX projects}」
 を参考にしました。\\
 
+\noindent
+※エラーのメモ \par
+\verb|\usepackage[subpreambles=true]{standalone}|としているとき，
+コンパイル時に.staファイルが生成される。
+この.staファイルには子のプリアンブルが書き込まれ，
+それがmainで読み込まれるという仕様になっているようだ。
+ただ，この.staファイル，
+コンパイルエラーが起きたときに
+\verb|\endstandalonepreambles|というコマンドを書き込まずに閉じてしまい，
+その次のコンパイルから「l543.   \}」で始まるエラーが毎回起こるようになる。
+.staファイルを削除するか\verb|\endstandalonepreambles|を
+.staファイルの最後に書き足せばエラーはなくなるが，
+これではかなり面倒である。
+当面，importが使えるパッケージとしての有用性を発揮してもらうだけになりそうだ。
+\\
 
 上の全てのパッケージを通して，
 子のchapter1.tex等で使った他ファイルへの参照となる\verb|\ref|は

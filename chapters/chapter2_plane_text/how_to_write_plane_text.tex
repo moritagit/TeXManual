@@ -1,5 +1,8 @@
 %第2章
 %特殊文字が不十分
+\documentclass[class=jreport, crop=false, preview=false, dvipdfmx, fleqn]{standalone}
+\usepackage{../../preamble/preamble_TeXManual}
+\begin{document}
 \chapter{文書の書き方}
 \label{ch:plane-text}
 
@@ -36,7 +39,7 @@ Hello, \TeX !
 
 まず，コードの書き方についてです。
 {\TeX}の命令は，キーボードの右上と右下にある\verb|\|で始めます
-（windowsでは円マーク￥になります）。
+（windowsでは円マーク{\textyen}になります）。
 \verb|\|から始めた部分は，
 何かの処理（例えば{\TeX}という合成文字を出力するなど）をするためのものであり，
 そのまま出力されるわけではありません。
@@ -54,7 +57,7 @@ Hello, \TeX !
 最後に，\verb|\documentclass{jsarticle}|と\verb|\begin{document}|の間ですが，
 ここのことを「プリアンブル」といいます。
 今回の例では何も書いてありませんが，
-ページレイアウトなどのオプションはここで設定することが多いです。\\
+ページレイアウトなどのオプションはここで設定することが多いです。
 
 
 
@@ -94,7 +97,7 @@ Hello, \TeX !
 なにぬねの
 \end{IOtcb}
 
-{\TeX}ファイル中では改行や半角スペース，タブは無視されてしまいます。
+{\TeX}ファイル中では改行や半角スペース，タブは普通には出力されません。
 普通に改行をしても出力に反映されないので，\verb|\\|という命令で改行するのです。
 
 
@@ -112,12 +115,12 @@ Hello, \TeX !
 コマンドには色々な種類があり，自分で命令を作ることも可能です。
 例えば，{\LaTeX}という文字は\verb|\LaTeX|というコマンドによって出力されます。
 
-先ほど書いたように，コマンドの前後には半角スペースを入れて使うのが安全です。
+先ほど書いたように，コマンドの後ろには半角スペースを入れて使うのが安全です。
 半角スペースを入れずに打ってしまうと，
 続く文まで命令の一章とみなされエラーしてしまうので注意してください。
-{\TeX}では半角スペースは無視されるので，これは区切りのために使われ，出力はされません。
-また，英語の文章中などに{\LaTeX}と打ちたければ，
-コマンドの後に半角スペースを出力するコマンド\verb*|\ |を使います。
+{\TeX}ではコマンドの後の半角スペースは区切りのために使われ，出力はされません。
+この仕様により，英語の文章中などに{\LaTeX}と打ちたければ，
+コマンドの後に半角スペースを出力するコマンド\verb*|\ |を使わなければいけません。
 これを入れずにただスペースを入れただけでは，
 コマンドの出力と単語の間が詰まってしまいますので気を付けて下さい。
 
@@ -213,7 +216,7 @@ Let's enjoy \LaTeX command ! \\
 \vspace*{5pt}
 \end{IOtcb}
 
-タイトルや節の細かい設定（例えば節番号を{\S}4にしたいなど）は後々ページレイアウトの章で扱います。
+タイトルや節の細かい設定（例えば節番号を{\S}4にしたいなど）は後々ページレイアウトの章で扱うと思います。
 
 
 
@@ -243,7 +246,7 @@ Let's enjoy \LaTeX command ! \\
 文書全体の文字サイズを変えたいときは，
 ドキュメントクラスにオプションをつけて指定します。
 \begin{ITeX}
-\documentclass[12pt]{jsarticle}|
+\documentclass[12pt]{jsarticle}
 \end{ITeX}
 
 
@@ -253,7 +256,7 @@ Let's enjoy \LaTeX command ! \\
 とりあえず押さえておきたいものだけ下にまとめます。
 
 \begin{table}[H]
-\begin{center}
+\centering
 \label{basic-fonts}
 \begin{tabular}{lll}
 \verb|\textrm{Roman}| & {\textrm{Roman}} & 本文（デフォルト） \\
@@ -261,7 +264,6 @@ Let's enjoy \LaTeX command ! \\
 \verb|\textit{Italic}| & {\textit{Italic}} & 強調（斜体） \\
 \verb|\textgt{ゴシック}| & {\textgt{ゴシック}} & 見出し
 \end{tabular}
-\end{center}
 \end{table}
 
 なお，文字サイズは指定したところだけ変更したい場合，
@@ -312,7 +314,7 @@ Let's enjoy \LaTeX command ! \\
 \subsection{そのまま出力する方法}
 前小節でどの文字が打てないのかはわかりましたので，
 今度はそれらを文章中に入れたいときにどうしたらいいかを説明しようと思います
-（もちろん一々\verb|\|をつけても出力はできますが，面倒です）。
+（もちろんいちいち\verb|\|をつけても出力はできますが，面倒です）。
 
 打ちたい記号が数文字程度なら，
 \begin{ITeX}
@@ -324,8 +326,7 @@ Let's enjoy \LaTeX command ! \\
 打ちたいものが複数行に渡る場合は，
 それらを\verb|\begin{verbatim}|と\verb|\end{verbatim}|で囲えばOKです。
 
-\begin{IOtcb}
-\begin{verbatim*}
+\begin{IOTeX}
 \verb|#!|
 
 \begin{verbatim}
@@ -334,20 +335,8 @@ Let's enjoy \LaTeX command ! \\
 Hello \TeX !
 
 \end{verbatim}
-\end{verbatim*}
-\tcblower
+\end{IOTeX}
 
-\begin{verbatim}
-
-#!
-
-\documentclass{jsarticle}
-Hello \TeX !
-
-\end{verbatim}
-\end{IOtcb}
-
-僕のこの入力・出力を示す表の入力側もこのverbatimを使っています。
 なお，半角スペースを示す「\verb*| |」を出力したいときは，
 \verb|\verb*| や \verb*|\begin{verbatim*}|，\verb|\end{verbatim*}|
 のように，「*」をつけてください。
@@ -371,7 +360,6 @@ Hello \TeX !
 これを書くと改行も無視されますので，それも頭に入れて使ってください。
 必要に応じてコメントを入れて，
 編集し直しやすいように文書を作るのをおすすめします。
-
 \begin{IOTeX}
 あいうえお		%ここはコメント
 かきくけこ
@@ -381,6 +369,35 @@ Hello \TeX !
 
 %なにぬねの
 \end{IOTeX}
+
+また，例えばよくわからないエラーが出るなどの理由で複数行をコメントアウトしたいときもあるかと思います。
+そのときは，commentパッケージのcomment環境を使ってみましょう。
+まずはプリアンブル（\verb|\documentclass|と\verb|\begin{document}|の間）に
+\begin{ITeX}
+\usepackage{comment}
+\end{ITeX}
+と書いてください。
+そして，コメントアウトしたい部分をcomment環境に入れて
+\begin{IOtcb}
+\begin{verbatim}
+ここは出力される。\\
+ここも。
+\begin{comment}
+ここは出力されない。
+ここも。
+なんでも書ける
+\aaaaaaaaaaaa
+エラーもしない。
+\end{comment}
+\end{verbatim}
+\tcblower
+ここは出力される。\\
+ここも。
+\end{IOtcb}
+のようにすればOKです。
+ただ，\verb|\end{comment}|の直後に{\%}を入れるとエラーするようなので，
+そこだけは気を付けて下さい
+（また，listings系とも相性が悪いようです）。
 
 
 
@@ -394,9 +411,11 @@ Hello \TeX !
 \verb|\footnote{...}|の後の半角スペースを忘れないようにしてください
 （もしくは\verb|{}|でくくってください）。
 
-
 次に欄外の書き込みについてですが，
-これは\verb|\marginpar{欄外だよ～}|\marginpar{欄外だよ～} のように書けば出力できます。
+これは\verb|\marginpar{欄外だよ～}|%\marginpar{欄外だよ～}
+のように書けば出力できます
+（ちょっとエラーしてるので省いておきます）
+。
 しかし，ドキュメントクラスがjsarticleだと欄外部分はあんまり広くないので，
 これを使いたいならページレイアウトをいじるか，
 ドキュメントクラスを変えるかしてください
@@ -417,7 +436,9 @@ cm & センチメートル & $\SI{1}{cm} = \SI{10}{mm} = \SI{0.3937}{in} = \SI{2
 mm & ミリメートル &  \\
 in & インチ & $\SI{1}{in} = \SI{2.54}{cm}$ \\
 pt & ポイント & $\SI{1}{pt}  = \SI{1/72.27}{in} = \SI{0.03515898}{cm}$ \\
-zw & 全角width & $\SI{1}{zw} = \SI{9.2469}{pt} = \SI{0.32499}{cm}$
+zw & 全角width & $\SI{1}{zw} = \SI{9.2469}{pt} = \SI{0.32499}{cm}$ \\
+Q & 級 & $\SI{1}{Q} = \SI{0.25}{mm}$ \\
+H & 歯 & $\SI{1}{H} = \SI{0.25}{mm}$
 \end{tabular}
 \end{center}
 \end{table}
@@ -444,6 +465,9 @@ zw & 全角width & $\SI{1}{zw} = \SI{9.2469}{pt} = \SI{0.32499}{cm}$
 （初期設定で{pdfp\LaTeX}になっていると思うので何もいじっていなければ使えます）。
 また，上の値はjsarticleでのものであり，jarticleでは\SI{9.62216}{pt}となります。
 
+QとHについてですが，これらは和製の書籍の組版でよく使われる単位です。
+文字\SI{14}{Q}，行送り\SI{30}{H}というのが大体の標準らしいです。
+
 
 
 \section{空白などの調整}
@@ -452,17 +476,24 @@ zw & 全角width & $\SI{1}{zw} = \SI{9.2469}{pt} = \SI{0.32499}{cm}$
 この節では空白の入れ方を説明します。
 
 なお，下で長さとした部分は，
-前節で挙げた単位の長さか長さを表すコマンドを入力してください。\\
+前節で挙げた単位の長さか長さを表すコマンドを入力してください。
 
 \begin{center}
 \begin{tabular}{ll}
 \verb*|\ | & 半角スペース \\
 \verb|~| & 改行されないスペース \\
+\verb|\quad| & 本文の文字と同じ大きさのスペース（本文\SI{10}{pt}なら\SI{10}{pt}） \\
+\verb|\qquad| & \verb|\quad|の2倍 \\
+\verb|\,| & \verb|\quad|の3/18ほど \\
+\verb|\>| & \verb|\quad|の4/18ほど（数式モード内のみ） \\
+\verb|\;| & \verb|\quad|の5/18ほど（数式モード内のみ） \\
+\verb|\!| & \verb|\quad|の$-3/18$ほど（数式モード内のみ） \\
 \verb|\hspace{長さ}| & 行頭・行末では出力されない水平方向の空白 \\
 \verb|\hspace*{長さ}| & 行頭・行末でも出力される水平方向の空白 \\
 \verb|\vspace{長さ}| & 行頭・行末では出力されない垂直方向の空白 \\
 \verb|\vspace*{長さ}| & 行頭・行末でも出力される垂直方向の空白 \\
-\verb|\fill| & いくらでも伸びる空白
+\verb|\hfill| & いくらでも伸びる空白（弱め） \\
+\verb|\hfill| & いくらでも伸びる空白（強め）
 \end{tabular}
 \end{center}
 
@@ -472,7 +503,7 @@ zw & 全角width & $\SI{1}{zw} = \SI{9.2469}{pt} = \SI{0.32499}{cm}$
 一般に改行は\verb|\\|，改段落は空行で行うことが多いです。
 ただ，明示的にコマンドで行いたいときは，
 以下の表のようにしてください。
-なお，インデントとは，段落の最初の頭下げのことです。\\
+なお，インデントとは，段落の最初の頭下げのことです。
 
 \begin{center}
 \begin{tabular}{ll}
@@ -621,3 +652,5 @@ rubyを使っている場合はそちらで対応してください。
 文字サイズやフォントの変更も含めて書けるようになりました。
 次章から平ではない部分の書き方を説明していこうと思います。
 
+
+\end{document}

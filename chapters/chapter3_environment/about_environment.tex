@@ -1,4 +1,7 @@
 %第3章
+\documentclass[class=jreport, crop=false, preview=false, dvipdfmx, fleqn]{standalone}
+\usepackage{../../preamble/preamble_TeXManual}
+\begin{document}
 \chapter{環境}
 
 先の章までで平の文書は打てるようになりました。
@@ -42,7 +45,7 @@ center環境 & 中央揃え
 \end{center}
 
 なお，1行なら，これらはそれぞれ，
-\verb|\raggedleft|，\verb|\centering|，\verb|\raggedright|
+\verb|\raggedright|，\verb|\centering|，\verb|\raggedleft|
 というコマンドでも実現できます。
 
 
@@ -177,3 +180,19 @@ center環境 & 中央揃え
 このオプション部分の\verb|\arabic*|は，他の\verb|\roman*|などにすることもできます。
 その際，*を忘れないようにしてください。 
 
+他の例ですが，例えば数字を丸で囲んで箇条書きにしたいときは，
+\begin{IOTeX*}
+\begin{enumerate}[label = \textcircled{\scriptsize \theenumi}]
+\item あ
+\item い
+\item う
+\end{enumerate}
+\end{IOTeX*}
+のようにしてください。
+なお，\verb|\textcircled{\scriptsize 数字}|で，
+とりあえず簡単ですが丸囲い数字を表現できます。
+emathの\verb|\maru|やotfパッケージの\verb|\ajMaru|などもっとキレイな丸はいっぱいあるので，
+拘る人は是非調べてみて下さい。
+
+
+\end{document}

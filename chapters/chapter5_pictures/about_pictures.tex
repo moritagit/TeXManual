@@ -1,4 +1,7 @@
 %第5章
+\documentclass[class=jreport, crop=false, preview=false, dvipdfmx, fleqn]{standalone}
+\usepackage{../../preamble/preamble_TeXManual}
+\begin{document}
 \chapter{図と色}
 \label{ch:pictures}
 
@@ -38,6 +41,7 @@
 \end{document}
 \end{ITeX}
 
+\verb|\documentclass|のオプションにdvipdfmxというものがあります。
 このdvipdfmxは，ドライバ名で，
 {p\TeX}，{up\TeX}で標準的に使われるドライバです。
 PDF，JPEG，PNG，EPS形式の図を扱うことができます。
@@ -116,6 +120,7 @@ units=6.2832 &
 このminipage環境は横幅を引数に取り，
 \begin{ITeX}
 \begin{minipage}{0.4\hsize}
+\centering
 \includegraphics{picture.pdf}
 \end{minipage}
 \end{ITeX}
@@ -132,6 +137,7 @@ units=6.2832 &
 
 \begin{ITeX}
 \begin{figure}
+\centering
 \includegraphics[width=10cm]{parabola.pdf}
 \caption{関数$y = x^2$のグラフ}
 \label{fig:parabolagraph}
@@ -146,7 +152,7 @@ units=6.2832 &
 2回出力すればよいです。
 この\verb|\label|や\verb|\ref|，
 2回実行する意味については
-相互参照やリンクを扱う第\ref{ch:reference-contents-link}章で詳しく扱います。
+相互参照やリンクを扱う第\ref{ch:references-contents-link}章で詳しく扱います。
 
 このfigure環境には以下のようなオプションがあります。
 
@@ -195,44 +201,38 @@ figure環境の中にminipage環境を作って，
 
 \begin{ITeX}
 \begin{figure}
-\begin{center}
+\centering
 \begin{minipage}{0.4\columnwidth}
-    \begin{center}
+    \centering
     \includegraphics[width=\columnwidth]{figure1.pdf}
-    \end{center}
     \caption{左側}
     \label{fig:left}
 \end{minipage}
 \begin{minipage}{0.4\columnwidth}
-    \begin{center}
+    \centering
     \includegraphics[width=\columnwidth]{figure2.pdf}
-    \end{center}
     \caption{右側（左と連関無し）}
     \label{fig:right}
 \end{minipage}
-\end{center}
 \end{figure}
 \end{ITeX}
 
 のようにすれば，次のようになります。
 
 \begin{figure}[H]
-\begin{center}
+\centering
 \begin{minipage}{0.4\columnwidth}
-	\begin{center}
+	\centering
 	\input{figures_for_pictures/fig_left_right}
-	\end{center}
 	\caption{左側}
 	\label{fig:left}
 \end{minipage}
 \begin{minipage}{0.4\columnwidth}
-	\begin{center}
+	\centering
 	\input{figures_for_pictures/fig_left_right}
-	\end{center}
 	\caption{右側（左と連関無し）}
 	\label{fig:right}
 \end{minipage}
-\end{center}
 \end{figure}
 
 なお，\verb|\columnwidth|は本文の幅を表します。
@@ -248,22 +248,19 @@ minipageをsubfigureに置き換えて，
 
 \begin{ITeX}
 \begin{figure}
-\begin{center}
+\centering
 \begin{subfigure}{0.4\columnwidth}
-    \begin{center}
+    \centering
     \includegraphics[width=\columnwidth]{figure1.pdf}
-    \end{center}
     \caption{左側}
     \label{fig:left}
 \end{subfigure}
 \begin{subfigure}{0.4\columnwidth}
-    \begin{center}
+    \centering
     \includegraphics[width=\columnwidth]{figure2.pdf}
-    \end{center}
     \caption{右側（左と連関無し）}
     \label{fig:right}
 \end{subfigure}
-\end{center}
 \caption{左右両方}
 \label{fig:left-and-right}
 \end{figure}
@@ -273,22 +270,19 @@ minipageをsubfigureに置き換えて，
 この出力は次のようになります。
 
 \begin{figure}[H]
-\begin{center}
+\centering
 \begin{subfigure}{0.4\columnwidth}
-    \begin{center}
+    \centering
 	\input{figures_for_pictures/fig_left_right}
-    \end{center}
     \caption{左側}
     \label{fig:left_sub}
 \end{subfigure}
 \begin{subfigure}{0.4\columnwidth}
-    \begin{center}
-	\input{figures_for_pictures/fig_left_right}
-    \end{center}
+    \centering
+    \input{figures_for_pictures/fig_left_right}
     \caption{右側（左と連関無し）}
     \label{fig:right_sub}
 \end{subfigure}
-\end{center}
 \caption{左右両方}
 \end{figure}
 
@@ -336,6 +330,7 @@ minipageをsubfigureに置き換えて，
 上に示した例に\verb|\vspace*{-intextsep}|とありますが，
 これはデフォルトで入る縦方向のスペース分上に戻す，という操作をしています。
 これを入れるとちょうどいいって話ですね。
+また，参考までに，文章との間に入るスペースは\verb|\columnsep|という長さになっています。
 
 なお，wrapfigには表の回り込み配置用にwraptable環境も用意されているので，
 必要ならば使ってみて下さい。
@@ -462,3 +457,5 @@ RGBについては，文字色の変更のときと同様，
 とします。
 \fcolorbox{orange}{lightcyan}{わくわく}
 
+
+\end{document}

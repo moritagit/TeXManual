@@ -1,0 +1,5 @@
+\begin{enumerate}[label = \textcircled{\scriptsize \theenumi}]
+\item あ
+\item い
+\item う
+\end{enumerate}

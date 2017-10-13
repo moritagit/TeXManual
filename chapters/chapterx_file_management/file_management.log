@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  25 SEP 2017 04:18
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  14 OCT 2017 03:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1596,7 +1596,7 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@ftn=\toks29
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2016/11/18 version 3.96 text color boxes
+Package: tcolorbox 2017/09/14 version 4.11 text color boxes
 
 (c:/w32tex/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -1876,7 +1876,11 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 Package: plistings 2015/12/07 v0.10 Japanese support of listings package
 \ltj@lst@frame@lslimit=\dimen290
 \lst@inputfile=\read4
-) (c:/w32tex/share/texmf-dist/tex/latex/caption/subcaption.sty
+) (c:/w32tex/share/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write6
+
+Excluding comment 'comment')
+(c:/w32tex/share/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 
 (c:/w32tex/share/texmf-dist/tex/latex/caption/caption.sty
@@ -2007,15 +2011,6 @@ braryangles.code.tex
 File: tikzlibraryangles.code.tex 2013/08/28 v3.0.1a (rcs-revision 1.1)
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarycalendar.code.tex
-File: tikzlibrarycalendar.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.3)
-
-(c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
-File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count295
-)))
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
 \pgf@layerbox@background=\box101
@@ -2032,6 +2027,15 @@ File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.te
 x
 File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+)))
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalendar.code.tex
+File: tikzlibrarycalendar.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.3)
+
+(c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
+File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
+\pgfcalendarcurrentjulian=\count295
 )))
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarymindmap.code.tex
@@ -2678,51 +2682,76 @@ LaTeX Info: Redefining \hbar on input line 50.
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
+(c:/w32tex/share/texmf-dist/tex/platex/japanese-otf/otf.sty
+Package: otf 2013/11/17 v1.7b6 psitau, u0.17 ttk
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 279.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
+(Font)                  JY1/mc/m/n --> JY1/hmc/m/n on input line 279.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/gt/m/n --> JY1/hmc/m/n on input line 279.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/hmc/m/n --> JY1/hmc/bx/n on input line 281.
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 282.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
+(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 282.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 282.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY1/hgt/m/n --> JY1/hgt/bx/n on input line 283.
+
+(c:/w32tex/share/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+Package: ajmacros 2005/12/25 13:52 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
+>
+\@tempcntc=\count299
+\@tempcntd=\count300
+\@tempcnte=\count301
+\@tempcntf=\count302
+))
+(c:/w32tex/share/texmf-dist/tex/platex/pxchfon/pxchfon.sty
+Package: pxchfon 2017/01/13 v0.8
+)
 (c:/w32tex/share/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldmincho=\mathgroup10
 LaTeX Info: Redefining \bm on input line 207.
 )
-
-Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 51.
-
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 51.
-Package hyperref Info: Option `colorlinks' set `true' on input line 51.
-Package hyperref Info: Option `setpagesize' set `false' on input line 51.
-) (c:/w32tex/share/texmf-dist/tex/latex/tools/layout.sty
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 53.
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
+Package hyperref Info: Option `setpagesize' set `false' on input line 53.
+)
+(c:/w32tex/share/texmf-dist/tex/latex/tools/layout.sty
 Package: layout 2014/10/28 v1.2c Show layout parameters
-\oneinch=\count299
-\cnt@paperwidth=\count300
-\cnt@paperheight=\count301
-\cnt@hoffset=\count302
-\cnt@voffset=\count303
-\cnt@textheight=\count304
-\cnt@textwidth=\count305
-\cnt@topmargin=\count306
-\cnt@oddsidemargin=\count307
-\cnt@evensidemargin=\count308
-\cnt@headheight=\count309
-\cnt@headsep=\count310
-\cnt@marginparsep=\count311
-\cnt@marginparwidth=\count312
-\cnt@marginparpush=\count313
-\cnt@footskip=\count314
-\fheight=\count315
-\ref@top=\count316
-\ref@hoffset=\count317
-\ref@voffset=\count318
-\ref@head=\count319
-\ref@body=\count320
-\ref@foot=\count321
-\ref@margin=\count322
-\ref@marginwidth=\count323
-\ref@marginpar=\count324
-\Interval=\count325
-\ExtraYPos=\count326
-\PositionX=\count327
-\PositionY=\count328
-\ArrowLength=\count329
+\oneinch=\count303
+\cnt@paperwidth=\count304
+\cnt@paperheight=\count305
+\cnt@hoffset=\count306
+\cnt@voffset=\count307
+\cnt@textheight=\count308
+\cnt@textwidth=\count309
+\cnt@topmargin=\count310
+\cnt@oddsidemargin=\count311
+\cnt@evensidemargin=\count312
+\cnt@headheight=\count313
+\cnt@headsep=\count314
+\cnt@marginparsep=\count315
+\cnt@marginparwidth=\count316
+\cnt@marginparpush=\count317
+\cnt@footskip=\count318
+\fheight=\count319
+\ref@top=\count320
+\ref@hoffset=\count321
+\ref@voffset=\count322
+\ref@head=\count323
+\ref@body=\count324
+\ref@foot=\count325
+\ref@margin=\count326
+\ref@marginwidth=\count327
+\ref@marginpar=\count328
+\Interval=\count329
+\ExtraYPos=\count330
+\PositionX=\count331
+\PositionY=\count332
+\ArrowLength=\count333
 )
 (c:/w32tex/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
@@ -2742,11 +2771,178 @@ File: ppdvipdfmx.def 2017/01/14 v0.5h Pdfpages driver for dvipdfmx (AM)
 \AM@pagebox=\box106
 \AM@global@opts=\toks48
 \AM@toc@title=\toks49
-\c@AM@survey=\count330
+\c@AM@survey=\count334
 \AM@templatesizebox=\box107
 )
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(c:/w32tex/share/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2017/01/16 v4.06 for typesetting chemical formulae
+
+(c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
+Package: l3regex 2017/02/10 v6878 L3 Experimental regular expressions
+
+(c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
+Package: l3tl-build 2017/02/10 v6878 L3 Experimental token list construction
+\l__tl_build_start_index_int=\count335
+\l__tl_build_index_int=\count336
+)
+(c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
+Package: l3tl-analysis 2016/12/28 v6805 L3 Experimental token lists analysis
+\l__tl_analysis_normal_int=\count337
+\l__tl_analysis_index_int=\count338
+\l__tl_analysis_nesting_int=\count339
+\l__tl_analysis_type_int=\count340
+)
+(c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
+Package: l3flag 2017/02/10 v6878 L3 Experimental flags
+)
+(c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
+Package: l3str-convert 2016/12/28 v6805 L3 Experimental string encoding convers
+ions
+\l__str_internal_int=\count341
+\c__str_replacement_char_int=\count342
+)
+\l__regex_internal_a_int=\count343
+\l__regex_internal_b_int=\count344
+\l__regex_internal_c_int=\count345
+\l__regex_balance_int=\count346
+\l__regex_group_level_int=\count347
+\l__regex_mode_int=\count348
+\l__regex_catcodes_int=\count349
+\l__regex_default_catcodes_int=\count350
+\c__regex_catcode_D_int=\count351
+\c__regex_catcode_S_int=\count352
+\c__regex_catcode_L_int=\count353
+\c__regex_catcode_O_int=\count354
+\c__regex_catcode_A_int=\count355
+\c__regex_all_catcodes_int=\count356
+\l__regex_show_lines_int=\count357
+\l__regex_min_state_int=\count358
+\l__regex_max_state_int=\count359
+\l__regex_left_state_int=\count360
+\l__regex_right_state_int=\count361
+\l__regex_capturing_group_int=\count362
+\l__regex_min_pos_int=\count363
+\l__regex_max_pos_int=\count364
+\l__regex_current_pos_int=\count365
+\l__regex_start_pos_int=\count366
+\l__regex_success_pos_int=\count367
+\l__regex_current_char_int=\count368
+\l__regex_current_catcode_int=\count369
+\l__regex_last_char_int=\count370
+\l__regex_case_changed_char_int=\count371
+\l__regex_current_state_int=\count372
+\l__regex_step_int=\count373
+\l__regex_min_active_int=\count374
+\l__regex_max_active_int=\count375
+\l__regex_replacement_csnames_int=\count376
+\l__regex_match_count_int=\count377
+\l__regex_submatch_int=\count378
+\l__regex_zeroth_submatch_int=\count379
+)
+(c:/w32tex/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+Package: chemgreek 2016/12/20 v1.1 interfaceforuprightgreeklettersforuseinchemi
+stry (CN)
+\l__chemgreek_tmpa_int=\count380
+\g__chemgreek_tmpa_int=\count381
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newchemgreekmapping with sig. 'O{}mm' on line 336.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \renewchemgreekmapping with sig. 'O{}mm' on line 339.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \declarechemgreekmapping with sig. 'O{}mm' on line 342.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newchemgreekmappingalias with sig. 'mm' on line 347.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \renewchemgreekmappingalias with sig. 'mm' on line 350.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \declarechemgreekmappingalias with sig. 'mm' on line 353.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \changechemgreeksymbol with sig. 'mmmm' on line 383.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \chemgreekmappingsymbol with sig. 'mm' on line 477.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \activatechemgreekmapping with sig. 'sm' on line 486.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \selectchemgreekmapping with sig. 'm' on line 491.
+.................................................
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count382
+\__mhchem_arrow_extPgfLength_skip=\skip86
+\mhchem@minispace@tmp=\skip87
+\mhchem@minibackspace@tmp=\skip88
+\mhchem@bondwidth=\skip89
+\mhchem@bondheight=\skip90
+\mhchem@smallbondwidth@tmpA=\skip91
+\mhchem@smallbondwidth@tmpB=\skip92
+\mhchem@smallbondwidth=\skip93
+\mhchem@bondtmp@minussidebearingleft=\skip94
+\mhchem@bondtmp@minussidebearingright=\skip95
+\l__mhchem_option_version_int=\count383
+\mhchem@option@minusmathsidebearingleft=\dimen328
+\mhchem@option@minusmathsidebearingright=\dimen329
+\mhchem@option@minustextsidebearingleft=\dimen330
+\mhchem@option@minustextsidebearingright=\dimen331
+)
+(c:/w32tex/share/texmf-dist/tex/latex/chemfig/chemfig.sty
+(c:/w32tex/share/texmf-dist/tex/generic/chemfig/chemfig.tex
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.cod
+e.tex
+File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
+\pgfarrowinset=\dimen332
+\pgfarrowlength=\dimen333
+\pgfarrowwidth=\dimen334
+\pgfarrowlinewidth=\dimen335
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 9.5822pt on input line 208.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 9.5822pt on input line 208.
+)
+\CF@cnt@atomingroup=\count384
+\CF@cnt@groupnumber=\count385
+\CF@cnt@atomnumber=\count386
+\CF@cnt@cycle=\count387
+\CF@dim=\dimen336
+\CF@lewis@box=\box108
+\CF@box@boxa=\box109
+\CF@box@boxb=\box110
+\CF@stuff@box=\box111
+\CF@unused=\write7
+\CF@compound@cnt=\count388
+\CF@arrow@size=\dimen337
+)
+Package: chemfig 2015/12/01 v1.2d Draw molecule with an easy syntax
 )
 (c:/w32tex/share/texmf-dist/tex/latex/0_added_packages/tcfaspin/tcfaspin.sty
 Package: tcfaspin 2017/06/18 v0.2a
@@ -2769,7 +2965,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count331
+\c@abspage=\count389
 Package zref Info: New property: abspage on input line 62.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
@@ -2779,187 +2975,55 @@ Package zref Info: New property list: LastPage on input line 55.
 (c:/w32tex/share/texmf-dist/tex/latex/media9/pdfbase.sty
 Package: pdfbase 2017/01/24 v0.13 driver independent access to low-level PDF fe
 atures
-\g@pbs@page@int=\count332
-\g_pbs_obj_int=\count333
-\g_pbs_oc_int=\count334
+\g@pbs@page@int=\count390
+\g_pbs_obj_int=\count391
+\g_pbs_oc_int=\count392
 )
 (c:/w32tex/share/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2016/03/11 v0.6 support package for ocgx2.sty
 )
-\@anim@box=\box108
-\@anim@measbox=\box109
-\@anim@tmpdima=\dimen328
-\@anim@tmpdimb=\dimen329
-\@anim@num=\count335
-\@anim@curframe=\count336
-\@anim@curframe@zb=\count337
-\@anim@resizeflags=\count338
-\@anim@skipfram=\count339
-\@anim@mulframecnt=\count340
+\@anim@box=\box112
+\@anim@measbox=\box113
+\@anim@tmpdima=\dimen338
+\@anim@tmpdimb=\dimen339
+\@anim@num=\count393
+\@anim@curframe=\count394
+\@anim@curframe@zb=\count395
+\@anim@resizeflags=\count396
+\@anim@skipfram=\count397
+\@anim@mulframecnt=\count398
 \@anim@@tmlnfile=\read5
-\@anim@tmpcnt=\count341
-\c@@anim@ltxcnt=\count342
-\@anim@curlayer=\count343
-\@anim@lineno=\count344
-\@anim@curfield=\count345
-\@anim@@resizeflags=\count346
+\@anim@tmpcnt=\count399
+\c@@anim@ltxcnt=\count400
+\@anim@curlayer=\count401
+\@anim@lineno=\count402
+\@anim@curfield=\count403
+\@anim@@resizeflags=\count404
 )
-\tcfs@boxa=\box110
-\tcfs@boxb=\box111
-)
-(c:/w32tex/share/texmf-dist/tex/latex/pythontex/pythontex.sty
-Package: pythontex 2016/07/21 v0.15 execute and typeset Python code and other l
-anguages
-
-(c:/w32tex/share/texmf-dist/tex/latex/fvextra/fvextra.sty
-Package: fvextra 2016/09/02 v1.2.1 fvextra - extensions and patches for fancyvr
-b
-
-(c:/w32tex/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2008/02/07
-
-Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
-<2008/02/07> (tvz)
-\FV@CodeLineNo=\count347
-\FV@InFile=\read6
-\FV@TabBox=\box112
-\c@FancyVerbLine=\count348
-\FV@StepNumber=\count349
-\FV@OutFile=\write6
-) (c:/w32tex/share/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
-)
-(c:/w32tex/share/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count350
-\output=\toks50
-\linenoprevgraf=\count351
-\linenumbersep=\dimen330
-\linenumberwidth=\dimen331
-\c@linenumber=\count352
-\c@pagewiselinenumber=\count353
-\c@LN@truepage=\count354
-\c@internallinenumber=\count355
-\c@internallinenumbers=\count356
-\quotelinenumbersep=\dimen332
-\bframerule=\dimen333
-\bframesep=\dimen334
-\bframebox=\box113
-LaTeX Info: Redefining \\ on input line 3056.
-)
-\c@FV@TrueTabGroupLevel=\count357
-\c@FV@TrueTabCounter=\count358
-\FV@TabBox@Group=\box114
-\FV@TmpLength=\skip86
-\c@FV@HighlightLinesStart=\count359
-\c@FV@HighlightLinesStop=\count360
-\FV@BreakIndent=\dimen335
-\FV@BreakSymbolSepLeft=\dimen336
-\FV@BreakSymbolSepRight=\dimen337
-\FV@BreakSymbolIndentLeft=\dimen338
-
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . . . )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 562.
- (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-\FV@BreakSymbolIndentRight=\dimen339
-\c@FancyVerbLineBreakLast=\count361
-\FV@LineBox=\box115
-\FV@LineIndentBox=\box116
-)
-(c:/w32tex/share/texmf-dist/tex/latex/xstring/xstring.sty
-(c:/w32tex/share/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write7
-\integerpart=\count362
-\decimalpart=\count363
-)
-Package: xstring 2013/07/29  v1.7b  String manipulations (C Tellechea)
-)
-(c:/w32tex/share/texmf-dist/tex/latex/pgfopts/pgfopts.sty
-Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks51
-\pgfopts@list@add@b@toks=\toks52
-)
-(c:/w32tex/share/texmf-dist/tex/latex/caption/newfloat.sty
-Package: newfloat 2015/09/17 v1.1-109 Defining new floating environments (AR)
-Package newfloat Info: Unsupported document class, or \@chapter 
-(newfloat)             was already redefined by another package.
-Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAu
-to {\Hy@chapapp *}\Hy@raisedlink {\hyper@anchorstart {\@currentHref }\hyper@anc
-horend }}\ifnum \c@secnumdepth >\m@ne \ltx@IfUndefined {if@mainmatter}\iftrue {
-\csname if@mainmatter\endcsname }\let \Hy@next \relax \fi \fi \Hy@next \Hy@org@
-chapter .
-Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\ifnum \c@secnumdepth >\
-m@ne \refstepcounter {chapter}\typeout {\@chapapp \space \thechapter \space \@c
-happos }\addcontentsline {toc}{chapter}{\protect \numberline {\@chapapp \thecha
-pter \@chappos }#1}\else \addcontentsline {toc}{chapter}{#1}\fi \chaptermark {#
-1}\addtocontents {lof}{\protect \addvspace {10\p@ }}\addtocontents {lot}{\prote
-ct \addvspace {10\p@ }}\@makechapterhead {#2}\@afterheading .
-Package newfloat Info: Trying Plan B...
-)
-\pytx@codefile=\write8
-\openout8 = `file_management.pytxcode'.
-
-\c@pytx@FancyVerbLineTemp=\count364
-\c@pytx@py@default@default=\count365
-\c@pytx@pycon@default@default=\count366
-\c@pytx@sympy@default@default=\count367
-\c@pytx@sympycon@default@default=\count368
-\c@pytx@pylab@default@default=\count369
-\c@pytx@pylabcon@default@default=\count370
-)
-(c:/w32tex/share/texmf-dist/tex/platex/japanese-otf/otf.sty
-Package: otf 2013/11/17 v1.7b6 psitau, u0.17 ttk
-LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 279.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
-(Font)                  JY1/mc/m/n --> JY1/hmc/m/n on input line 279.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY1/gt/m/n --> JY1/hmc/m/n on input line 279.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY1/hmc/m/n --> JY1/hmc/bx/n on input line 281.
-LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 282.
-LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
-(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 282.
-LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
-(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 282.
-LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
-(Font)                  JY1/hgt/m/n --> JY1/hgt/bx/n on input line 283.
-
-(c:/w32tex/share/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
-Package: ajmacros 2005/12/25 13:52 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
->
-\@tempcntc=\count371
-\@tempcntd=\count372
-\@tempcnte=\count373
-\@tempcntf=\count374
-))
-(c:/w32tex/share/texmf-dist/tex/platex/pxchfon/pxchfon.sty
-Package: pxchfon 2017/01/13 v0.8
+\tcfs@boxa=\box114
+\tcfs@boxb=\box115
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '3.96'
-\tcb@waterbox=\box117
+Library (tcolorbox): 'tcbskins.code.tex' version '4.11'
+\tcb@waterbox=\box116
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '3.96'
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.11'
 )) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '3.96'
+Library (tcolorbox): 'tcblistings.code.tex' version '4.11'
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
-Library (tcolorbox): 'tcblistingscore.code.tex' version '3.96'
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.11'
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '3.96'
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.11'
 (c:/w32tex/share/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
 ))
-\c@tcblisting=\count375
+\c@tcblisting=\count405
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbdocumentation.code.tex
-Library (tcolorbox): 'tcbdocumentation.code.tex' version '3.96'
+Library (tcolorbox): 'tcbdocumentation.code.tex' version '4.11'
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
-Library (tcolorbox): 'tcbxparse.code.tex' version '3.96'
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.11'
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -2971,16 +3035,12 @@ Library (tcolorbox): 'tcbxparse.code.tex' version '3.96'
 . Defining command \tcbsidebyside with sig. ' +O{} +m +m ' on line 280.
 .................................................
 ) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
-Library (tcolorbox): 'tcbexternal.code.tex' version '3.96'
+Library (tcolorbox): 'tcbexternal.code.tex' version '4.11'
 ) (c:/w32tex/share/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 63.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 63.
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
@@ -2999,54 +3059,58 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 (c:/w32tex/share/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2016/10/21 v1.2a non floating margin notes for LaTeX
-\c@mn@abspage=\count376
+\c@mn@abspage=\count406
 )
 .................................................
 . LaTeX info: "xparse/define-environment"
 . 
-. Defining environment 'docKey' with sig. ' O{} +O{} m m +m ' on line 341.
+. Defining environment 'docKey' with sig. ' O{} +O{} m m +m ' on line 347.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \docAuxCommand with sig. 'sm' on line 356.
+. Defining command \docAuxCommand with sig. 'sm' on line 362.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \docAuxEnvironment with sig. 'sm' on line 361.
+. Defining command \docAuxEnvironment with sig. 'sm' on line 367.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \docAuxKey with sig. 'sO{}m' on line 370.
+. Defining command \docAuxKey with sig. 'sO{}m' on line 376.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \docColor with sig. 'sm' on line 375.
+. Defining command \docColor with sig. 'sm' on line 381.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \docCounter with sig. 'sm' on line 380.
+. Defining command \docCounter with sig. 'sm' on line 386.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \docLength with sig. 'sm' on line 385.
+. Defining command \docLength with sig. 'sm' on line 391.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \docValue with sig. 'sm' on line 390.
+. Defining command \docValue with sig. 'sm' on line 396.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tcb@ref@doc with sig. 'msm' on line 400.
+. Defining command \tcb@ref@doc with sig. 'msm' on line 406.
 .................................................
-))
+)
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 48.
+Package hyperref Info: Option `colorlinks' set `true' on input line 48.
+Package hyperref Info: Option `setpagesize' set `false' on input line 48.
+)
 
 LaTeX Warning: Unused global option(s):
     [14Q].
@@ -3081,6 +3145,10 @@ LaTeX Font Info:    ... okay on input line 3.
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 3.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 3.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 3.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -3099,7 +3167,7 @@ File: siunitx-abbreviations.cfg 2017/02/01 v2.7c siunitx: Abbreviated units
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 3.
-\AtBeginShipoutBox=\box118
+\AtBeginShipoutBox=\box117
 Package hyperref Info: Link coloring ON on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -3108,19 +3176,19 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/w32tex/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count377
+\c@section@level=\count407
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
 
 (./file_management.out) (./file_management.out)
-\@outlinefile=\write9
-\openout9 = `file_management.out'.
+\@outlinefile=\write8
+\openout8 = `file_management.out'.
 
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count378
+\c@lstlisting=\count408
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -3128,18 +3196,17 @@ Package caption Info: End \AtBeginDocument code.
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 )
-No file pythontex-files-file_management/file_management.pytxmcr.
-Run PythonTeX to create it.
-Package newfloat Info: New float `listing' with options `fileext=lopytx' on inp
-ut line 3.
-\c@listing=\count379
-Package newfloat Info: float type `listing'=16 on input line 3.
-\c@sublisting=\count380
+.................................................
+. chemgreek info: "mapping-activated"
+. 
+. Activating mapping `default' on line 3.
+.................................................
 Package marginnote Info: either \pdflastxpos or \pdfoutput not available
 (marginnote)             or \pdfoutput set to 0.
 (marginnote)             Extended position detection mode deactivated.
-\c__siunitx_mathsf_int=\count381
+\c__siunitx_mathsf_int=\count409
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
+
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -3182,12 +3249,18 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
+(Font)              scaled to size 9.6222pt on input line 3.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
+(Font)              scaled to size 7.1204pt on input line 3.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
+(Font)              scaled to size 5.77332pt on input line 3.
 LaTeX Font Info:    Try loading font information for OT1+lmss on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c__siunitx_mathtt_int=\count382
+\c__siunitx_mathtt_int=\count410
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
@@ -3224,17 +3297,23 @@ LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
 (Font)              scaled to size 11.54663pt on input line 25.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 25.
-[1
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . . . )
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 51.
+ (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 67.
+
+(c:/w32tex/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [1
 
 
 ]
-Overfull \hbox (4.05411pt too wide) in paragraph at lines 87--91
-[]\JY1/hmc/m/n/10 色々解説してきましたが， 実際どのようにするのか見ないとかなり
-わかりづらいと思うので具体例を示し
- []
-
 File: figures_for_file_management/directory_example1.jpg Graphic file (type bmp
 )
+
 <figures_for_file_management/directory_example1.jpg>
 \openout4 = `file_management.listing'.
 
@@ -3277,20 +3356,9 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [2]
-Overfull \hbox (6.06567pt too wide) in paragraph at lines 128--133
-\JY1/hmc/m/n/10 改ページしたくないときは\T1/pcr/m/n/10 \input \JY1/hmc/m/n/10 
-を使ってください）。 これで \T1/ptm/m/n/10 main \JY1/hmc/m/n/10 を実行すれば， 
-これらを全部一緒の\T1/ptm/m/n/10 .tex
- []
-
-
-Overfull \hbox (0.58243pt too wide) in paragraph at lines 148--152
-[]\JY1/hmc/m/n/10 上では\T1/ptm/m/n/10 .tex \JY1/hmc/m/n/10 ファイルを全て同じ
-フォルダに入れていますが， 図が多かったりするときは章ごとにフォルダ
- []
-
 File: figures_for_file_management/directory_example2.jpg Graphic file (type bmp
 )
+
 <figures_for_file_management/directory_example2.jpg>
 File: figures_for_file_management/directory_example3.jpg Graphic file (type bmp
 )
@@ -3301,39 +3369,15 @@ File: figures_for_file_management/directory_example3.jpg Graphic file (type bmp
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-Overfull \hbox (66.95432pt too wide) in paragraph at lines 184--190
-\JY1/hmc/m/n/10 を読み込んでいる場合， それがそのまま \T1/ptm/m/n/10 main.tex \
-JY1/hmc/m/n/10 に書き込まれる形になるので， \T1/ptm/m/n/10 chap-ter1.tex \JY1/h
-mc/m/n/10 で書いた\T1/pcr/m/n/10 \includegraphics
- []
-
-[3]
-Overfull \hbox (17.75719pt too wide) in paragraph at lines 194--203
-\JY1/hmc/m/n/10 決可能で， \T1/ptm/m/n/10 chap-ter1.tex \JY1/hmc/m/n/10 内で他
-のファイルを読み込んでいるところ （\T1/pcr/m/n/10 \include\JY1/hmc/m/n/10 ， \T
-1/pcr/m/n/10 \input\JY1/hmc/m/n/10 ， \T1/pcr/m/n/10 \includegraphics
- []
-
+) [3]
 \openout4 = `file_management.listing'.
+
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-Overfull \hbox (1.59363pt too wide) in paragraph at lines 209--215
-[]\JY1/hmc/m/n/10 そこで， \T1/ptm/m/n/10 im-port \JY1/hmc/m/n/10 という便利な
-パッケージを使います。 まずは\T1/pcr/m/n/10 \usepackage{import}\JY1/hmc/m/n/10 
-とプリアンブルに
- []
-
-
-Overfull \hbox (3.80365pt too wide) in paragraph at lines 216--222
-[]\JY1/hmc/m/n/10 という \T1/ptm/m/n/10 2 \JY1/hmc/m/n/10 つのコマンドが定義さ
-れています。 この \T1/ptm/m/n/10 2 \JY1/hmc/m/n/10 つのコマンドで \T1/ptm/m/n/1
-0 chap-ter1.tex \JY1/hmc/m/n/10 を読み込むと， \T1/ptm/m/n/10 chap-ter1.tex
- []
-
 \openout4 = `file_management.listing'.
+
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -3344,36 +3388,17 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-Overfull \hbox (20.58218pt too wide) in paragraph at lines 257--265
-\JY1/hmc/m/n/10 ょっと不便です。 例えば， ファイルの一部を書き換え， それを出力
-して修正するというとき， その実行は \T1/ptm/m/n/10 main.tex
- []
-
-
-Overfull \hbox (8.86523pt too wide) in paragraph at lines 257--265
-\JY1/hmc/m/n/10 を用いて行わなければなりません。 このとき， 他のファイルごと実
-行すると実行時間がかなりかかりますが，
- []
-
-[4]
 \openout4 = `file_management.listing'.
 
- (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-Overfull \hbox (55.9251pt too wide) in paragraph at lines 268--275
-[]\T1/ptm/m/n/10 docmute \JY1/hmc/m/n/10 パッケージを用いれば， \T1/pcr/m/n/10 
-\input \JY1/hmc/m/n/10 と\T1/pcr/m/n/10 \include \JY1/hmc/m/n/10 されるファイル
-の\T1/pcr/m/n/10 \begin{document}\JY1/hmc/m/n/10 と\T1/pcr/m/n/10 \end{document
-}
- []
 
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [4]
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 9.6222pt on input line 278.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
 (Font)              scaled to size 9.6222pt on input line 278.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 278.
+
 
 LaTeX Warning: Reference `ch:packages' on page 5 undefined on input line 278.
 
@@ -3392,12 +3417,14 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-Overfull \hbox (8.86523pt too wide) in paragraph at lines 314--320
-\JY1/hmc/m/n/10 ているとそれぞれの実行結果が変わる可能性があります。 できるだけ
-同じプリアンブルを使うようにしてく
- []
-
 \openout4 = `file_management.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `file_management.listing'.
+
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -3414,48 +3441,21 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-Overfull \hbox (4.05414pt too wide) in paragraph at lines 356--359
-\JY1/hmc/m/n/10 プリアンブルを共有できるので， いちいち子のファイルでプリアンブ
-ルを書いたり読み込んだりする必要が
- []
-
-\openout4 = `file_management.listing'.
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
 \openout4 = `file_management.listing'.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [6]
-Overfull \hbox (4.05414pt too wide) in paragraph at lines 402--410
-\JY1/hmc/m/n/10 エラーしません。 他の子のファイルと共有しないようなプリアンブル
-は， 共有のプリアンブルでなく子のそ
- []
-
-
-Overfull \hbox (8.86523pt too wide) in paragraph at lines 421--425
-\JY1/hmc/m/n/10 の用途で使っているわけではないのであまりそちらには詳しくありま
-せん。 そちらの用途で使うとき用のオ
- []
-
-
-Overfull \hbox (1.20116pt too wide) in paragraph at lines 431--437
-\JY1/hmc/m/n/10 となりうまく表示されません。 \T1/ptm/m/n/10 main \JY1/hmc/m/n/1
-0 においてはちゃんと表示されるので基本的にはそこまで気にしなくて
- []
-
 
 AED: lastpage setting LastPage
 Package atenddvi Info: Last page = 7.
 [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 439.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 439.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 456.
  (./file_management.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 439.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 439.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 456.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
 Package rerunfilecheck Info: File `file_management.out' has not changed.
 (rerunfilecheck)             Checksum: C69D5C2157E19C103FCF2BCA51E6ACF3;843.
 
@@ -3464,12 +3464,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 45131 strings out of 493671
- 869549 string characters out of 6151255
- 1012525 words of memory out of 5000000
- 47858 multiletter control sequences out of 15000+600000
- 44482 words of font info for 99 fonts, out of 8000000 for 9000
+ 45820 strings out of 493671
+ 889887 string characters out of 6151255
+ 1057039 words of memory out of 5000000
+ 48543 multiletter control sequences out of 15000+600000
+ 44652 words of font info for 102 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 76i,12n,151p,10484b,3056s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 76i,12n,151p,10484b,3057s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on file_management.dvi (7 pages, 62744 bytes).
+Output written on file_management.dvi (7 pages, 66964 bytes).

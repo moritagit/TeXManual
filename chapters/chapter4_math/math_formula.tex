@@ -1,6 +1,10 @@
 %第4章
+\documentclass[class=jreport, crop=false, preview=false, dvipdfmx, fleqn]{standalone}
+\usepackage{../../preamble/preamble_TeXManual}
+\begin{document}
 \chapter{数式}
 \label{ch:formulas}
+
 この章では数式を扱いたいと思います。
 数式を打つために{\TeX}を使い始める人が大半だと思いますので，
 頑張っていきましょう。
@@ -30,7 +34,7 @@
 「amsmath, amssymb」というパッケージで拡張することができます。
 とりあえずプリアンブル（\verb|\documentclass|と\verb|\begin{document}|の間）に
 \begin{ITeX}
-\usepackage{amsmath, amssymb}|
+\usepackage{amsmath, amssymb}
 \end{ITeX}
 と書いてください。
 
@@ -61,7 +65,8 @@ $a_n$のように文字の右下につく文字を「下付き文字」と言い
 \verb|a_{ij}| & \rightarrow & a_{ij} \\
 \verb|{v_0}^2| & \rightarrow & {v_0}^2 \\
 \verb|\mathrm{^{1}_{1}H}| & \rightarrow & \mathrm{^{1}_{1}H} \\
-\verb|a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0| & \rightarrow & a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0
+\verb|a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0| & & \\
+\hfill \rightarrow a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 \\
 \end{array} \]
 
 
@@ -85,7 +90,7 @@ $+, -, =$はキーボードから打ったものをそのまま使えますが�
 \verb|\pm| & $\pm$ \\
 \verb|\mp| & $\mp$ \\
 \verb|\times| & $\times$ \\
-%\verb|\div| & $\div$ \\
+\verb|\div| & \textdiv \\
 \verb|*| & $*$ \\
 \verb|\circ| & $\circ$ \\
 \verb|\bullet| & $\bullet$ \\
@@ -174,7 +179,7 @@ amsmathパッケージを読み込むともっと多くの記号を使えるよ�
 平方根は\verb|\sqrt|というコマンドで出力できます。
 使い方は，
 \begin{ITeX}
-\sqrt{ルートの中}
+\sqrt{ルートの中身}
 \end{ITeX}
 です。
 \begin{IOTeX}
@@ -192,7 +197,7 @@ amsmathパッケージを読み込むともっと多くの記号を使えるよ�
 (), {}, [], ||
 \end{ITeX}
 の4つくらいだと思います。
-()と[]はそのまま打てば出せます。
+()と[]と$||$はそのまま打てば出せます。
 ただ，\verb|{}|は{\TeX}では特殊な働きをするので，
 そのまま打っても出力されません。
 \verb|{}|を出すには，\verb|\|をつけて\verb|\{ \}|とします。
@@ -377,10 +382,12 @@ amsmathパッケージを読み込むともっと多くの記号を使えるよ�
 
 \begin{IOTeX*}
 \[
-{}_m \mathrm{P}_n = \overbrace{m \cdot (m-1) \cdot \dots (m-n+1)}^{n \text{コ}}
+{}_m \mathrm{P}_n =
+    \overbrace{m \cdot (m-1) \cdot \dots (m-n+1)}^{n \text{コ}}
 \]
 \[
-{}_m \mathrm{P}_n = \underbrace{m \cdot (m-1) \cdot \dots (m-n+1)}_{n \text{コ}}
+{}_m \mathrm{P}_n =
+    \underbrace{m \cdot (m-1) \cdot \dots (m-n+1)}_{n \text{コ}}
 \]
 \end{IOTeX*}
 
@@ -680,3 +687,5 @@ a_{m1} & \dots & a_{mn}
 \]
 \end{IOTeX}
 
+
+\end{document}
