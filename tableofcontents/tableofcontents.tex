@@ -1,5 +1,6 @@
+
 \begin{tcolorbox}[%
-	%breakable,
+	breakable,
 	enhanced jigsaw,title={Contents},fonttitle=\bfseries\Large,
 	colback=yellow!10!white,colframe=red!50!black,before=\par\bigskip\noindent,
 	interior style={fill overzoom image=goldshade.png,fill image opacity=0.25},
@@ -16,7 +17,9 @@
 		-- (interior.north west) -- (interior.north east)
 		-- ([xshift=2mm]interior.east) -- (interior.south east) -- (interior.south west)
 		-- cycle;}  },
-	drop fuzzy shadow]
+	drop fuzzy shadow,
+	before = {\clearpage},
+	]
 \makeatletter
 \@starttoc{toc}
 \makeatother
