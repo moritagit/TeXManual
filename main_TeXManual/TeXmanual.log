@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  14 OCT 2017 04:17
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  17 OCT 2017 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -111,6 +111,46 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(c:/w32tex/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+
+(c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(c:/w32tex/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count105
+\calc@Bcount=\count106
+\calc@Adimen=\dimen131
+\calc@Bdimen=\dimen132
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count107
+\calc@Cskip=\skip48
+)
+(c:/w32tex/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count108
+\l_MT_multwidth_dim=\dimen133
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen134
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen135
+\l_MT_above_intertext_sep=\dimen136
+\l_MT_below_intertext_sep=\dimen137
+\l_MT_above_shortintertext_sep=\dimen138
+\l_MT_below_shortintertext_sep=\dimen139
+)
+(c:/w32tex/share/texmf-dist/tex/latex/cases/cases.sty
+Package: cases 2002/05/02 ver 2.5 
+)
 (c:/w32tex/share/texmf-dist/tex/latex/0_added_packages/physics/physics/physics.
 sty
 Package: physics 
@@ -128,37 +168,37 @@ L3 Module: l3tl 2017/02/06 v6842 L3 Token lists
 L3 Module: l3str 2017/01/01 v6809 L3 Strings
 L3 Module: l3seq 2017/02/06 v6842 L3 Sequences and stacks
 L3 Module: l3int 2016/12/28 v6805 L3 Integers
-\c_max_int=\count105
-\l_tmpa_int=\count106
-\l_tmpb_int=\count107
-\g_tmpa_int=\count108
-\g_tmpb_int=\count109
+\c_max_int=\count109
+\l_tmpa_int=\count110
+\l_tmpb_int=\count111
+\g_tmpa_int=\count112
+\g_tmpb_int=\count113
 L3 Module: l3quark 2016/12/28 v6805 L3 Quarks
 L3 Module: l3prg 2017/01/01 v6811 L3 Control structures
-\g__prg_map_int=\count110
+\g__prg_map_int=\count114
 L3 Module: l3clist 2017/02/06 v6842 L3 Comma separated lists
 L3 Module: l3token 2016/12/28 v6805 L3 Experimental token manipulation
 L3 Module: l3prop 2016/12/28 v6805 L3 Property lists
 L3 Module: l3msg 2016/12/28 v6805 L3 Messages
 L3 Module: l3file 2016/12/28 v6805 L3 File and I/O operations
-\l_iow_line_count_int=\count111
-\l__iow_target_count_int=\count112
-\l__iow_current_line_int=\count113
-\l__iow_current_word_int=\count114
-\l__iow_current_indentation_int=\count115
+\l_iow_line_count_int=\count115
+\l__iow_target_count_int=\count116
+\l__iow_current_line_int=\count117
+\l__iow_current_word_int=\count118
+\l__iow_current_indentation_int=\count119
 L3 Module: l3skip 2017/01/01 v6809 L3 Dimensions and skips
-\c_zero_dim=\dimen131
-\c_max_dim=\dimen132
-\l_tmpa_dim=\dimen133
-\l_tmpb_dim=\dimen134
-\g_tmpa_dim=\dimen135
-\g_tmpb_dim=\dimen136
-\c_zero_skip=\skip46
-\c_max_skip=\skip47
-\l_tmpa_skip=\skip48
-\l_tmpb_skip=\skip49
-\g_tmpa_skip=\skip50
-\g_tmpb_skip=\skip51
+\c_zero_dim=\dimen140
+\c_max_dim=\dimen141
+\l_tmpa_dim=\dimen142
+\l_tmpb_dim=\dimen143
+\g_tmpa_dim=\dimen144
+\g_tmpb_dim=\dimen145
+\c_zero_skip=\skip50
+\c_max_skip=\skip51
+\l_tmpa_skip=\skip52
+\l_tmpb_skip=\skip53
+\g_tmpa_skip=\skip54
+\g_tmpb_skip=\skip55
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
@@ -166,32 +206,32 @@ L3 Module: l3skip 2017/01/01 v6809 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2017/01/01 v6811 L3 Key-value interfaces
-\l_keys_choice_int=\count116
+\l_keys_choice_int=\count120
 L3 Module: l3fp 2016/12/28 v6805 L3 Floating points
-\c__fp_leading_shift_int=\count117
-\c__fp_middle_shift_int=\count118
-\c__fp_trailing_shift_int=\count119
-\c__fp_big_leading_shift_int=\count120
-\c__fp_big_middle_shift_int=\count121
-\c__fp_big_trailing_shift_int=\count122
-\c__fp_Bigg_leading_shift_int=\count123
-\c__fp_Bigg_middle_shift_int=\count124
-\c__fp_Bigg_trailing_shift_int=\count125
-\c__fp_rand_size_int=\count126
-\c__fp_rand_four_int=\count127
-\c__fp_rand_eight_int=\count128
+\c__fp_leading_shift_int=\count121
+\c__fp_middle_shift_int=\count122
+\c__fp_trailing_shift_int=\count123
+\c__fp_big_leading_shift_int=\count124
+\c__fp_big_middle_shift_int=\count125
+\c__fp_big_trailing_shift_int=\count126
+\c__fp_Bigg_leading_shift_int=\count127
+\c__fp_Bigg_middle_shift_int=\count128
+\c__fp_Bigg_trailing_shift_int=\count129
+\c__fp_rand_size_int=\count130
+\c__fp_rand_four_int=\count131
+\c__fp_rand_eight_int=\count132
 L3 Module: l3sort 2017/02/07 v6847 L3 Sorting functions
-\l__sort_length_int=\count129
-\l__sort_min_int=\count130
-\l__sort_top_int=\count131
-\l__sort_max_int=\count132
-\l__sort_true_max_int=\count133
-\l__sort_block_int=\count134
-\l__sort_begin_int=\count135
-\l__sort_end_int=\count136
-\l__sort_A_int=\count137
-\l__sort_B_int=\count138
-\l__sort_C_int=\count139
+\l__sort_length_int=\count133
+\l__sort_min_int=\count134
+\l__sort_top_int=\count135
+\l__sort_max_int=\count136
+\l__sort_true_max_int=\count137
+\l__sort_block_int=\count138
+\l__sort_begin_int=\count139
+\l__sort_end_int=\count140
+\l__sort_A_int=\count141
+\l__sort_B_int=\count142
+\l__sort_C_int=\count143
 L3 Module: l3box 2016/12/28 v6805 L3 Experimental boxes
 \c_empty_box=\box43
 \l_tmpa_box=\box44
@@ -200,13 +240,13 @@ L3 Module: l3box 2016/12/28 v6805 L3 Experimental boxes
 \g_tmpb_box=\box47
 L3 Module: l3coffins 2016/12/28 v6805 L3 Coffin code layer
 \l__coffin_internal_box=\box48
-\l__coffin_internal_dim=\dimen137
-\l__coffin_offset_x_dim=\dimen138
-\l__coffin_offset_y_dim=\dimen139
-\l__coffin_x_dim=\dimen140
-\l__coffin_y_dim=\dimen141
-\l__coffin_x_prime_dim=\dimen142
-\l__coffin_y_prime_dim=\dimen143
+\l__coffin_internal_dim=\dimen146
+\l__coffin_offset_x_dim=\dimen147
+\l__coffin_offset_y_dim=\dimen148
+\l__coffin_x_dim=\dimen149
+\l__coffin_y_dim=\dimen150
+\l__coffin_x_prime_dim=\dimen151
+\l__coffin_y_prime_dim=\dimen152
 \c_empty_coffin=\box49
 \l__coffin_aligned_coffin=\box50
 \l__coffin_aligned_internal_coffin=\box51
@@ -215,28 +255,28 @@ L3 Module: l3coffins 2016/12/28 v6805 L3 Coffin code layer
 \l__coffin_display_coffin=\box54
 \l__coffin_display_coord_coffin=\box55
 \l__coffin_display_pole_coffin=\box56
-\l__coffin_display_offset_dim=\dimen144
-\l__coffin_display_x_dim=\dimen145
-\l__coffin_display_y_dim=\dimen146
+\l__coffin_display_offset_dim=\dimen153
+\l__coffin_display_x_dim=\dimen154
+\l__coffin_display_y_dim=\dimen155
 L3 Module: l3color 2016/12/28 v6805 L3 Experimental color support
 L3 Module: l3sys 2017/01/01 v6811 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2017/01/30 v6835 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen147
-\l__box_bottom_dim=\dimen148
-\l__box_left_dim=\dimen149
-\l__box_right_dim=\dimen150
-\l__box_top_new_dim=\dimen151
-\l__box_bottom_new_dim=\dimen152
-\l__box_left_new_dim=\dimen153
-\l__box_right_new_dim=\dimen154
+\l__box_top_dim=\dimen156
+\l__box_bottom_dim=\dimen157
+\l__box_left_dim=\dimen158
+\l__box_right_dim=\dimen159
+\l__box_top_new_dim=\dimen160
+\l__box_bottom_new_dim=\dimen161
+\l__box_left_new_dim=\dimen162
+\l__box_right_new_dim=\dimen163
 \l__box_internal_box=\box57
-\l__coffin_bounding_shift_dim=\dimen155
-\l__coffin_left_corner_dim=\dimen156
-\l__coffin_right_corner_dim=\dimen157
-\l__coffin_bottom_corner_dim=\dimen158
-\l__coffin_top_corner_dim=\dimen159
-\l__coffin_scaled_total_height_dim=\dimen160
-\l__coffin_scaled_width_dim=\dimen161
+\l__coffin_bounding_shift_dim=\dimen164
+\l__coffin_left_corner_dim=\dimen165
+\l__coffin_right_corner_dim=\dimen166
+\l__coffin_bottom_corner_dim=\dimen167
+\l__coffin_top_corner_dim=\dimen168
+\l__coffin_scaled_total_height_dim=\dimen169
+\l__coffin_scaled_width_dim=\dimen170
 L3 Module: l3luatex 2016/12/28 v6805 L3 Experimental LuaTeX-specific functions
 )
 (c:/w32tex/share/texmf-dist/tex/latex/l3kernel/l3dvipdfmx.def
@@ -244,11 +284,11 @@ File: l3dvidpfmx.def 2016/12/28 v6805 L3 Experimental driver: dvipdfmx
 \l__driver_tmp_box=\box58
 ))
 Package: xparse 2017/02/10 v6878 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count140
-\g__xparse_grabber_int=\count141
-\l__xparse_m_args_int=\count142
-\l__xparse_mandatory_args_int=\count143
-\l__xparse_v_nesting_int=\count144
+\l__xparse_current_arg_int=\count144
+\g__xparse_grabber_int=\count145
+\l__xparse_m_args_int=\count146
+\l__xparse_mandatory_args_int=\count147
+\l__xparse_v_nesting_int=\count148
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -264,16 +304,6 @@ Package: xparse 2017/02/10 v6878 L3 Experimental document command parser
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \ordersymbol with sig. '' on line 30.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \lparen with sig. '' on line 31.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \rparen with sig. '' on line 32.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1137,55 +1167,55 @@ Package: siunitx 2017/02/01 v2.7c A comprehensive (SI) units package
 
 (c:/w32tex/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen162
-\extrarowheight=\dimen163
-\NC@list=\toks20
-\extratabsurround=\skip52
-\backup@length=\skip53
+\col@sep=\dimen171
+\extrarowheight=\dimen172
+\NC@list=\toks21
+\extratabsurround=\skip56
+\backup@length=\skip57
 )
 (c:/w32tex/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2017/02/10 v6878 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box59
-\l__siunitx_tmp_dim=\dimen164
-\l__siunitx_tmp_int=\count145
-\l__siunitx_number_mantissa_length_int=\count146
-\l__siunitx_number_uncert_length_int=\count147
-\l__siunitx_round_int=\count148
-\l__siunitx_process_decimal_int=\count149
-\l__siunitx_process_uncertainty_int=\count150
-\l__siunitx_process_fixed_int=\count151
-\l__siunitx_process_integer_min_int=\count152
-\l__siunitx_process_precision_int=\count153
-\l__siunitx_group_min_int=\count154
+\l__siunitx_tmp_dim=\dimen173
+\l__siunitx_tmp_int=\count149
+\l__siunitx_number_mantissa_length_int=\count150
+\l__siunitx_number_uncert_length_int=\count151
+\l__siunitx_round_int=\count152
+\l__siunitx_process_decimal_int=\count153
+\l__siunitx_process_uncertainty_int=\count154
+\l__siunitx_process_fixed_int=\count155
+\l__siunitx_process_integer_min_int=\count156
+\l__siunitx_process_precision_int=\count157
+\l__siunitx_group_min_int=\count158
 \l__siunitx_angle_marker_box=\box60
 \l__siunitx_angle_unit_box=\box61
-\l__siunitx_angle_marker_dim=\dimen165
-\l__siunitx_angle_unit_dim=\dimen166
-\l__siunitx_unit_int=\count155
-\l__siunitx_unit_denominator_int=\count156
-\l__siunitx_unit_numerator_int=\count157
-\l__siunitx_unit_prefix_int=\count158
-\l__siunitx_unit_prefix_base_int=\count159
-\l__siunitx_unit_prefix_gram_int=\count160
-\l__siunitx_number_product_int=\count161
-\c__siunitx_one_fill_skip=\skip54
-\l__siunitx_table_unit_align_skip=\skip55
-\l__siunitx_table_exponent_dim=\dimen167
-\l__siunitx_table_integer_dim=\dimen168
-\l__siunitx_table_mantissa_dim=\dimen169
-\l__siunitx_table_marker_dim=\dimen170
-\l__siunitx_table_result_dim=\dimen171
-\l__siunitx_table_uncert_dim=\dimen172
-\l__siunitx_table_fill_pre_dim=\dimen173
-\l__siunitx_table_fill_post_dim=\dimen174
-\l__siunitx_table_fill_mid_dim=\dimen175
+\l__siunitx_angle_marker_dim=\dimen174
+\l__siunitx_angle_unit_dim=\dimen175
+\l__siunitx_unit_int=\count159
+\l__siunitx_unit_denominator_int=\count160
+\l__siunitx_unit_numerator_int=\count161
+\l__siunitx_unit_prefix_int=\count162
+\l__siunitx_unit_prefix_base_int=\count163
+\l__siunitx_unit_prefix_gram_int=\count164
+\l__siunitx_number_product_int=\count165
+\c__siunitx_one_fill_skip=\skip58
+\l__siunitx_table_unit_align_skip=\skip59
+\l__siunitx_table_exponent_dim=\dimen176
+\l__siunitx_table_integer_dim=\dimen177
+\l__siunitx_table_mantissa_dim=\dimen178
+\l__siunitx_table_marker_dim=\dimen179
+\l__siunitx_table_result_dim=\dimen180
+\l__siunitx_table_uncert_dim=\dimen181
+\l__siunitx_table_fill_pre_dim=\dimen182
+\l__siunitx_table_fill_post_dim=\dimen183
+\l__siunitx_table_fill_mid_dim=\dimen184
 \l__siunitx_table_pre_box=\box62
 \l__siunitx_table_post_box=\box63
 \l__siunitx_table_mantissa_box=\box64
 \l__siunitx_table_result_box=\box65
-\l__siunitx_table_number_align_skip=\skip56
-\l__siunitx_table_text_align_skip=\skip57
+\l__siunitx_table_number_align_skip=\skip60
+\l__siunitx_table_text_align_skip=\skip61
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1308,22 +1338,18 @@ Package: l3keys2e 2017/02/10 v6878 LaTeX2e option processing using LaTeX3 keys
 (c:/w32tex/share/texmf-dist/tex/latex/beamer/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
 
-(c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
-)
 (c:/w32tex/share/texmf-dist/tex/latex/beamer/translator/translator-language-map
 pings.tex))) (c:/w32tex/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip58
-\f@ncyO@elh=\skip59
-\f@ncyO@erh=\skip60
-\f@ncyO@olh=\skip61
-\f@ncyO@orh=\skip62
-\f@ncyO@elf=\skip63
-\f@ncyO@erf=\skip64
-\f@ncyO@olf=\skip65
-\f@ncyO@orf=\skip66
+\fancy@headwidth=\skip62
+\f@ncyO@elh=\skip63
+\f@ncyO@erh=\skip64
+\f@ncyO@olh=\skip65
+\f@ncyO@orh=\skip66
+\f@ncyO@elf=\skip67
+\f@ncyO@erf=\skip68
+\f@ncyO@olf=\skip69
+\f@ncyO@orf=\skip70
 )
 (c:/w32tex/share/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
@@ -1385,14 +1411,14 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen176
-\Hy@linkcounter=\count162
-\Hy@pagecounter=\count163
+\@linkdim=\dimen185
+\Hy@linkcounter=\count166
+\Hy@pagecounter=\count167
 
 (c:/w32tex/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count164
+\Hy@SavedSpaceFactor=\count168
 
 (c:/w32tex/share/texmf-dist/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1404,17 +1430,17 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count165
+\c@Hy@tempcnt=\count169
 
 (c:/w32tex/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen177
-\Fld@menulength=\count166
-\Field@Width=\dimen178
-\Fld@charsize=\dimen179
+\XeTeXLinkMargin=\dimen186
+\Fld@menulength=\count170
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -1424,9 +1450,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count167
-\c@Item=\count168
-\c@Hfootnote=\count169
+\Hy@abspage=\count171
+\c@Item=\count172
+\c@Hfootnote=\count173
 )
 
 Package hyperref Message: Driver: hdvipdfm.
@@ -1434,17 +1460,17 @@ Package hyperref Message: Driver: hdvipdfm.
 (c:/w32tex/share/texmf-dist/tex/latex/hyperref/hdvipdfm.def
 File: hdvipdfm.def 2016/06/24 v6.83q Hyperref driver for dvipdfm
 \pdfm@box=\box66
-\c@Hy@AnnotLevel=\count170
-\HyField@AnnotCount=\count171
-\Fld@listcount=\count172
-\c@bookmark@seq@number=\count173
+\c@Hy@AnnotLevel=\count174
+\HyField@AnnotCount=\count175
+\Fld@listcount=\count176
+\c@bookmark@seq@number=\count177
 
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip67
+\Hy@SectionHShift=\skip71
 )
 (c:/w32tex/share/texmf-dist/tex/latex/pxjahyper/pxjahyper.sty
 Package: pxjahyper 2012/05/27 v0.2
@@ -1460,9 +1486,9 @@ LaTeX Info: Redefining \cite on input line 441.
 )
 (c:/w32tex/share/texmf-dist/tex/platex/pxrubrica/pxrubrica.sty
 Package: pxrubrica 2014/12/23 v1.0a PX Japanese-style ruby
-\pxrr@cnta=\count174
-\pxrr@cntr=\count175
-\pxrr@dima=\dimen180
+\pxrr@cnta=\count178
+\pxrr@cntr=\count179
+\pxrr@dima=\dimen189
 \pxrr@boxa=\box67
 \pxrr@boxb=\box68
 \pxrr@boxr=\box69
@@ -1482,9 +1508,9 @@ File: dvipdfmx.def 2016/07/11 v4.12 LaTeX color/graphics driver for dvipdfmx (L
 (c:/w32tex/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
 \everycr=\toks22
-\minrowclearance=\skip68
+\minrowclearance=\skip72
 )
-\rownum=\count176
+\rownum=\count180
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -1497,25 +1523,25 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip69
-\LTright=\skip70
-\LTpre=\skip71
-\LTpost=\skip72
-\LTchunksize=\count177
-\LTcapwidth=\dimen181
+\LTleft=\skip73
+\LTright=\skip74
+\LTpre=\skip75
+\LTpost=\skip76
+\LTchunksize=\count181
+\LTcapwidth=\dimen190
 \LT@head=\box70
 \LT@firsthead=\box71
 \LT@foot=\box72
 \LT@lastfoot=\box73
-\LT@cols=\count178
-\LT@rows=\count179
-\c@LT@tables=\count180
-\c@LT@chunks=\count181
+\LT@cols=\count182
+\LT@rows=\count183
+\c@LT@tables=\count184
+\c@LT@chunks=\count185
 \LT@p@ftn=\toks23
 )
 (c:/w32tex/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count182
+\c@float@type=\count186
 \float@exts=\toks24
 \float@box=\box74
 \@float@everytoks=\toks25
@@ -1523,52 +1549,38 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 (c:/w32tex/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip73
-\multirow@cntb=\count183
-\multirow@dima=\skip74
-\bigstrutjot=\dimen182
+\multirow@colwidth=\skip77
+\multirow@cntb=\count187
+\multirow@dima=\skip78
+\bigstrutjot=\dimen191
 )
 (c:/w32tex/share/texmf-dist/tex/latex/listliketab/listliketab.sty
 Package: listliketab 2005/01/09 v1.0a Create list-like tabulars
-
-(c:/w32tex/share/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count184
-\calc@Bcount=\count185
-\calc@Adimen=\dimen183
-\calc@Bdimen=\dimen184
-\calc@Askip=\skip75
-\calc@Bskip=\skip76
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count186
-\calc@Cskip=\skip77
-)
-\llt@labelwidth=\skip78
-\llt@labelsep=\skip79
-\llt@topsep=\skip80
-\llt@rightmargin=\skip81
-\llt@tab@indent=\skip82
-\llt@bot@sep=\skip83
-\llt@arraystretch=\skip84
+\llt@labelwidth=\skip79
+\llt@labelsep=\skip80
+\llt@topsep=\skip81
+\llt@rightmargin=\skip82
+\llt@tab@indent=\skip83
+\llt@bot@sep=\skip84
+\llt@arraystretch=\skip85
 \llt@list@box=\box76
 )
 (c:/w32tex/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip85
-\enit@outerparindent=\dimen185
+\labelindent=\skip86
+\enit@outerparindent=\dimen192
 \enit@toks=\toks26
 \enit@inbox=\box77
-\enitdp@description=\count187
+\enitdp@description=\count188
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
-\TX@col@width=\dimen186
-\TX@old@table=\dimen187
-\TX@old@col=\dimen188
-\TX@target=\dimen189
-\TX@delta=\dimen190
-\TX@cols=\count188
+\TX@col@width=\dimen193
+\TX@old@table=\dimen194
+\TX@old@col=\dimen195
+\TX@target=\dimen196
+\TX@delta=\dimen197
+\TX@cols=\count189
 \TX@ftn=\toks27
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
@@ -1578,8 +1590,8 @@ Package: tcolorbox 2017/09/14 version 4.11 text color boxes
 (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks28
-\pgfutil@tempdima=\dimen191
-\pgfutil@tempdimb=\dimen192
+\pgfutil@tempdima=\dimen198
+\pgfutil@tempdimb=\dimen199
 
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
 ) (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -1608,8 +1620,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
 )
-\Gin@req@height=\dimen193
-\Gin@req@width=\dimen194
+\Gin@req@height=\dimen256
+\Gin@req@width=\dimen257
 )
 (c:/w32tex/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
@@ -1622,20 +1634,20 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks31
 ))
-\pgf@x=\dimen195
-\pgf@y=\dimen196
-\pgf@xa=\dimen197
-\pgf@ya=\dimen198
-\pgf@xb=\dimen199
-\pgf@yb=\dimen256
-\pgf@xc=\dimen257
-\pgf@yc=\dimen258
+\pgf@x=\dimen258
+\pgf@y=\dimen259
+\pgf@xa=\dimen260
+\pgf@ya=\dimen261
+\pgf@xb=\dimen262
+\pgf@yb=\dimen263
+\pgf@xc=\dimen264
+\pgf@yc=\dimen265
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count189
-\c@pgf@countb=\count190
-\c@pgf@countc=\count191
-\c@pgf@countd=\count192
+\c@pgf@counta=\count190
+\c@pgf@countb=\count191
+\c@pgf@countc=\count192
+\c@pgf@countd=\count193
 \t@pgf@toka=\toks32
 \t@pgf@tokb=\toks33
 \t@pgf@tokc=\toks34
@@ -1650,12 +1662,12 @@ File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count193
+\pgfsys@objnum=\count194
 ))
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count194
-\pgfsyssoftpath@bigbuffer@items=\count195
+\pgfsyssoftpath@smallbuffer@items=\count195
+\pgfsyssoftpath@bigbuffer@items=\count196
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -1666,8 +1678,8 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen259
-\pgfmath@count=\count196
+\pgfmath@dimen=\dimen266
+\pgfmath@count=\count197
 \pgfmath@box=\box79
 \pgfmath@toks=\toks35
 \pgfmath@stack@operand=\toks36
@@ -1691,55 +1703,55 @@ x)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
 etics.code.tex)))
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count197
+\c@pgfmathroundto@lastzeros=\count198
 ))
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen260
-\pgf@picmaxx=\dimen261
-\pgf@picminy=\dimen262
-\pgf@picmaxy=\dimen263
-\pgf@pathminx=\dimen264
-\pgf@pathmaxx=\dimen265
-\pgf@pathminy=\dimen266
-\pgf@pathmaxy=\dimen267
-\pgf@xx=\dimen268
-\pgf@xy=\dimen269
-\pgf@yx=\dimen270
-\pgf@yy=\dimen271
-\pgf@zx=\dimen272
-\pgf@zy=\dimen273
+\pgf@picminx=\dimen267
+\pgf@picmaxx=\dimen268
+\pgf@picminy=\dimen269
+\pgf@picmaxy=\dimen270
+\pgf@pathminx=\dimen271
+\pgf@pathmaxx=\dimen272
+\pgf@pathminy=\dimen273
+\pgf@pathmaxy=\dimen274
+\pgf@xx=\dimen275
+\pgf@xy=\dimen276
+\pgf@yx=\dimen277
+\pgf@yy=\dimen278
+\pgf@zx=\dimen279
+\pgf@zy=\dimen280
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
 e.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen274
-\pgf@path@lasty=\dimen275
+\pgf@path@lastx=\dimen281
+\pgf@path@lasty=\dimen282
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
 x
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen276
-\pgf@shorten@start@additional=\dimen277
+\pgf@shorten@end@additional=\dimen283
+\pgf@shorten@start@additional=\dimen284
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box80
 \pgf@hbox=\box81
 \pgf@layerbox@main=\box82
-\pgf@picture@serial@count=\count198
+\pgf@picture@serial@count=\count199
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
 .tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen278
+\pgflinewidth=\dimen285
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
 ode.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen279
-\pgf@pt@y=\dimen280
-\pgf@pt@temp=\dimen281
+\pgf@pt@x=\dimen286
+\pgf@pt@y=\dimen287
+\pgf@pt@temp=\dimen288
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1753,12 +1765,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen282
+\pgfarrowsep=\dimen289
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen283
-\pgf@sys@shading@range@num=\count199
+\pgf@max=\dimen290
+\pgf@sys@shading@range@num=\count266
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1787,8 +1799,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (c:/w32tex/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
 y
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen284
-\pgf@nodesepend=\dimen285
+\pgf@nodesepstart=\dimen291
+\pgf@nodesepend=\dimen292
 )
 (c:/w32tex/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
 y
@@ -1807,15 +1819,15 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count266
+\etb@tempcnta=\count267
 )
 \tcb@titlebox=\box85
 \tcb@upperbox=\box86
 \tcb@lowerbox=\box87
 \tcb@phantombox=\box88
-\c@tcbbreakpart=\count267
-\c@tcblayer=\count268
-\tcolorbox@number=\count269
+\c@tcbbreakpart=\count268
+\c@tcblayer=\count269
+\tcolorbox@number=\count270
 \tcb@temp=\box89
 \tcb@temp=\box90
 \tcb@temp=\box91
@@ -1835,8 +1847,8 @@ Library (tcolorbox): 'tcbskins.code.tex' version '4.11'
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen286
-\pgffor@skip=\dimen287
+\pgffor@iter=\dimen293
+\pgffor@skip=\dimen294
 \pgffor@stack=\toks40
 \pgffor@toks=\toks41
 ))
@@ -1846,31 +1858,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
 de.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count270
-\pgfplotmarksize=\dimen288
+\pgf@plot@mark@count=\count271
+\pgfplotmarksize=\dimen295
 )
-\tikz@lastx=\dimen289
-\tikz@lasty=\dimen290
-\tikz@lastxsaved=\dimen291
-\tikz@lastysaved=\dimen292
-\tikzleveldistance=\dimen293
-\tikzsiblingdistance=\dimen294
+\tikz@lastx=\dimen296
+\tikz@lasty=\dimen297
+\tikz@lastxsaved=\dimen298
+\tikz@lastysaved=\dimen299
+\tikzleveldistance=\dimen300
+\tikzsiblingdistance=\dimen301
 \tikz@figbox=\box93
 \tikz@figbox@bg=\box94
 \tikz@tempbox=\box95
 \tikz@tempbox@bg=\box96
-\tikztreelevel=\count271
-\tikznumberofchildren=\count272
-\tikznumberofcurrentchild=\count273
-\tikz@fig@count=\count274
+\tikztreelevel=\count272
+\tikznumberofchildren=\count273
+\tikznumberofcurrentchild=\count274
+\tikz@fig@count=\count275
 
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count275
-\pgfmatrixcurrentcolumn=\count276
-\pgf@matrix@numberofcolumns=\count277
+\pgfmatrixcurrentrow=\count276
+\pgfmatrixcurrentcolumn=\count277
+\pgf@matrix@numberofcolumns=\count278
 )
-\tikz@expandcount=\count278
+\tikz@expandcount=\count279
 
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarytopaths.code.tex
@@ -1883,23 +1895,23 @@ Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.11'
 )) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '4.11'
 (c:/w32tex/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count279
+\lst@mode=\count280
 \lst@gtempboxa=\box98
 \lst@token=\toks42
-\lst@length=\count280
-\lst@currlwidth=\dimen295
-\lst@column=\count281
-\lst@pos=\count282
-\lst@lostspace=\dimen296
-\lst@width=\dimen297
-\lst@newlines=\count283
-\lst@lineno=\count284
-\lst@maxwidth=\dimen298
+\lst@length=\count281
+\lst@currlwidth=\dimen302
+\lst@column=\count282
+\lst@pos=\count283
+\lst@lostspace=\dimen303
+\lst@width=\dimen304
+\lst@newlines=\count284
+\lst@lineno=\count285
+\lst@maxwidth=\dimen305
 
 (c:/w32tex/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count285
-\lst@skipnumbers=\count286
+\c@lstnumber=\count286
+\lst@skipnumbers=\count287
 \lst@framebox=\box99
 )
 (c:/w32tex/share/texmf-dist/tex/latex/listings/listings.cfg
@@ -1915,11 +1927,17 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '4.11'
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
 ))
-\c@tcblisting=\count287
+\c@tcblisting=\count288
 ))
+(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.11'
+\tcb@testbox=\box100
+\tcb@totalupperbox=\box101
+\tcb@totallowerbox=\box102
+)
 (c:/w32tex/share/texmf-dist/tex/latex/0_added_packages/plistings/plistings.sty
 Package: plistings 2015/12/07 v0.10 Japanese support of listings package
-\ltj@lst@frame@lslimit=\dimen299
+\ltj@lst@frame@lslimit=\dimen306
 \lst@inputfile=\read4
 ) (c:/w32tex/share/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write6
@@ -1934,13 +1952,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (c:/w32tex/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen300
-\captionmargin@=\dimen301
-\captionwidth=\dimen302
-\caption@tempdima=\dimen303
-\caption@indent=\dimen304
-\caption@parindent=\dimen305
-\caption@hangindent=\dimen306
+\captionmargin=\dimen307
+\captionmargin@=\dimen308
+\captionwidth=\dimen309
+\caption@tempdima=\dimen310
+\caption@indent=\dimen311
+\caption@parindent=\dimen312
+\caption@hangindent=\dimen313
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -1954,7 +1972,7 @@ p \iftdir \sbox \@tempboxa {#1\hskip 1zw#2}\else \sbox \@tempboxa {#1: #2}\fi \
 ifdim \wd \@tempboxa >\hsize \iftdir #1\hskip 1zw#2\relax \par \else #1: #2\rel
 ax \par \fi \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa
  \hfil }\fi \vskip \belowcaptionskip .
-\c@ContinuedFloat=\count288
+\c@ContinuedFloat=\count289
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1962,14 +1980,14 @@ Package caption Info: longtable package is loaded.
 (c:/w32tex/share/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 ))
-\c@subfigure=\count289
-\c@subtable=\count290
+\c@subfigure=\count290
+\c@subtable=\count291
 )
 (c:/w32tex/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen307
-\WF@size=\dimen308
-\c@WF@wrappedlines=\count291
-\WF@box=\box100
+\wrapoverhang=\dimen314
+\WF@size=\dimen315
+\c@WF@wrappedlines=\count292
+\WF@box=\box103
 \WF@everypar=\toks43
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -1989,16 +2007,16 @@ File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
 brarydecorations.code.tex
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.t
 ex
-\pgfdecoratedcompleteddistance=\dimen309
-\pgfdecoratedremainingdistance=\dimen310
-\pgfdecoratedinputsegmentcompleteddistance=\dimen311
-\pgfdecoratedinputsegmentremainingdistance=\dimen312
-\pgf@decorate@distancetomove=\dimen313
-\pgf@decorate@repeatstate=\count292
-\pgfdecorationsegmentamplitude=\dimen314
-\pgfdecorationsegmentlength=\dimen315
+\pgfdecoratedcompleteddistance=\dimen316
+\pgfdecoratedremainingdistance=\dimen317
+\pgfdecoratedinputsegmentcompleteddistance=\dimen318
+\pgfdecoratedinputsegmentremainingdistance=\dimen319
+\pgf@decorate@distancetomove=\dimen320
+\pgf@decorate@repeatstate=\count293
+\pgfdecorationsegmentamplitude=\dimen321
+\pgfdecorationsegmentlength=\dimen322
 )
-\tikz@lib@dec@box=\box101
+\tikz@lib@dec@box=\box104
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 braryangles.code.tex
@@ -2007,8 +2025,8 @@ File: tikzlibraryangles.code.tex 2013/08/28 v3.0.1a (rcs-revision 1.1)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box102
-\pgf@layerboxsaved@background=\box103
+\pgf@layerbox@background=\box105
+\pgf@layerboxsaved@background=\box106
 )
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 braryshadows.code.tex
@@ -2029,7 +2047,7 @@ File: tikzlibrarycalendar.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.3)
 (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
 File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count293
+\pgfcalendarcurrentjulian=\count294
 )))
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarymindmap.code.tex
@@ -2060,7 +2078,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks44
 \XKV@tempa@toks=\toks45
 )
-\XKV@depth=\count294
+\XKV@depth=\count295
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/currfile/currfile.sty
@@ -2070,7 +2088,7 @@ nt input file
 (c:/w32tex/share/texmf-dist/tex/latex/filehook/filehook.sty
 Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
-\c@currfiledepth=\count295
+\c@currfiledepth=\count296
 )
 (c:/w32tex/share/texmf-dist/tex/latex/gincltex/gincltex.sty
 (c:/w32tex/share/texmf-dist/tex/latex/svn-prov/svn-prov.sty
@@ -2090,12 +2108,12 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (c:/w32tex/share/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box104
+\collectedbox=\box107
 )
-\tc@llx=\dimen316
-\tc@lly=\dimen317
-\tc@urx=\dimen318
-\tc@ury=\dimen319
+\tc@llx=\dimen323
+\tc@lly=\dimen324
+\tc@urx=\dimen325
+\tc@ury=\dimen326
 
 (c:/w32tex/share/texmf-dist/tex/latex/adjustbox/tc-pgf.def
 File: tc-pgf.def 2012/05/13 v1.0 trimclip fall-back clipping driver using PGF
@@ -2103,23 +2121,23 @@ File: tc-pgf.def 2012/05/13 v1.0 trimclip fall-back clipping driver using PGF
 Package trimclip Info: No clipping driver 'tc-dvipdfmx.def' available.
 (trimclip)             Using fall-back PGF driver.
 )
-\adjbox@Width=\dimen320
-\adjbox@Height=\dimen321
-\adjbox@Depth=\dimen322
-\adjbox@Totalheight=\dimen323
+\adjbox@Width=\dimen327
+\adjbox@Height=\dimen328
+\adjbox@Depth=\dimen329
+\adjbox@Totalheight=\dimen330
 
 (c:/w32tex/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count296
+\c@checkoddpage=\count297
 )
 (c:/w32tex/share/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box105
-\sift@deathcycles=\count297
-\@vwid@loff=\dimen324
-\@vwid@roff=\dimen325
+\@vwid@box=\box108
+\sift@deathcycles=\count298
+\@vwid@loff=\dimen331
+\@vwid@roff=\dimen332
 ))
-\gincltex@box=\box106
+\gincltex@box=\box109
 )
 (c:/w32tex/share/texmf-dist/tex/latex/filemod/filemod-expmin.sty
 Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
@@ -2707,10 +2725,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
 (c:/w32tex/share/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
 Package: ajmacros 2005/12/25 13:52 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
 >
-\@tempcntc=\count298
-\@tempcntd=\count299
-\@tempcnte=\count300
-\@tempcntf=\count301
+\@tempcntc=\count299
+\@tempcntd=\count300
+\@tempcnte=\count301
+\@tempcntf=\count302
 ))
 (c:/w32tex/share/texmf-dist/tex/platex/pxchfon/pxchfon.sty
 Package: pxchfon 2017/01/13 v0.8
@@ -2726,37 +2744,37 @@ Package hyperref Info: Option `setpagesize' set `false' on input line 54.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tools/layout.sty
 Package: layout 2014/10/28 v1.2c Show layout parameters
-\oneinch=\count302
-\cnt@paperwidth=\count303
-\cnt@paperheight=\count304
-\cnt@hoffset=\count305
-\cnt@voffset=\count306
-\cnt@textheight=\count307
-\cnt@textwidth=\count308
-\cnt@topmargin=\count309
-\cnt@oddsidemargin=\count310
-\cnt@evensidemargin=\count311
-\cnt@headheight=\count312
-\cnt@headsep=\count313
-\cnt@marginparsep=\count314
-\cnt@marginparwidth=\count315
-\cnt@marginparpush=\count316
-\cnt@footskip=\count317
-\fheight=\count318
-\ref@top=\count319
-\ref@hoffset=\count320
-\ref@voffset=\count321
-\ref@head=\count322
-\ref@body=\count323
-\ref@foot=\count324
-\ref@margin=\count325
-\ref@marginwidth=\count326
-\ref@marginpar=\count327
-\Interval=\count328
-\ExtraYPos=\count329
-\PositionX=\count330
-\PositionY=\count331
-\ArrowLength=\count332
+\oneinch=\count303
+\cnt@paperwidth=\count304
+\cnt@paperheight=\count305
+\cnt@hoffset=\count306
+\cnt@voffset=\count307
+\cnt@textheight=\count308
+\cnt@textwidth=\count309
+\cnt@topmargin=\count310
+\cnt@oddsidemargin=\count311
+\cnt@evensidemargin=\count312
+\cnt@headheight=\count313
+\cnt@headsep=\count314
+\cnt@marginparsep=\count315
+\cnt@marginparwidth=\count316
+\cnt@marginparpush=\count317
+\cnt@footskip=\count318
+\fheight=\count319
+\ref@top=\count320
+\ref@hoffset=\count321
+\ref@voffset=\count322
+\ref@head=\count323
+\ref@body=\count324
+\ref@foot=\count325
+\ref@margin=\count326
+\ref@marginwidth=\count327
+\ref@marginpar=\count328
+\Interval=\count329
+\ExtraYPos=\count330
+\PositionX=\count331
+\PositionY=\count332
+\ArrowLength=\count333
 )
 (c:/w32tex/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
@@ -2767,17 +2785,17 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (c:/w32tex/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
-\AM@pagewidth=\dimen326
-\AM@pageheight=\dimen327
+\AM@pagewidth=\dimen333
+\AM@pageheight=\dimen334
 
 (c:/w32tex/share/texmf-dist/tex/latex/pdfpages/ppdvipdfmx.def
 File: ppdvipdfmx.def 2017/01/14 v0.5h Pdfpages driver for dvipdfmx (AM)
 )
-\AM@pagebox=\box107
+\AM@pagebox=\box110
 \AM@global@opts=\toks48
 \AM@toc@title=\toks49
-\c@AM@survey=\count333
-\AM@templatesizebox=\box108
+\c@AM@survey=\count334
+\AM@templatesizebox=\box111
 )
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
@@ -2790,15 +2808,15 @@ Package: l3regex 2017/02/10 v6878 L3 Experimental regular expressions
 
 (c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
 Package: l3tl-build 2017/02/10 v6878 L3 Experimental token list construction
-\l__tl_build_start_index_int=\count334
-\l__tl_build_index_int=\count335
+\l__tl_build_start_index_int=\count335
+\l__tl_build_index_int=\count336
 )
 (c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
 Package: l3tl-analysis 2016/12/28 v6805 L3 Experimental token lists analysis
-\l__tl_analysis_normal_int=\count336
-\l__tl_analysis_index_int=\count337
-\l__tl_analysis_nesting_int=\count338
-\l__tl_analysis_type_int=\count339
+\l__tl_analysis_normal_int=\count337
+\l__tl_analysis_index_int=\count338
+\l__tl_analysis_nesting_int=\count339
+\l__tl_analysis_type_int=\count340
 )
 (c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
 Package: l3flag 2017/02/10 v6878 L3 Experimental flags
@@ -2806,52 +2824,52 @@ Package: l3flag 2017/02/10 v6878 L3 Experimental flags
 (c:/w32tex/share/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
 Package: l3str-convert 2016/12/28 v6805 L3 Experimental string encoding convers
 ions
-\l__str_internal_int=\count340
-\c__str_replacement_char_int=\count341
+\l__str_internal_int=\count341
+\c__str_replacement_char_int=\count342
 )
-\l__regex_internal_a_int=\count342
-\l__regex_internal_b_int=\count343
-\l__regex_internal_c_int=\count344
-\l__regex_balance_int=\count345
-\l__regex_group_level_int=\count346
-\l__regex_mode_int=\count347
-\l__regex_catcodes_int=\count348
-\l__regex_default_catcodes_int=\count349
-\c__regex_catcode_D_int=\count350
-\c__regex_catcode_S_int=\count351
-\c__regex_catcode_L_int=\count352
-\c__regex_catcode_O_int=\count353
-\c__regex_catcode_A_int=\count354
-\c__regex_all_catcodes_int=\count355
-\l__regex_show_lines_int=\count356
-\l__regex_min_state_int=\count357
-\l__regex_max_state_int=\count358
-\l__regex_left_state_int=\count359
-\l__regex_right_state_int=\count360
-\l__regex_capturing_group_int=\count361
-\l__regex_min_pos_int=\count362
-\l__regex_max_pos_int=\count363
-\l__regex_current_pos_int=\count364
-\l__regex_start_pos_int=\count365
-\l__regex_success_pos_int=\count366
-\l__regex_current_char_int=\count367
-\l__regex_current_catcode_int=\count368
-\l__regex_last_char_int=\count369
-\l__regex_case_changed_char_int=\count370
-\l__regex_current_state_int=\count371
-\l__regex_step_int=\count372
-\l__regex_min_active_int=\count373
-\l__regex_max_active_int=\count374
-\l__regex_replacement_csnames_int=\count375
-\l__regex_match_count_int=\count376
-\l__regex_submatch_int=\count377
-\l__regex_zeroth_submatch_int=\count378
+\l__regex_internal_a_int=\count343
+\l__regex_internal_b_int=\count344
+\l__regex_internal_c_int=\count345
+\l__regex_balance_int=\count346
+\l__regex_group_level_int=\count347
+\l__regex_mode_int=\count348
+\l__regex_catcodes_int=\count349
+\l__regex_default_catcodes_int=\count350
+\c__regex_catcode_D_int=\count351
+\c__regex_catcode_S_int=\count352
+\c__regex_catcode_L_int=\count353
+\c__regex_catcode_O_int=\count354
+\c__regex_catcode_A_int=\count355
+\c__regex_all_catcodes_int=\count356
+\l__regex_show_lines_int=\count357
+\l__regex_min_state_int=\count358
+\l__regex_max_state_int=\count359
+\l__regex_left_state_int=\count360
+\l__regex_right_state_int=\count361
+\l__regex_capturing_group_int=\count362
+\l__regex_min_pos_int=\count363
+\l__regex_max_pos_int=\count364
+\l__regex_current_pos_int=\count365
+\l__regex_start_pos_int=\count366
+\l__regex_success_pos_int=\count367
+\l__regex_current_char_int=\count368
+\l__regex_current_catcode_int=\count369
+\l__regex_last_char_int=\count370
+\l__regex_case_changed_char_int=\count371
+\l__regex_current_state_int=\count372
+\l__regex_step_int=\count373
+\l__regex_min_active_int=\count374
+\l__regex_max_active_int=\count375
+\l__regex_replacement_csnames_int=\count376
+\l__regex_match_count_int=\count377
+\l__regex_submatch_int=\count378
+\l__regex_zeroth_submatch_int=\count379
 )
 (c:/w32tex/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2016/12/20 v1.1 interfaceforuprightgreeklettersforuseinchemi
 stry (CN)
-\l__chemgreek_tmpa_int=\count379
-\g__chemgreek_tmpa_int=\count380
+\l__chemgreek_tmpa_int=\count380
+\g__chemgreek_tmpa_int=\count381
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -2903,49 +2921,49 @@ stry (CN)
 . Defining command \selectchemgreekmapping with sig. 'm' on line 491.
 .................................................
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count381
-\__mhchem_arrow_extPgfLength_skip=\skip86
-\mhchem@minispace@tmp=\skip87
-\mhchem@minibackspace@tmp=\skip88
-\mhchem@bondwidth=\skip89
-\mhchem@bondheight=\skip90
-\mhchem@smallbondwidth@tmpA=\skip91
-\mhchem@smallbondwidth@tmpB=\skip92
-\mhchem@smallbondwidth=\skip93
-\mhchem@bondtmp@minussidebearingleft=\skip94
-\mhchem@bondtmp@minussidebearingright=\skip95
-\l__mhchem_option_version_int=\count382
-\mhchem@option@minusmathsidebearingleft=\dimen328
-\mhchem@option@minusmathsidebearingright=\dimen329
-\mhchem@option@minustextsidebearingleft=\dimen330
-\mhchem@option@minustextsidebearingright=\dimen331
+\l__mhchem_ce_distanceFromLastComma_int=\count382
+\__mhchem_arrow_extPgfLength_skip=\skip87
+\mhchem@minispace@tmp=\skip88
+\mhchem@minibackspace@tmp=\skip89
+\mhchem@bondwidth=\skip90
+\mhchem@bondheight=\skip91
+\mhchem@smallbondwidth@tmpA=\skip92
+\mhchem@smallbondwidth@tmpB=\skip93
+\mhchem@smallbondwidth=\skip94
+\mhchem@bondtmp@minussidebearingleft=\skip95
+\mhchem@bondtmp@minussidebearingright=\skip96
+\l__mhchem_option_version_int=\count383
+\mhchem@option@minusmathsidebearingleft=\dimen335
+\mhchem@option@minusmathsidebearingright=\dimen336
+\mhchem@option@minustextsidebearingleft=\dimen337
+\mhchem@option@minustextsidebearingright=\dimen338
 )
 (c:/w32tex/share/texmf-dist/tex/latex/chemfig/chemfig.sty
 (c:/w32tex/share/texmf-dist/tex/generic/chemfig/chemfig.tex
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.cod
 e.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen332
-\pgfarrowlength=\dimen333
-\pgfarrowwidth=\dimen334
-\pgfarrowlinewidth=\dimen335
+\pgfarrowinset=\dimen339
+\pgfarrowlength=\dimen340
+\pgfarrowwidth=\dimen341
+\pgfarrowlinewidth=\dimen342
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 9.5822pt on input line 208.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 9.5822pt on input line 208.
 )
-\CF@cnt@atomingroup=\count383
-\CF@cnt@groupnumber=\count384
-\CF@cnt@atomnumber=\count385
-\CF@cnt@cycle=\count386
-\CF@dim=\dimen336
-\CF@lewis@box=\box109
-\CF@box@boxa=\box110
-\CF@box@boxb=\box111
-\CF@stuff@box=\box112
+\CF@cnt@atomingroup=\count384
+\CF@cnt@groupnumber=\count385
+\CF@cnt@atomnumber=\count386
+\CF@cnt@cycle=\count387
+\CF@dim=\dimen343
+\CF@lewis@box=\box112
+\CF@box@boxa=\box113
+\CF@box@boxb=\box114
+\CF@stuff@box=\box115
 \CF@unused=\write7
-\CF@compound@cnt=\count387
-\CF@arrow@size=\dimen337
+\CF@compound@cnt=\count388
+\CF@arrow@size=\dimen344
 )
 Package: chemfig 2015/12/01 v1.2d Draw molecule with an easy syntax
 )
@@ -2970,7 +2988,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count388
+\c@abspage=\count389
 Package zref Info: New property: abspage on input line 62.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
@@ -2980,79 +2998,69 @@ Package zref Info: New property list: LastPage on input line 55.
 (c:/w32tex/share/texmf-dist/tex/latex/media9/pdfbase.sty
 Package: pdfbase 2017/01/24 v0.13 driver independent access to low-level PDF fe
 atures
-\g@pbs@page@int=\count389
-\g_pbs_obj_int=\count390
-\g_pbs_oc_int=\count391
+\g@pbs@page@int=\count390
+\g_pbs_obj_int=\count391
+\g_pbs_oc_int=\count392
 )
 (c:/w32tex/share/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2016/03/11 v0.6 support package for ocgx2.sty
 )
-\@anim@box=\box113
-\@anim@measbox=\box114
-\@anim@tmpdima=\dimen338
-\@anim@tmpdimb=\dimen339
-\@anim@num=\count392
-\@anim@curframe=\count393
-\@anim@curframe@zb=\count394
-\@anim@resizeflags=\count395
-\@anim@skipfram=\count396
-\@anim@mulframecnt=\count397
+\@anim@box=\box116
+\@anim@measbox=\box117
+\@anim@tmpdima=\dimen345
+\@anim@tmpdimb=\dimen346
+\@anim@num=\count393
+\@anim@curframe=\count394
+\@anim@curframe@zb=\count395
+\@anim@resizeflags=\count396
+\@anim@skipfram=\count397
+\@anim@mulframecnt=\count398
 \@anim@@tmlnfile=\read5
-\@anim@tmpcnt=\count398
-\c@@anim@ltxcnt=\count399
-\@anim@curlayer=\count400
-\@anim@lineno=\count401
-\@anim@curfield=\count402
-\@anim@@resizeflags=\count403
+\@anim@tmpcnt=\count399
+\c@@anim@ltxcnt=\count400
+\@anim@curlayer=\count401
+\@anim@lineno=\count402
+\@anim@curfield=\count403
+\@anim@@resizeflags=\count404
 )
-\tcfs@boxa=\box115
-\tcfs@boxb=\box116
-))
-(c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '4.11'
-\tcb@testbox=\box117
-\tcb@totalupperbox=\box118
-\tcb@totallowerbox=\box119
-)
-
-LaTeX Warning: Unused global option(s):
-    [14Q].
-
-(./TeXmanual.aux)
+\tcfs@boxa=\box118
+\tcfs@boxb=\box119
+)) (./TeXmanual.aux)
 \openout1 = `TeXmanual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
- (c:/w32tex/share/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 3.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    ... okay on input line 3.
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 4.
+(Font)              scaled to size 9.6222pt on input line 3.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 4.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 4.
+(Font)              scaled to size 9.6222pt on input line 3.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 3.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -3069,9 +3077,9 @@ File: siunitx-abbreviations.cfg 2017/02/01 v2.7c siunitx: Abbreviated units
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 4.
+(lastpage)             ! on input line 3.
 \AtBeginShipoutBox=\box120
-Package hyperref Info: Link coloring ON on input line 4.
+Package hyperref Info: Link coloring ON on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -3079,18 +3087,18 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/w32tex/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count404
+\c@section@level=\count405
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
+LaTeX Info: Redefining \nameref on input line 3.
 
 (./TeXmanual.out) (./TeXmanual.out)
 \@outlinefile=\write8
 \openout8 = `TeXmanual.out'.
 
  ABD: EveryShipout initializing macros
-\c@lstlisting=\count405
+\c@lstlisting=\count406
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -3101,66 +3109,66 @@ Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 4.
+. Activating mapping `default' on line 3.
 .................................................
-\c__siunitx_mathsf_int=\count406
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 4.
+\c__siunitx_mathsf_int=\count407
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 4.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 3.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 4.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 3.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 4.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 3.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 7.1204pt on input line 4.
+(Font)              scaled to size 7.1204pt on input line 3.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 4.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 4.
+(Font)              scaled to size 5.77332pt on input line 3.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 4.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 9.6222pt on input line 4.
+(Font)              scaled to size 9.6222pt on input line 3.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 7.1204pt on input line 4.
+(Font)              scaled to size 7.1204pt on input line 3.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 5.77332pt on input line 4.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 4.
+(Font)              scaled to size 5.77332pt on input line 3.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c__siunitx_mathtt_int=\count407
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 4.
+\c__siunitx_mathtt_int=\count408
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -3206,9 +3214,9 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 )
 (../tableofcontents/tableofcontents.tex
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 9.6222pt on input line 22.
+(Font)              scaled to size 9.6222pt on input line 23.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
  (./TeXmanual.toc)
 \tf@toc=\write9
 \openout9 = `TeXmanual.toc'.
@@ -3216,22 +3224,29 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
  [2
 
 ]
-File: goldshade.png Graphic file (type bmp)
- <goldshade.png>
-[3
+File: /Users/User/Documents/TeX/TeXManual/tableofcontents/orangeshade.jpg Graph
+ic file (type bmp)
+
+</Users/User/Documents/TeX/TeXManual/tableofcontents/orangeshade.jpg> [3
 
 ]
-File: goldshade.png Graphic file (type bmp)
- <goldshade.png> [4]
-File: goldshade.png Graphic file (type bmp)
- <goldshade.png> [5]
-File: goldshade.png Graphic file (type bmp)
- <goldshade.png>)
+File: /Users/User/Documents/TeX/TeXManual/tableofcontents/orangeshade.jpg Graph
+ic file (type bmp)
+
+</Users/User/Documents/TeX/TeXManual/tableofcontents/orangeshade.jpg> [4]
+File: /Users/User/Documents/TeX/TeXManual/tableofcontents/orangeshade.jpg Graph
+ic file (type bmp)
+
+</Users/User/Documents/TeX/TeXManual/tableofcontents/orangeshade.jpg> [5]
+File: /Users/User/Documents/TeX/TeXManual/tableofcontents/orangeshade.jpg Graph
+ic file (type bmp)
+
+</Users/User/Documents/TeX/TeXManual/tableofcontents/orangeshade.jpg>)
 (../chapters/chapter1_preparation/before_making_document.tex [6]
 第 1 章
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 28.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 29.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [7
@@ -3666,10 +3681,22 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[31]
 \openout4 = `TeXmanual.listing'.
 
- (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [31]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 \openout4 = `TeXmanual.listing'.
@@ -3712,8 +3739,20 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) (./TeXmanual.listing))
-(../chapters/chapter5_pictures/about_pictures.tex [34]
+) (./TeXmanual.listing)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [34]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+))
+(../chapters/chapter5_pictures/about_pictures.tex [35]
 第 5 章
 \openout4 = `TeXmanual.listing'.
 
@@ -3731,7 +3770,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [35
+) [36
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -3745,7 +3784,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [36]
+) [37]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -3766,7 +3805,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 (../chapters/chapter5_pictures/figures_for_pictures/fig_left_right.tex)
 (../chapters/chapter5_pictures/figures_for_pictures/fig_left_right.tex)
-[37]
+[38]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -3778,42 +3817,6 @@ File: ../chapters/chapter5_pictures/figures_for_pictures/wakan.jpg Graphic file
  (type bmp)
 
 <../chapters/chapter5_pictures/figures_for_pictures/wakan.jpg>
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [38]
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
 \openout4 = `TeXmanual.listing'.
 
 
@@ -3861,8 +3864,44 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [40]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapter6_tables/about_tables.tex [40]
+(../chapters/chapter6_tables/about_tables.tex [41]
 第 6 章
 \openout4 = `TeXmanual.listing'.
 
@@ -3881,7 +3920,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[41
+[42
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -3906,55 +3945,32 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[42]
-\openout4 = `TeXmanual.listing'.
-
- (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) (./TeXmanual.listing)
 [43]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) (./TeXmanual.listing)
+)
 \openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -3976,6 +3992,11 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./TeXmanual.listing)
+\openout4 = `TeXmanual.listing'.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 \openout4 = `TeXmanual.listing'.
 
@@ -3988,49 +4009,67 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [45]
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) (./TeXmanual.listing)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) (./TeXmanual.listing)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) (./TeXmanual.listing)
-[46]
+[45]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [47]
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [46]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./TeXmanual.listing)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./TeXmanual.listing)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./TeXmanual.listing)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./TeXmanual.listing)
+[47]
+\openout4 = `TeXmanual.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [48]
 
 Package caption Warning: \label without proper reference on input line 160.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:options-of-figure' on page 48 undefined on input 
+LaTeX Warning: Reference `tab:options-of-figure' on page 49 undefined on input 
 line 442.
 
 \openout4 = `TeXmanual.listing'.
@@ -4045,7 +4084,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
 (../chapters/chapter8_references_contents_links/references_contents_links.tex
-[48]
+[49]
 第 7 章
 \openout4 = `TeXmanual.listing'.
 
@@ -4069,7 +4108,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [49
+) [50
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4090,18 +4129,6 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [50]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4125,8 +4152,20 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [52]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_pagelayout/pagelayout.tex [52]
+(../chapters/chapterx_pagelayout/pagelayout.tex [53]
 第 8 章
 
 Overfull \hbox (9.74373pt too wide) in paragraph at lines 30--44
@@ -4138,7 +4177,7 @@ Overfull \hbox (29.65387pt too wide) in alignment at lines 70--110
  [] [] 
  []
 
-[53
+[54
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4151,11 +4190,11 @@ Package caption Warning: \label without proper reference on input line 433.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `length-unit' on page 54 undefined on input line 133.
+LaTeX Warning: Reference `length-unit' on page 55 undefined on input line 133.
 
-[54]
-One-sided document style.
 [55]
+One-sided document style.
+[56]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -4179,30 +4218,6 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [56]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4250,19 +4265,43 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [58]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [59]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4285,12 +4324,12 @@ Overfull \hbox (204.7462pt too wide) in paragraph at lines 444--449
 [][] 
  []
 
-[59] [60]
+[60] [61]
 Overfull \hbox (23.7462pt too wide) in paragraph at lines 454--459
 [][] 
  []
 
-[61
+[62
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4315,7 +4354,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [62
+) [63
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4342,7 +4381,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_fonts/about_europian_fonts.tex [63]
+(../chapters/chapterx_fonts/about_europian_fonts.tex [64]
 第 9 章
 \openout4 = `TeXmanual.listing'.
 
@@ -4354,7 +4393,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [64
+) [65
 
 ]
 (I search kanjifont definition file: . . ) (I search font definition file: . .
@@ -4392,14 +4431,14 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [65]
+) [66]
 \openout4 = `TeXmanual.listing'.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_fonts/about_japanese_fonts.tex [66]
+(../chapters/chapterx_fonts/about_japanese_fonts.tex [67]
 第 10 章
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 51.
@@ -4409,7 +4448,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [67
+) [68
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4435,7 +4474,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [68]
+) [69]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4470,10 +4509,10 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [69] [70])
-(../chapters/chapterx_file_management/file_management.tex [71]
+) [70] [71])
+(../chapters/chapterx_file_management/file_management.tex [72]
 第 11 章
-[72
+[73
 
 ]
 File: ../chapters/chapterx_file_management/figures_for_file_management/director
@@ -4485,7 +4524,7 @@ mple1.jpg>
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [73]
+) [74]
 File: ../chapters/chapterx_file_management/figures_for_file_management/director
 y_example2.jpg Graphic file (type bmp)
 
@@ -4500,31 +4539,7 @@ mple3.jpg>
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [74]
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [75]
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4566,8 +4581,32 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [77])
-(../chapters/chapterx_right_words/how_to_write_right_words.tex [78]
+) [77]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [78])
+(../chapters/chapterx_right_words/how_to_write_right_words.tex [79]
 第 12 章
 \openout4 = `TeXmanual.listing'.
 
@@ -4579,9 +4618,9 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [79
+) [80
 
-] [80]
+] [81]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4603,10 +4642,10 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [81])
-(../chapters/chapterx_useful_packages/useful_packages.tex [82]
+) [82])
+(../chapters/chapterx_useful_packages/useful_packages.tex [83]
 第 13 章
-[83
+[84
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4649,7 +4688,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [84]
+) [85]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4678,7 +4717,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 <a0,fr10> <a0,fr11> <a0,fr12> <a0,fr13> <a0,fr14> <a0,fr15> <a0,fr16>
 <a0,fr17> <a0,fr18> <a0,fr19> <a0,fr20> <a0,fr21> <a0,fr22> <a0,fr23>
 <a0,fr24> <a0,fr25> <a0,fr26> <a0,fr27> <a0,fr28> <a0,fr29> <a0,fr30>
-<a0,fr31> [85] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5> <a1,fr6>
+<a0,fr31> [86] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5> <a1,fr6>
 <a1,fr7> <a1,fr8> <a1,fr9> <a1,fr10> <a1,fr11> <a1,fr12> <a1,fr13> <a1,fr14>
 <a1,fr15> <a1,fr16> <a1,fr17> <a1,fr18> <a1,fr19> <a1,fr20> <a1,fr21>
 <a1,fr22> <a1,fr23> <a1,fr24> <a1,fr25> <a1,fr26> <a1,fr27> <a1,fr28>
@@ -4687,11 +4726,11 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 <a2,fr13> <a2,fr14> <a2,fr15> <a2,fr16> <a2,fr17> <a2,fr18> <a2,fr19>
 <a2,fr20> <a2,fr21> <a2,fr22> <a2,fr23> <a2,fr24> <a2,fr25> <a2,fr26>
 <a2,fr27> <a2,fr28> <a2,fr29> <a2,fr30> <a2,fr31>)
-(../chapters/chapterx_others/other_topics.tex [86]
+(../chapters/chapterx_others/other_topics.tex [87]
 第 14 章
-[87
+[88
 
-]) (../bibliography/bibliography.tex [88]
+]) (../bibliography/bibliography.tex [89]
 Underfull \hbox (badness 10000) in paragraph at lines 41--43
 []\T1/ptm/m/n/10 Multi-file La-TeX projects. [][]$\T1/pcr/m/n/10 https : / / ja
  . sharelatex . com / learn / Multi-[]file _ LaTeX _
@@ -4699,17 +4738,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
 ) 
 AED: lastpage setting LastPage
-Package atenddvi Info: Last page = 89.
-[89
+Package atenddvi Info: Last page = 90.
+[90
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 27.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 24.
  (./TeXmanual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 27.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `TeXmanual.out' has not changed.
-(rerunfilecheck)             Checksum: 99866B644E3530A2169D5FBB61B1D72E;9994.
+(rerunfilecheck)             Checksum: 625394906EF3DC5B32F10D3D5BADB1DB;10066.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -4721,15 +4760,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 47070 strings out of 493671
- 921800 string characters out of 6151255
- 1100739 words of memory out of 5000000
- 49295 multiletter control sequences out of 15000+600000
- 117204 words of font info for 223 fonts, out of 8000000 for 9000
+ 47542 strings out of 493671
+ 930928 string characters out of 6151255
+ 1111673 words of memory out of 5000000
+ 49749 multiletter control sequences out of 15000+600000
+ 117541 words of font info for 224 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 84i,21n,163p,10487b,3110s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 84i,21n,163p,10478b,3110s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on TeXmanual.dvi (89 pages, 947392 bytes).
+Output written on TeXmanual.dvi (90 pages, 955488 bytes).

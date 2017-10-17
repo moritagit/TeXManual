@@ -51,6 +51,9 @@
 \definecolor{gold}{RGB}{255, 215, 0}
 \definecolor{darkcyan}{RGB}{0, 139, 139}
 
+\font\signika=signika
+\font\signikab=signikab at 16pt
+
 
 \begin{document}
 \begin{tikzpicture}
@@ -81,10 +84,10 @@
 	page layout/.style = {concept color = orange, faded/.style = {concept color = orange!50}},
 	link/.style = {concept color = cyan, faded/.style = {concept color = cyan!50}},
 	others/.style = {concept color = darkcyan, faded/.style = {concept color = darkcyan!50}},
-	info/.style = {concept color = gray, faded/.style = {concept color = gray!50}},	
+	info/.style = {concept color = gray, faded/.style = {concept color = gray!50}, font=\signika},	
 	grow cyclic,
-	level 1/.append style = {level distance = 4.5cm, sibling angle = 90, font = \sffamily\bfseries\large},
-	level 2/.append style = {level distance = 2.7cm, sibling angle = 60, font = \sffamily}]
+	level 1/.append style = {level distance = 4.5cm, sibling angle = 90, font = \signikab},
+	level 2/.append style = {level distance = 2.7cm, sibling angle = 60, font = \signika}]
 \node [root concept] at (latex) {\LaTeXe} % root
 	child [deco] { node {Decoration}
 		child { node {space} }

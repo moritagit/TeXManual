@@ -530,6 +530,19 @@ y = ax^2 + bx + c \label{eq:parabola}
 これはキレイに参照番号等を出してくれるので，
 数式の参照においてはこちらを使ってもいいと思います。
 
+また，参照したときだけ式番号を表示したいというときは，
+mathtoolsパッケージを使います。
+まずはプリアンブルに，
+\begin{ITeX}
+\usepackage{mathtools}
+\end{ITeX}
+と書いてください。
+この後，プリアンブルに
+\begin{ITeX}
+\mathtoolsset{showonlyrefs = true}
+\end{ITeX}
+とすれば，参照された式のみ式番号を表示する，ということが実現できます。
+
 なお，第\ref{ch:references-contents-link}章\ref{sec:references}節で説明している通りですが，
 2回実行しないと正しく参照が表示されないので，
 そこは注意してください。
@@ -615,7 +628,7 @@ equation環境とsplit環境を使って，
 \[
 | x | =
 \begin{cases}
-x & (x \leq 0) \\
+x & (x \geq 0) \\
 -x & (x < 0)
 \end{cases}
 \]
@@ -686,6 +699,26 @@ a_{m1} & \dots & a_{mn}
 \end{pmatrix}
 \]
 \end{IOTeX}
+
+
+
+\section{数式の左詰め}
+デフォルトでは数式は紙面の中央に配置されます。
+これを，紙面の左から一定の距離のところより始める，というようにしたい場合は，
+\verb|\documentclass|のオプションに「fleqn」とつけます。
+つまり，次のようにすればよいです。
+\begin{ITeX}
+\documentclass[dvipdfmx, fleqn]{jsarticle}
+\end{ITeX}
+デフォルトでは，数式は左から\SI{3}{zw}（3全角文字分）のところから始まります。
+これを変更するには，\verb|\mathindent|というコマンドで設定されている長さを変更します。
+例えば，\SI{5}{zw}の位置から始めるようにするには，
+\begin{ITeX}
+\setlength{\mathindent}{5zw}
+\end{ITeX}
+のようにします。
+
+この話題については，第\ref{ch:pagelayout}章\ref{sec:options-of-documentclass}節でも扱っています。
 
 
 \end{document}
