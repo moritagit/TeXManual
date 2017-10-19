@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  20 OCT 2017 03:07
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  20 OCT 2017 03:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./before_making_document.tex
-(./before_making_document.tex
+**./about_tables.tex
+(./about_tables.tex
 pLaTeX2e <2016/11/29> (based on LaTeX2e <2017/01/01> patch level 3)
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (c:/w32tex/share/texmf-dist/tex/latex/standalone/standalone.cls
@@ -3042,43 +3042,41 @@ Package: ocgbase 2016/03/11 v0.6 support package for ocgx2.sty
 )
 \tcfs@boxa=\box118
 \tcfs@boxb=\box119
-))
-(./before_making_document.aux)
-\openout1 = `before_making_document.aux'.
+)) (./about_tables.aux)
+\openout1 = `about_tables.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 3.
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
+ (c:/w32tex/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    ... okay on input line 4.
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 3.
+(Font)              scaled to size 9.6222pt on input line 4.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 3.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 3.
+(Font)              scaled to size 9.6222pt on input line 4.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 4.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -3095,9 +3093,9 @@ File: siunitx-abbreviations.cfg 2017/02/01 v2.7c siunitx: Abbreviated units
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 3.
+(lastpage)             ! on input line 4.
 \AtBeginShipoutBox=\box120
-Package hyperref Info: Link coloring ON on input line 3.
+Package hyperref Info: Link coloring ON on input line 4.
 
 (c:/w32tex/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -3107,13 +3105,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count407
 )
-LaTeX Info: Redefining \ref on input line 3.
-LaTeX Info: Redefining \pageref on input line 3.
-LaTeX Info: Redefining \nameref on input line 3.
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
 
-(./before_making_document.out) (./before_making_document.out)
+(./about_tables.out) (./about_tables.out)
 \@outlinefile=\write8
-\openout8 = `before_making_document.out'.
+\openout8 = `about_tables.out'.
 
 
 ABD: EveryShipout initializing macros
@@ -3128,122 +3126,398 @@ Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 3.
+. Activating mapping `default' on line 4.
 .................................................
 \c__siunitx_mathsf_int=\count409
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 4.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 3.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 4.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 4.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 3.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 4.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 7.1204pt on input line 3.
+(Font)              scaled to size 7.1204pt on input line 4.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 3.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
+(Font)              scaled to size 5.77332pt on input line 4.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 4.
 
 (c:/w32tex/share/texmf-dist/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 3.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 4.
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 9.6222pt on input line 3.
+(Font)              scaled to size 9.6222pt on input line 4.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 7.1204pt on input line 3.
+(Font)              scaled to size 7.1204pt on input line 4.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 5.77332pt on input line 3.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 3.
+(Font)              scaled to size 5.77332pt on input line 4.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 4.
 
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \c__siunitx_mathtt_int=\count410
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 3.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 4.
 
 (c:/w32tex/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 第 1 章
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 4.
+(Font)              scaled to size 19.95642pt on input line 5.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 4.
+(Font)              scaled to size 19.95642pt on input line 5.
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 19.95642pt on input line 4.
+(Font)              scaled to size 19.95642pt on input line 5.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 19.95642pt on input line 4.
+(Font)              scaled to size 19.95642pt on input line 5.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 10.
+(Font)              scaled to size 13.85594pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 10.
+(Font)              scaled to size 13.85594pt on input line 13.
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 13.85594pt on input line 10.
+(Font)              scaled to size 13.85594pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 13.85594pt on input line 10.
+(Font)              scaled to size 13.85594pt on input line 13.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 7.1204pt on input line 15.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+\openout4 = `about_tables.listing'.
+
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2015/06/04 1.6 listings language file
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 28.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 27.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [1
+)
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 27.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 27.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
+(Font)              scaled to size 9.6222pt on input line 53.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
+
+
+LaTeX Warning: Reference `ch:formulas' on page 1 undefined on input line 53.
+
+
+LaTeX Warning: Reference `sec:align' on page 1 undefined on input line 53.
+
+\openout4 = `about_tables.listing'.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing)
+[1
 
 
 ]
+\openout4 = `about_tables.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+(./about_tables.listing)
+\openout4 = `about_tables.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+(./about_tables.listing)
+\openout4 = `about_tables.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing)
+[2]
+\openout4 = `about_tables.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 2.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 2.
+)
+[3]
+\openout4 = `about_tables.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+(./about_tables.listing)
+\openout4 = `about_tables.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing)
+[4]
+Overfull \hbox (161.45535pt too wide) in paragraph at lines 285--289
+ [] 
+ []
+
+\openout4 = `about_tables.listing'.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [5]
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 7.1204pt on input line 12.
+)
+[6]
+
+LaTeX Warning: Reference `ch:pictures' on page 7 undefined on input line 379.
+
+
+LaTeX Warning: Reference `sec:colors' on page 7 undefined on input line 379.
+
+\openout4 = `about_tables.listing'.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+
+LaTeX Warning: Reference `ch:pictures' on page 7 undefined on input line 388.
+
+
+LaTeX Warning: Reference `sec:colors' on page 7 undefined on input line 388.
+
+\openout4 = `about_tables.listing'.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing)
+[7]
+\openout4 = `about_tables.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+(./about_tables.listing)
+\openout4 = `about_tables.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./about_tables.listing)
+[8]
+
+LaTeX Warning: Reference `ch:pictures' on page 9 undefined on input line 467.
+
+
+LaTeX Warning: Reference `sec:insert-pictures' on page 9 undefined on input lin
+e 467.
+
+\openout4 = `about_tables.listing'.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+
+LaTeX Warning: Reference `tab:options-of-figure' on page 9 undefined on input l
+ine 496.
+
+
+LaTeX Warning: Reference `ch:pictures' on page 9 undefined on input line 510.
+
+
+LaTeX Warning: Reference `sec:wrapfig' on page 9 undefined on input line 510.
+
+\openout4 = `about_tables.listing'.
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `about_tables.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+
+LaTeX Warning: Reference `ch:pictures' on page 9 undefined on input line 534.
+
+
+LaTeX Warning: Reference `sec:wrapfig' on page 9 undefined on input line 534.
+
 
 AED: lastpage setting LastPage
-Package atenddvi Info: Last page = 2.
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 77.
- (./before_making_document.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
-Package rerunfilecheck Info: File `before_making_document.out' has not changed.
+Package atenddvi Info: Last page = 9.
+[9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 537.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 537.
+ (./about_tables.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 537.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 537.
+Package rerunfilecheck Info: File `about_tables.out' has not changed.
+(rerunfilecheck)             Checksum: 553E191FD412CF78C9BE88EC0815D18E;766.
 
-(rerunfilecheck)             Checksum: 0431877B26229DE8F94204EB7D4798EF;280.
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 43904 strings out of 493671
- 863931 string characters out of 6151255
- 1007788 words of memory out of 5000000
- 46718 multiletter control sequences out of 15000+600000
- 39328 words of font info for 90 fonts, out of 8000000 for 9000
+ 45761 strings out of 493671
+ 890565 string characters out of 6151255
+ 1105198 words of memory out of 5000000
+ 48458 multiletter control sequences out of 15000+600000
+ 41851 words of font info for 97 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 68i,11n,96p,10491b,984s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 77i,14n,151p,10481b,3076s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on before_making_document.dvi (2 pages, 21292 bytes).
+Output written on about_tables.dvi (9 pages, 144468 bytes).

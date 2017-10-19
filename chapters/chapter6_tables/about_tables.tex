@@ -1,4 +1,7 @@
 %第6章
+\documentclass[class=jreport, crop=false, preview=false, dvipdfmx, fleqn]{standalone}
+\usepackage{../../preamble/preamble_TeXManual}
+\begin{document}
 \chapter{表}
 \label{ch:tables}
 
@@ -275,6 +278,16 @@ tcolorboxについてはまたどこかで説明しようと思います...
 普通に表を書くだけでは，横幅は内容によって勝手に決まってしまいます。
 このとき，中身を長くすると紙面からはみ出してしまうこともあって，
 不便に思うときもあるかもしれません。
+例えば以下の表のようなことになることもあるかと思います。
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|l|}\hline
+あ & い & う & えおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもらりるれろやゆよわをん
+abcdefghijklmnopqrstuvwxyz \\ \hline
+\end{tabular}
+\end{table}
+
 この横幅をこちらで指定することもできます。
 列指定を以下のように変更すれば，
 その列の幅が指定した長さになります。
@@ -287,8 +300,18 @@ r & $\rightarrow$ & \verb|>{\raggedleft}p{長さ}| \\
 
 一番右の列に\verb|\centering|を入れるとうまくいきませんが，
 これは右に空の列を追加することで回避できます。
+こうすると以下のように改行してくれてうまく収まります
+（一番右のセルの列指定を\texttt{l}から\verb|p{30zw}|に変えてみました）。
 
-また，表自体の横幅を指定するには，
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|p{30zw}|}\hline
+あ & い & う & えおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもらりるれろやゆよわをん
+abcdefghijklmnopqrstuvwxyz \\ \hline
+\end{tabular}
+\end{table}
+
+表自体の横幅を指定するには，
 tabularxパッケージのtabularx環境を使います。
 まずはプリアンブルに
 \begin{ITeX}
@@ -306,15 +329,46 @@ tabularx環境の使い方は，
 幅が自由に変わります。
 長い文を書くと勝手に改行してくれます。
 
-%\begin{IOTeX*}
-%\begin{tabularx}{80mm}{|l|X|c|} \hline
-%\multicolumn{3}{|c|}{\textgt{社員表}} \\ \hline
-%ID & \multicolumn{1}{|c|}{名前} & 年齢 \\ \hline
-%1 & 堂成道 橡数 & 30 \\ \hline
-%2 & てふ 太郎 & 36 \\ \hline
-%3 & らてふ 次郎 & 25 \\ \hline
-%\end{tabularx}
-%\end{IOTeX*}
+\begin{IOTeX*}
+\begin{tabularx}{80mm}{|l|X|c|} \hline
+\multicolumn{3}{|c|}{\textgt{社員表}} \\ \hline
+ID & \multicolumn{1}{|c|}{名前} & 年齢 \\ \hline
+1 & 堂成道 橡数 & 30 \\ \hline
+2 & てふ 太郎 & 36 \\ \hline
+3 & らてふ 次郎 & 25 \\ \hline
+\end{tabularx}
+\end{IOTeX*}
+
+少しコアな話に入ります。
+セルの中身がかなり長くなるとき，
+普通に書くだけでは紙面からはみ出すので上のように列指定にpを使う，
+というのは上で説明した通りです。
+が，セルの中で改行したいときもあるかと思います。
+このとき，普通に改行しようと\verb|\\|を使うと，
+表自体の改行と勘違いされ，思わぬ改行やエラーにつながります。
+このときは，表の行間での改行を\verb|\tabularnewline|，
+セル内での改行を\verb|\newline|（または\verb|\par|）とすればうまくいきます。
+このとき，インデント（字下げ）は入らない仕様になっています。
+
+\begin{IOTeX*}
+\begin{tabular}{|c|l|c|p{30zw}|} \hline
+ID & 名前 & 年齢 & その他 \tabularnewline \hline
+1 & 堂成道 橡数 & 30 &
+{\TeX}を開発されたDonald Knuth氏のもじり。\newline
+ドナルドはよく見るけどクヌースは見たことがなかったので頑張って当て字をしました。\par
+本当に尊敬します。
+\tabularnewline \hline
+2 & てふ 太郎 & 36 &
+まあ長男なので太郎です。
+\tabularnewline \hline
+3 & らてふ 次郎 & 25 &
+{\LaTeX}が次男なのか知らないですが，
+考えるのが面倒なので次郎です。
+\tabularnewline \hline
+\end{tabular}
+\end{IOTeX*}
+
+
 
 
 
@@ -480,3 +534,4 @@ jsarticle，jsbookなら
 詳しくは第\ref{ch:pictures}章\ref{sec:wrapfig}節を読んでください。
 
 
+\end{document}

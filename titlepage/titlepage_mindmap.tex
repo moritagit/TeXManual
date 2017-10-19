@@ -1,8 +1,8 @@
 %Design of title（mindmap ver.）
-\documentclass[class=jreport, crop=false, preview=false, tikz, dvipdfmx, a4paper, 14Q]{standalone}
+\documentclass[class=jreport, crop=false, preview=false, tikz, dvipdfmx, fleqn]{standalone}
 
 %package & library
-\usetikzlibrary{calc, patterns, decorations, angles, calendar, backgrounds, shadows, mindmap}
+\usetikzlibrary{calc, patterns, decorations, decorations.footprints, angles, calendar, backgrounds, shadows, mindmap}
 \usepackage{fancyhdr}
 
 %header & footer
@@ -31,7 +31,7 @@
 	\fancyhf{}
 	%page layout
 	\setlength{\textwidth}{210mm}
-	\setlength{\hoffset}{-2.9cm}
+	\setlength{\hoffset}{-3.3cm}
 	\setlength{\oddsidemargin}{0mm}
 	\setlength{\marginparsep}{0mm}
 	\setlength{\marginparwidth}{0mm}
@@ -53,6 +53,9 @@
 
 \font\signika=signika
 \font\signikab=signikab at 16pt
+
+%\newcommand{\signika}{\sffamily}
+%\newcommand{\signikab}{\sffamily\bfseries\Large}
 
 
 \begin{document}
@@ -139,8 +142,14 @@
 		};
 \end{scope}
 
-%grid
+%foots
+\begin{scope}[decoration={footprints, foot of = felis silvestris, stride length = 15mm}]
+\draw [decorate] ($(AR) + (-1.5, -0.5)$) to[bend left = 45] ($(O) + (0, -0.2)$) to[bend right = 45] ($(BL) + (1, 0.1)$);
+\end{scope}
+
+%grid and point
 %\draw [step=1cm, very thin, black!25!white] (BL) grid (AR);
+%\fill (O) circle [radius = 2mm];
 
 \end{tikzpicture}
 \end{document}

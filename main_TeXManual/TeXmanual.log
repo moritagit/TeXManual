@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  17 OCT 2017 16:04
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.2.24)  20 OCT 2017 03:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2800,6 +2800,10 @@ File: ppdvipdfmx.def 2017/01/14 v0.5h Pdfpages driver for dvipdfmx (AM)
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.footprints.code.tex
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
+orations.footprints.code.tex))
 (c:/w32tex/share/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2017/01/16 v4.06 for typesetting chemical formulae
 
@@ -3246,7 +3250,7 @@ ic file (type bmp)
 第 1 章
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 29.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 28.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [7
@@ -4011,13 +4015,11 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
 [45]
-\openout4 = `TeXmanual.listing'.
+Overfull \hbox (161.45535pt too wide) in paragraph at lines 285--289
+ [][] 
+ []
 
- (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
 \openout4 = `TeXmanual.listing'.
-
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -4040,6 +4042,12 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
+[47]
+\openout4 = `TeXmanual.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4048,6 +4056,17 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
 \openout4 = `TeXmanual.listing'.
 
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./TeXmanual.listing)
+[48]
+\openout4 = `TeXmanual.listing'.
+
+ (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) (./TeXmanual.listing)
+\openout4 = `TeXmanual.listing'.
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -4058,19 +4077,19 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) (./TeXmanual.listing)
-[47]
+[49]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [48]
+)
 
 Package caption Warning: \label without proper reference on input line 160.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:options-of-figure' on page 49 undefined on input 
-line 442.
+LaTeX Warning: Reference `tab:options-of-figure' on page 50 undefined on input 
+line 496.
 
 \openout4 = `TeXmanual.listing'.
 
@@ -4084,7 +4103,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
 (../chapters/chapter8_references_contents_links/references_contents_links.tex
-[49]
+[50]
 第 7 章
 \openout4 = `TeXmanual.listing'.
 
@@ -4108,7 +4127,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [50
+) [51
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4129,18 +4148,6 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [51]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4164,8 +4171,20 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [53]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_pagelayout/pagelayout.tex [53]
+(../chapters/chapterx_pagelayout/pagelayout.tex [54]
 第 8 章
 
 Overfull \hbox (9.74373pt too wide) in paragraph at lines 30--44
@@ -4177,7 +4196,7 @@ Overfull \hbox (29.65387pt too wide) in alignment at lines 70--110
  [] [] 
  []
 
-[54
+[55
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4190,11 +4209,11 @@ Package caption Warning: \label without proper reference on input line 433.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `length-unit' on page 55 undefined on input line 133.
+LaTeX Warning: Reference `length-unit' on page 56 undefined on input line 133.
 
-[55]
-One-sided document style.
 [56]
+One-sided document style.
+[57]
 \openout4 = `TeXmanual.listing'.
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
@@ -4218,30 +4237,6 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [57]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4289,19 +4284,43 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [59]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [60]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4324,12 +4343,12 @@ Overfull \hbox (204.7462pt too wide) in paragraph at lines 444--449
 [][] 
  []
 
-[60] [61]
+[61] [62]
 Overfull \hbox (23.7462pt too wide) in paragraph at lines 454--459
 [][] 
  []
 
-[62
+[63
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4354,7 +4373,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [63
+) [64
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4381,7 +4400,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_fonts/about_europian_fonts.tex [64]
+(../chapters/chapterx_fonts/about_europian_fonts.tex [65]
 第 9 章
 \openout4 = `TeXmanual.listing'.
 
@@ -4393,7 +4412,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [65
+) [66
 
 ]
 (I search kanjifont definition file: . . ) (I search font definition file: . .
@@ -4431,14 +4450,14 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [66]
+) [67]
 \openout4 = `TeXmanual.listing'.
 
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ))
-(../chapters/chapterx_fonts/about_japanese_fonts.tex [67]
+(../chapters/chapterx_fonts/about_japanese_fonts.tex [68]
 第 10 章
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 51.
@@ -4448,7 +4467,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [68
+) [69
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4474,7 +4493,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [69]
+) [70]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4509,10 +4528,10 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [70] [71])
-(../chapters/chapterx_file_management/file_management.tex [72]
+) [71] [72])
+(../chapters/chapterx_file_management/file_management.tex [73]
 第 11 章
-[73
+[74
 
 ]
 File: ../chapters/chapterx_file_management/figures_for_file_management/director
@@ -4524,7 +4543,7 @@ mple1.jpg>
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [74]
+) [75]
 File: ../chapters/chapterx_file_management/figures_for_file_management/director
 y_example2.jpg Graphic file (type bmp)
 
@@ -4539,31 +4558,7 @@ mple3.jpg>
 
  (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [75]
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [76]
-\openout4 = `TeXmanual.listing'.
-
-
-(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4605,8 +4600,32 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [78])
-(../chapters/chapterx_right_words/how_to_write_right_words.tex [79]
+) [78]
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+\openout4 = `TeXmanual.listing'.
+
+
+(c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [79])
+(../chapters/chapterx_right_words/how_to_write_right_words.tex [80]
 第 12 章
 \openout4 = `TeXmanual.listing'.
 
@@ -4618,9 +4637,9 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [80
+) [81
 
-] [81]
+] [82]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4642,10 +4661,10 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [82])
-(../chapters/chapterx_useful_packages/useful_packages.tex [83]
+) [83])
+(../chapters/chapterx_useful_packages/useful_packages.tex [84]
 第 13 章
-[84
+[85
 
 ]
 \openout4 = `TeXmanual.listing'.
@@ -4688,7 +4707,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [85]
+) [86]
 \openout4 = `TeXmanual.listing'.
 
 
@@ -4717,7 +4736,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 <a0,fr10> <a0,fr11> <a0,fr12> <a0,fr13> <a0,fr14> <a0,fr15> <a0,fr16>
 <a0,fr17> <a0,fr18> <a0,fr19> <a0,fr20> <a0,fr21> <a0,fr22> <a0,fr23>
 <a0,fr24> <a0,fr25> <a0,fr26> <a0,fr27> <a0,fr28> <a0,fr29> <a0,fr30>
-<a0,fr31> [86] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5> <a1,fr6>
+<a0,fr31> [87] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5> <a1,fr6>
 <a1,fr7> <a1,fr8> <a1,fr9> <a1,fr10> <a1,fr11> <a1,fr12> <a1,fr13> <a1,fr14>
 <a1,fr15> <a1,fr16> <a1,fr17> <a1,fr18> <a1,fr19> <a1,fr20> <a1,fr21>
 <a1,fr22> <a1,fr23> <a1,fr24> <a1,fr25> <a1,fr26> <a1,fr27> <a1,fr28>
@@ -4726,11 +4745,13 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 <a2,fr13> <a2,fr14> <a2,fr15> <a2,fr16> <a2,fr17> <a2,fr18> <a2,fr19>
 <a2,fr20> <a2,fr21> <a2,fr22> <a2,fr23> <a2,fr24> <a2,fr25> <a2,fr26>
 <a2,fr27> <a2,fr28> <a2,fr29> <a2,fr30> <a2,fr31>)
-(../chapters/chapterx_others/other_topics.tex [87]
+(../chapters/chapterx_others/other_topics.tex [88]
 第 14 章
-[88
+[89
 
-]) (../bibliography/bibliography.tex [89]
+]) (../bibliography/bibliography.tex
+Package atenddvi Info: Last page = 90.
+ [90]
 Underfull \hbox (badness 10000) in paragraph at lines 41--43
 []\T1/ptm/m/n/10 Multi-file La-TeX projects. [][]$\T1/pcr/m/n/10 https : / / ja
  . sharelatex . com / learn / Multi-[]file _ LaTeX _
@@ -4738,13 +4759,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
 ) 
 AED: lastpage setting LastPage
-Package atenddvi Info: Last page = 90.
-[90
+[91
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 24.
- (./TeXmanual.aux)
+ (./TeXmanual.aux
+
+Package atenddvi Warning: Rerun LaTeX, last page has changed.
+
+
+Package animate Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(animate)                @ Rerun to get internal references right! @
+(animate)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
+
+)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `TeXmanual.out' has not changed.
@@ -4760,15 +4789,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 47542 strings out of 493671
- 930928 string characters out of 6151255
- 1111673 words of memory out of 5000000
- 49749 multiletter control sequences out of 15000+600000
+ 47609 strings out of 493671
+ 932851 string characters out of 6151255
+ 1117309 words of memory out of 5000000
+ 49801 multiletter control sequences out of 15000+600000
  117541 words of font info for 224 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  84i,21n,163p,10478b,3110s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on TeXmanual.dvi (90 pages, 955488 bytes).
+Output written on TeXmanual.dvi (91 pages, 973336 bytes).
